@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Abdulmunim Jundurahman Jemal's Portfolio - Software Engineering student passionate about Machine Learning and Artificial Intelligence."
+    >
+    <meta
+      name="keywords"
+      content="Abdulmunim Jundurahman, Machine Learning, Artificial Intelligence, Software Engineering, Portfolio"
+    >
+    <meta name="author" content="Abdulmunim Jundurahman Jemal" >
     <title>Welcome to Abdulmunim's Portfolio</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
   </head>
 
   <body>
     <header>
       <nav>
-        <img src="images/logo.png" alt="my logo">
+        <img src="images/logo.svg" alt="my logo" >
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -17,22 +27,18 @@
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
-        <a
-          href="pdfs/home.pdf"
-          title="Download PDF Version"
-          download="abdulmunim_cv.pdf"
-        >
-          <img
-            src="images/down.svg"
-            alt="Download WebPage's PDF Version"
-            id="download"
-         >
-        </a>
+        <label for="language">Language</label>
+        <select id="language">
+          <option value="en">English</option>
+          <option value="ar">Arabic</option>
+          <option value="or">Afan Oromoo</option>
+          <option value="am">Amharic</option>
+        </select>
+        <!-- Search bar is not included in the home.html nav -->
       </nav>
     </header>
 
     <main>
-      <!-- Hero Section -->
       <section id="home">
         <h1>Welcome to My Portfolio</h1>
         <p>
@@ -40,33 +46,37 @@
           student at Addis Ababa University. I'm passionate about Machine
           Learning and Artificial Intelligence.
         </p>
-        <a href="#about-me">Read More</a>
+        <!-- Additional: Inspiring Quote -->
+        <blockquote
+          cite="https://www.brainyquote.com/quotes/franklin_d_roosevelt_132157"
+        >
+          "The only limit to our realization of tomorrow will be our doubts of
+          today." - Franklin D. Roosevelt
+        </blockquote>
+        <a href="https://upwork.com/abdulmunimjemal">Hire Me</a>
         <a href="pdfs/abdulmunim_cv.pdf" download="abdulmunim_cv.pdf"
           >Download my CV</a
         >
-        <img src="images/hero.png" alt="Hero image">
+        <img src="images/hero.svg" alt="Hero image" >
       </section>
 
-      <!-- About Me Section -->
       <section id="about-me">
         <h2>About Me</h2>
-          <p>
-            I'm fascinated by the blend of technology and intelligence.
-            Currently pursuing a Bachelor's in Artificial Intelligence online,
-            my goal is to become a Machine Learning Engineer.
-          </p>
-          <p>
-            I speak English fluently and am familiar with Arabic. Afan Oromo is my
-            native language, and I'm proficient in Amharic.
-          </p>
+        <p>
+          I'm fascinated by the blend of technology and intelligence. Currently
+          pursuing a Bachelor's in Artificial Intelligence online, my goal is to
+          become a Machine Learning Engineer.
+        </p>
+        <p>
+          I speak English fluently and am familiar with Arabic. Afan Oromo is my
+          native language, and I'm proficient in Amharic.
+        </p>
       </section>
 
-      <!-- Services I Provide Section -->
       <section id="services">
         <h2>Services</h2>
-        <!-- Card for each service -->
         <article class="service">
-          <img src="images/ml.svg" alt="Machine Learning Service">
+          <img src="images/ml.svg" alt="Machine Learning Service" >
           <h3>Machine Learning</h3>
           <p>
             Specializing in cutting-edge Machine Learning models, I tackle
@@ -74,10 +84,7 @@
           </p>
         </article>
         <article class="service">
-          <img
-            src="images/ai.svg"
-            alt="Artificial Intelligence Service"
-         >
+          <img src="images/ai.svg" alt="Artificial Intelligence Service" >
           <h3>Artificial Intelligence</h3>
           <p>
             Proficient in crafting intelligent systems, I focus on learning,
@@ -86,10 +93,7 @@
           </p>
         </article>
         <article class="service">
-          <img
-            src="images/se.svg"
-            alt="Software Development Service"
-         >
+          <img src="images/se.svg" alt="Software Development Service" >
           <h3>Software Development</h3>
           <p>
             Beyond algorithms, I excel in Software Development, creating robust
@@ -98,12 +102,11 @@
         </article>
       </section>
 
-      <!-- Machine Learning Projects Section -->
       <section id="projects">
         <h2>Projects</h2>
-        <!-- Card for each project -->
-        <article class="project">
-          <img src="images/ml_project1.png" alt="Afan Oromoo News Classifier">
+        <!-- Project cards go here -->
+        <article>
+          <img src="https://placehold.co/400" alt="Afan Oromoo News Classifier" >
           <h3>Afan Oromoo News Classifier</h3>
           <p>
             Classified Afan Oromoo news articles using machine learning
@@ -111,29 +114,20 @@
           </p>
           <a href="#read-more-afan-oromoo-project">Read More</a>
         </article>
-        <article class="project">
+        <article>
           <img
-            src="images/ml_project2.png"
+            src="https://placehold.co/400"
             alt="Amharic Context Aware Spell Checker"
-         >
+          >
           <h3>Amharic Context Aware Spell Checker</h3>
           <p>
-            Developed a spell checker for Amharic, considering context for
-            improved accuracy in writing.
+            Developed a spell checker for Amharic using machine learning
+            algorithms, effectively correcting spelling errors in Amharic text.
           </p>
           <a href="#read-more-amharic-spell-checker-project">Read More</a>
         </article>
-        <article class="project">
-          <img src="images/ml_project3.png" alt="AAU Chatbot">
-          <h3>AAU Chatbot</h3>
-          <p>
-            Created a chatbot for Addis Ababa University, providing assistance
-            and information to students.
-          </p>
-          <a href="#read-more-aau-chatbot-project">Read More</a>
-        </article>
-        <article class="project">
-          <img src="images/ml_project4.png" alt="Leukemia Detection">
+        <article>
+          <img src="https://placehold.co/400" alt="Leukemia Detection" >
           <h3>Leukemia Detection</h3>
           <p>
             Worked on a project for detecting leukemia using machine learning
@@ -143,10 +137,9 @@
         </article>
       </section>
 
-      <!-- My Blog Section -->
       <section id="blog">
         <h2>Blog</h2>
-        <!-- Card for each blog post -->
+        <!-- Blog cards go here -->
         <article class="blog-post">
           <h3>Applicability of AI in Ethiopia</h3>
           <p>
@@ -174,16 +167,16 @@
       </section>
     </main>
 
-    <!-- Footer with Logo -->
+    <!-- Footer with Logo and Address -->
     <footer>
-      <img src="images/logo.png" alt="my logo">
+      <img src="images/logo.svg" alt="my logo" >
       <p>
         Dedicated to advancing knowledge in machine learning and AI. Let's
         create intelligent solutions together!
       </p>
-      <p>
-        Copyright &copy; 2023 Abdulmunim Jundurahman Jemal
-      </p>
+      <p>Copyright &copy; 2023 Abdulmunim Jundurahman Jemal</p>
+      <!-- Additional: Address -->
+      <address>Addis Ababa, Ethiopia</address>
     </footer>
   </body>
 </html>
