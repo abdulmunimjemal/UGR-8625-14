@@ -4,13 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn more about Abdulmunim Jundurahman Jemal.">
+  <meta name="keywords" content="Abdulmunim Jundurahman Jemal, about, skills, languages">
+  <meta name="author" content="Abdulmunim Jundurahman Jemal">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+
   <title>About</title>
 </head>
 
 <body>
   <header>
     <nav>
-      <img src="images/logo.png" alt="my logo">
+      <img src="images/logo.svg" alt="my logo">
       <ul>
         <li><a href="home.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -18,6 +24,13 @@
         <li><a href="blog.html">Blog</a></li>
         <li><a href="#">About</a></li>
       </ul>
+      <label for="language">Language</label>
+            <select id="language">
+              <option value="en">English</option>
+              <option value="ar">Arabic</option>
+              <option value="or">Afan Oromoo</option>
+              <option value="am">Amharic</option>
+            </select>
     </nav>
   </header>
 
@@ -26,7 +39,7 @@
     <section id="about">
       <h2>About Me</h2>
       <article>
-        <img src="images/about_1.jpg" alt="my photo">
+        <img src="https://via.placeholder.co/300" alt="my photo">
         <h3>Passionate Learner</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
@@ -51,58 +64,80 @@
       </article>
     </section>
 
-    <!-- Skills with percentage: First technical skill, then communicational skills, then langauges I can speak -->
+    <!-- Skills with percentage: First technical skill, then communicational skills, then languages I can speak -->
     <section id="skills">
       <h2>Skills</h2>
       <article>
         <h3>Technical Skills</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node</li>
-          <li>Express</li>
-          <li>SQL</li>
-          <li>MongoDB</li>
-          <li>Python</li>
-          <li>Data Structures and Algorithms</li>
-          <li>Machine Learning</li>
-          <li>Data Analysis</li>
-        </ul>
+        <table>
+          <tr>
+            <td>HTML</td>
+            <td>90%</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>85%</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>80%</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>95%</td>
+          </tr>
+          <tr>
+            <td>Django</td>
+            <td>90%</td>
+          </tr>
+       
+        </table>
       </article>
       <article>
         <h3>Communicational Skills</h3>
-        <ul>
-          <li>Teamwork</li>
-          <li>Leadership</li>
-          <li>Communication</li>
-          <li>Problem Solving</li>
-          <li>Time Management</li>
-          <li>Adaptability</li>
-          <li>Work Ethic</li>
-          <li>Interpersonal Skills</li>
-          <li>Conflict Resolution</li>
-          <li>Flexibility</li>
-          <li>Self-Confidence</li>
-          <li>Organizational Skills</li>
-        </ul>
+        <table>
+          <tr>
+            <td>Teamwork</td>
+            <td>95%</td>
+          </tr>
+          <tr>
+            <td>Leadership</td>
+            <td>90%</td>
+          </tr>
+          <tr>
+            <td>Communication</td>
+            <td>85%</td>
+          </tr>
+         
+        </table>
       </article>
       <article>
         <h3>Languages</h3>
-        <ul>
-          <li>Afan Oromo</li>
-          <li>Amharic</li>
-          <li>English</li>
-          <li>Arabic</li>
-        </ul>
+        <table>
+          <tr>
+            <td>Afan Oromo</td>
+            <td>Mother Tongue</td>
+          </tr>
+          <tr>
+            <td>Amharic</td>
+            <td>Native</td>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td>Fluent (C1) </td>
+          </tr>
+          <tr>
+            <td>Arabic</td>
+            <td>Intermediate (B2)</td>
+          </tr>
+        </table>
       </article>
     </section>
   </main>
 
   <!-- Footer with Logo -->
   <footer>
-    <img src="images/logo.png" alt="my logo">
+    <img src="images/logo.svg" alt="my logo">
     <p>
       Dedicated to advancing knowledge in machine learning and AI. Let's
       create intelligent solutions together!
