@@ -3,8 +3,21 @@
   <head>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Read insightful articles by Abdulmunim Jundurahman Jemal on machine learning and artificial intelligence."
+    >
+    <meta
+      name="keywords"
+      content="blog, articles, machine learning, artificial intelligence, Abdulmunim Jundurahman, programming, computer"
+    >
+    <meta name="author" content="Abdulmunim Jundurahman Jemal" >
+    <meta name="robots" content="index, follow" >
+    <meta name="googlebot" content="index, follow" >
+
     <title>Blog</title>
   </head>
+
   <body>
     <header>
       <nav>
@@ -16,21 +29,30 @@
           <li><a href="#">Blog</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
-        <input type="text" placeholder="Search" >
-        <input type="button" value="Search" >
+        <label for="language">Language:</label>
+        <select id="language">
+          <option value="en">English</option>
+          <option value="ar">Arabic</option>
+          <option value="am">Amharic</option>
+          <option value="om">Afan Oromo</option>
+        </select>
+        <div id="search-bar">
+          <input type="text" placeholder="Search" >
+          <input type="button" value="Search" >
+        </div>
       </nav>
     </header>
 
     <main>
       <h1>My Blog</h1>
-      <!-- TODO: trending blogs, sliding left and right, image on the rifght, blog heading adn text on the left in card -->
+      <!-- TODO: trending blogs, sliding left and right, image on the right, blog heading and text on the left in a card -->
       <section>
         <h2>Trending Posts</h2>
         <article>
           <img src="images/arrow_left.jpg" alt="arrow left" >
           <h3>Applicability of AI in Ethiopia</h3>
           <p>
-            AI is being applied to solve communal, technical, and poltical
+            AI is being applied to solve communal, technical, and political
             problems in the world. Can we do the same in Ethiopia? We will
             explore my point of view and argument in this post
           </p>
@@ -45,37 +67,37 @@
           <img src="images/blog_2.jpg" alt="blog 2" >
           <h3>AI and the Future of Work</h3>
           <p>
-            AI is being applied to solve communal, technical, and poltical
+            AI is being applied to solve communal, technical, and political
             problems in the world. Can we do the same in Ethiopia? We will
             explore my point of view and argument in this post
           </p>
         </article>
 
         <article>
-          <img src="images/blog_3.jpg" alt="blog 3" >
+          <img src="https://via.placeholder.co/300" alt="blog 3" >
           <h3>AI and the Future of Work</h3>
           <p>
-            AI is being applied to solve communal, technical, and poltical
+            AI is being applied to solve communal, technical, and political
             problems in the world. Can we do the same in Ethiopia? We will
             explore my point of view and argument in this post
           </p>
         </article>
 
         <article>
-          <img src="images/blog_4.jpg" alt="blog 4" >
+          <img src="https://via.placeholder.co/300" alt="blog 4" >
           <h3>AI and the Future of Work</h3>
           <p>
-            AI is being applied to solve communal, technical, and poltical
+            AI is being applied to solve communal, technical, and political
             problems in the world. Can we do the same in Ethiopia? We will
             explore my point of view and argument in this post
           </p>
         </article>
 
         <article>
-          <img src="images/blog_5.jpg" alt="blog 5" >
+          <img src="https://via.placeholder.co/300" alt="blog 5" >
           <h3>AI and the Future of Work</h3>
           <p>
-            AI is being applied to solve communal, technical, and poltical
+            AI is being applied to solve communal, technical, and political
             problems in the world. Can we do the same in Ethiopia? We will
             explore my point of view and argument in this post
           </p>
@@ -101,20 +123,20 @@
         <ul>
           <li>AI and the Future of Work</li>
           <li>AI in Ethiopia</li>
-          <li>Natural language Processing for Local Languages</li>
+          <li>Natural Language Processing for Local Languages</li>
         </ul>
       </section>
     </aside>
-     <!-- Footer with Logo -->
-     <footer>
-        <img src="images/logo.png" alt="my logo">
-        <p>
-          Dedicated to advancing knowledge in machine learning and AI. Let's
-          create intelligent solutions together!
-        </p>
-        <p>
-          Copyright &copy; 2023 Abdulmunim Jundurahman Jemal
-        </p>
-      </footer>
+
+    <!-- Footer with Logo -->
+    <footer>
+      <img src="images/logo.svg" alt="my logo" >
+      <p>
+        Dedicated to advancing knowledge in machine learning and AI. Let's
+        create intelligent solutions together!
+      </p>
+      <p>Copyright &copy; 2023 Abdulmunim Jundurahman Jemal</p>
+      <address>Addis Ababa, Ethiopia</address>
+    </footer>
   </body>
 </html>

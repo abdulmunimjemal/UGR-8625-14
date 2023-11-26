@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read about AI in Ethiopia by Abdulmunim Jundurahman Jemal.">
+    <meta name="keywords" content="AI, Ethiopia, blog, Abdulmunim Jundurahman Jemal">
+    <meta name="author" content="Abdulmunim Jundurahman Jemal">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
     <title>Blog Post: AI in Ethiopia</title>
   </head>
   <body>
     <header>
       <nav>
-        <img src="images/logo.png" alt="my logo" >
+        <img src="images/logo.png" alt="my logo">
         <ul>
           <li><a href="home.html">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -16,8 +22,17 @@
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
-        <input type="text" placeholder="Search" >
-        <input type="button" value="Search" >
+        <label for="language">Language:</label>
+        <select id="language">
+          <option value="en">English</option>
+          <option value="ar">Arabic</option>
+          <option value="am">Amharic</option>
+          <option value="om">Afan Oromo</option>
+        </select>
+        <div id="search-bar">
+          <input type="text" placeholder="Search">
+          <input type="button" value="Search">
+        </div>
       </nav>
     </header>
 
@@ -25,7 +40,7 @@
       <article>
         <div id="post-heading">
           <h1>AI in Ethiopia</h1>
-          <img src="images/blog_1.jpg" alt="blog 1 cover image" >
+          <img src="https://via.placeholder.com/800" alt="blog 1 cover image">
           <p>By: <a href="about.html">Abebe</a></p>
           <p>Posted: 2020-10-10</p>
           <p>Category: <a href="blog.html">AI</a></p>
@@ -79,9 +94,10 @@
         </ul>
       </section>
     </aside>
+
     <!-- Footer with Logo -->
     <footer>
-      <img src="images/logo.png" alt="my logo" >
+      <img src="images/logo.png" alt="my logo">
       <p>
         Dedicated to advancing knowledge in machine learning and AI. Let's
         create intelligent solutions together!
