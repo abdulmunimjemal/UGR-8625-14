@@ -1,25 +1,23 @@
+/* Global Styles */
 :root {
-  /* COLOR PALLETE */
-  --tropical-indigo: #9274f2;
-  --white-color: hsl(0, 0%, 95%);
+  /* Color Palette */
   --aquamarine: #59f9be;
-  --color-primary: #5b38e3;
+  --black-color-light: hsl(0, 0%, 40%);
   --black-color: hsl(0, 0%, 0%);
-  --lime-color: #d3fe57;
-  --color-border: #ccc;
-  --color-body: #20172c;
-  --title-color: hsl(0, 0%, 0%);
-  --text-color: hsl(0, 0%, 35%);
-  --text-color-light: hsl(0, 0%, 64%);
   --body-color: hsl(0, 0%, 87%);
+  --color-body: #20172c;
+  --color-border: #ccc;
+  --color-primary: #5b38e3;
   --container-color: hsl(0, 0%, 83%);
   --first-color: hsl(14, 98%, 50%);
-  --black-color: hsl(0, 0%, 0%);
-  --black-color-light: hsl(0, 0%, 40%);
+  --lime-color: #d3fe57;
+  --text-color-light: hsl(0, 0%, 64%);
+  --text-color: hsl(0, 0%, 35%);
+  --title-color: hsl(0, 0%, 0%);
+  --tropical-indigo: #9274f2;
+  --white-color: hsl(0, 0%, 95%);
 
-  /*========== Font and typography ==========*/
-
-  /*.5rem = 8px | 1rem = 16px ...*/
+  /* Font and Typography */ 
   --body-font: "Bai Jamjuree", sans-serif;
   --biggest-font-size: 2.5rem;
   --h1-font-size: 1.75rem;
@@ -29,7 +27,7 @@
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 
-  /*========== Font weight ==========*/
+  /* Font Weight */
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
@@ -37,7 +35,7 @@
   --header-height: 3.5rem;
 }
 
-/* Responsive typography */
+/* Responsive typography TODO: Nothing here*/
 @media screen and (min-width: 760px) {
   :root {
     --biggest-font-size: 4.5rem;
@@ -50,16 +48,21 @@
   }
 }
 
+
+/* Reset Styles */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+/* HTML Specific Styles */
 html {
   scroll-behavior: smooth;
 }
 
+
+/* Body Sty;les*/
 body {
   background-color: var(--body-color);
   color: var(--text-color);
@@ -67,47 +70,59 @@ body {
   font-size: var(--normal-font-size);
 }
 
-h1,
-h2,
-h3,
-h4 {
+/* Heading Styles */
+h1, h2, h3, h4 {
   color: var(--title-color);
   font-weight: var(--font-bold);
 }
 
+/* List Styles */
 ul {
   list-style: none;
 }
 
+/* Link Styles */
 a {
   text-decoration: none;
   color: var(--text-color);
   font-weight: var(--font-medium);
 }
 
+/* Image Styles */
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
+/* Box Model Reset */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* COMMON USAGE */
+/* Utility Classes TODO: Nothing */
 .container {
   max-width: 1080px;
   margin-inline: 0.5rem;
-  margin-bottom: 3rem;
 }
 
 .section {
-  padding: 1.5rem;
+  padding: 2rem;
+  padding-bottom: 4rem;
   margin: 0 auto;
+  margin-bottom: 2.5rem;
 }
+
+.section:nth-child(odd) {
+  background-color: var(--container-color);
+}
+
+.container:last-child {
+  margin-bottom: 0;
+}
+
 .main {
   padding-top: 8rem;
 }
@@ -115,17 +130,22 @@ img {
 .hidden {
   display: none;
 }
-/* HEADER */
 
-.header {
-  position: fixed;
-  top: 0;
-  padding: 1rem 0.5rem;
-  left: 0;
-  width: 100%;
-  background-color: var(--body-color);
+.blue {
+  color: var(--color-primary);
 }
 
+/* Header Styles */
+.header {
+  background-color: var(--body-color);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0.5rem;
+}
+
+/* Navigation Styles */
 .nav {
   max-width: 1140px;
   margin: 0 auto;
@@ -135,6 +155,7 @@ img {
   z-index: 2;
 }
 
+/* Navigation Logo Styles */
 .nav__logo {
   display: inline-flex;
   column-gap: 0.5rem;
@@ -165,6 +186,7 @@ img {
   width: fit-content;
 }
 
+/* Active Navigation Item Style */
 .nav__item.active {
   padding: 0 0.15rem;
   width: fit-content;
@@ -176,11 +198,13 @@ img {
   display: none;
 }
 
+/* Navigation Language Styles [DESKTOP ONLY] */
 .nav__language {
   display: flex;
   column-gap: 0.5rem;
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
 
 .nav__language--icon {
@@ -190,7 +214,7 @@ img {
   background-color: var(--black-color);
   color: var(--white-color);
   display: flex;
-  align-items: center;
+  align-items: center; 
   justify-content: center;
 }
 
@@ -216,11 +240,11 @@ img {
   top: 100%;
   left: 0;
   background-color: var(--body-color);
-  width: 100%;
+  width: fit-content;
   padding: 0.1rem;
   text-align: center;
   backdrop-filter: blur(8px);
-  transition: top 0.4;
+  transition: top 0.4s;
   display: none;
   flex-direction: column;
   row-gap: 0.5rem;
@@ -249,13 +273,13 @@ img {
   transform: rotate(180deg);
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 760px) {
   .nav__language {
     display: none;
   }
 
   .nav__list {
-    top: -100%;
+    top: -105%;
     left: 0;
     background-color: rgba(1, 1, 1, 0.75);
     width: 100%;
@@ -263,7 +287,7 @@ img {
     padding: 1.8rem 5rem;
     text-align: center;
     backdrop-filter: blur(8px);
-    transition: top 0.4;
+    transition: top 0.4s;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -313,8 +337,7 @@ img {
   outline: 0;
   padding: 0.75rem 1.5rem;
   text-align: center;
-  text-trasform: uppercase;
-  whitespace: nowrap;
+  white-space: nowrap;
 }
 
 .btn--block {
@@ -325,7 +348,7 @@ img {
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 0.5rem;
-  vertifcal-align: middle;
+  vertical-align: middle;
 }
 .btn--primary {
   background-color: var(--color-primary);
@@ -419,9 +442,7 @@ img {
   }
 }
 
-.blue {
-  color: var(--color-primary);
-}
+
 @media screen and (max-width: 480px) {
   .hero-section__title {
     font-size: var(--h3-font-size);
@@ -442,6 +463,7 @@ about-section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .about-section__title {
@@ -499,7 +521,7 @@ about-section {
     justify-content: center;
   }
   .grid-item {
-    flex-basis: 1;
+    flex-basis: 100%;
   }
 }
 
@@ -591,7 +613,7 @@ about-section {
 .blog-section__card-img {
   width: 100%;
   height: auto;
-  object: cover;
+  object-fit: cover;
 }
 
 .blog-section__card-body {
@@ -629,7 +651,7 @@ about-section {
 .link-arrow::after {
   content: ">";
   margin-left: 0.25rem;
-  transform: all 0.3s ease;
+  transition: margin-left 0.3s ease;
 }
 
 .link-arrow:hover {
@@ -643,14 +665,15 @@ about-section {
 /* Footer */
 
 .footer {
-  background-color: #ccc666);
-  color: var(--text-color-light);
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--title-color);
   padding: 1.5rem;
   text-align: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100vw;
+  margin: 0 auto;
   }
 
   @media screen and (max-width: 760px) {
