@@ -1,129 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>Contact</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Abdulmunim Jundurahman Jemal - Machine Learning Engineer"
+    />
+    <meta
+      name="keywords"
+      content="machine learning, artificial intelligence, contact, Abdulmunim Jundurahman Jemal"
+    />
+    <meta name="author" content="Abdulmunim Jundurahman Jemal" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <title>Contact Me</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+    />
   </head>
 
   <body>
-    <header>
-      <nav>
-        <img src="images/logo.png" alt="my logo" >
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#about">About</a></li>
+    <header class="header" id="header">
+      <nav class="nav">
+        <a class="nav__logo">
+          <span class="nav__logo-circle">M</span>
+          <span class="nav__logo-name">Munim</span>
+        </a>
+        <ul class="nav__list" id="nav-list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav__item active">
+            <a class="nav__link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="about.html">About</a>
+          </li>
         </ul>
+
+        <!-- CHOOSE LANGUAGE DROP DOWN -->
+        <div class="nav__language">
+          <div class="nav__language--icon">
+            <i class="ri-global-line"></i>
+          </div>
+          <div class="nav__language--text">
+            <span>English</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+          <div class="nav__language--list">
+            <div class="nav__language--item">
+              <span>العربية</span>
+            </div>
+            <div class="nav__language--item">
+              <span>Afan Oromo</span>
+            </div>
+            <div class="nav__language--item">
+              <span>አማርኛ</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-4-line" id="nav-menu-icon"></i>
+          <i class="ri-close-line hidden" id="nav-close-icon"></i>
+        </div>
       </nav>
     </header>
 
-    <main>
+    <main class="flex main container">
       <!-- Social media Contact Address with Photo -->
-      <section id="contact">
-        <img src="images/abdulmunim.jpg" alt="my photo" >
+      <section id="contact" class="container section">
+        <figure>
+          <img src="http://via.placeholder.com/300" alt="my photo" />
+          <figcaption>Abdulmunim Jundurahman</figcaption>
+        </figure>
         <div>
-          <h2>Contact</h2>
-          <p>
-            <strong>LinkedIn:</strong>
-            <a
-              href="https://www.linkedin.com/in/abdulmunim-jemal/"
-              target="_blank"
-              >Connect with me</a
-            >
-          </p>
-          <p>
-            <strong>Facebook:</strong>
-            <a href="https://www.facebook.com/abdulmunim.jemal/" target="_blank"
-              >Follow me</a
-            >
-          </p>
-          <p>
-            <strong>Instagram:</strong>
-            <a
-              href="https://www.instagram.com/abdulmunim_jemal/"
-              target="_blank"
-              >Follow me</a
-            >
-          </p>
-          <p>
-            <strong>Telegram:</strong>
-            <a href="https://t.me/abdulmunim_jemal" target="_blank"
-              >Message me</a
-            >
-          </p>
-          <p>
-            <strong>Email:</strong>
-            <a href="mailto:abdulmunim.jemal@gmail.com" target="_blank"
-              >Send an email</a
-            >
-          </p>
+          <h2 class="contact__title">Contact Me</h2>
+          <!-- Address -->
+          <div class="contact__address">
+            <p class="contact__address-text">
+              <i class="ri-map-pin-line"></i> Addis Ababa, Ethiopia
+            </p>
+            <p class="contact__address-text">
+              <i class="ri-phone-line"></i> +251 900 729 000
+            </p>
+            <p class="contact__address-text">
+              <i class="ri-mail-line"></i>
+              <a href="mailto:abdulmunim.jemal@gmail.com">abdulmunim.jemal@gmail.com</a>
+            </p>
+            </div>
+            <!-- SOCIAL MEDIA WITH REMIX ICON -->
+            <div class="contact__social">
+              <a
+                href="https://www.facebook.com/abdulmunim.jemal.1"
+                class="contact__social-link"
+              >
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/abdulmunim.jemal/"
+                class="contact__social-link"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a
+                href="https://twitter.com/AbdulmunimJemal"
+                class="contact__social-link"
+              >
+                <i class="ri-twitter-fill"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/abdulmunim-jemal-0b0b3b1b2/"
+                class="contact__social-link"
+              >
+                <i class="ri-linkedin-fill"></i>
+              </a>
         </div>
       </section>
 
       <!-- Contact Form -->
-      <section id="contact-form">
-        <h2>Send Me a Message</h2>
-        <p>
+      <section id="contact-form" class="container section contact-form">
+        <h2 class="contact-form__title">Send Me a Message</h2>
+        <p class="contact-form__text">
           Have a question or want to work together? Fill out the form below, and
           I'll get back to you!
         </p>
-        <form action="sample/end/point" method="post">
-          <label for="name">Your Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your name"
-            required
-          >
 
-          <label for="email">Your Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email"
-            required
-          >
+        <form action="sample/end/point" method="post" class="form container">
+          <div class="input-group">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+              class="input"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              class="input"
+              required
+            />
+          </div>
 
-          <label for="subject">Subject</label>
-          <input
-            type="text"
-            name="subject"
-            id="subject"
-            placeholder="Enter your subject"
-            required
-          >
 
-          <label for="message">Your Message</label>
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Enter your message"
-            required
-          ></textarea>
+          <div class="input-group">
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+              class="input"
+              required
+            />
+          </div>
 
-          <button type="submit">Send Message</button>
+          <div class="input-group">
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Enter your message"
+              required
+              class="textarea"
+            ></textarea>
+          </div>
+
+          <button class="btn btn--primary" type="submit">
+            Send Message <i class="ri-send-plane-fill"></i>
+          </button>
         </form>
       </section>
     </main>
-    
-    <!-- Footer with Logo -->
-    <footer>
-      <img src="images/logo.png" alt="my logo">
-      <p>
-        Dedicated to advancing knowledge in machine learning and AI. Let's
-        create intelligent solutions together!
-      </p>
-      <p>
-        Copyright &copy; 2023 Abdulmunim Jundurahman Jemal
-      </p>
+
+    <!-- Footer with Logo and Address -->
+    <footer class="footer container">
+      <div class="footer__logo">
+        <span class="footer__logo-circle">M</span>
+        <span class="footer__logo-name">Munim</span>
+      </div>
+      <div class="footer__address">
+        <p class="footer__address-text">
+          <i class="ri-map-pin-line"></i> Addis Ababa, Ethiopia
+        </p>
+        <p class="footer__address-text">
+          <i class="ri-phone-line"></i> +251 900 729 000
+        </p>
+        <p class="footer__address-text">
+          <i class="ri-mail-line"></i>
+          <a href="mailto:abdulmunim.jemal@gmail.com"
+            >abdulmunim.jemal@gmail.com</a
+          >
+        </p>
+      </div>
+      <div class="footer-social">
+        <a
+          href="https://www.facebook.com/abdulmunim.jemal.1"
+          class="footer-social__link"
+        >
+          <i class="ri-facebook-circle-fill"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/abdulmunim.jemal/"
+          class="footer-social__link"
+        >
+          <i class="ri-instagram-fill"></i>
+        </a>
+        <a
+          href="https://twitter.com/AbdulmunimJemal"
+          class="footer-social__link"
+        >
+          <i class="ri-twitter-fill"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/abdulmunim-jemal-0b0b3b1b2/"
+          class="footer-social__link"
+        >
+          <i class="ri-linkedin-fill"></i>
+        </a>
+      </div>
     </footer>
-    
+
+    <script src="js/main.js"></script>
   </body>
 </html>

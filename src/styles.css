@@ -125,6 +125,8 @@ img {
 
 .main {
   padding-top: 8rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hidden {
@@ -342,6 +344,7 @@ img {
   padding: 0.75rem 1.5rem;
   text-align: center;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .btn--block {
@@ -749,4 +752,125 @@ about-section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* CONTACTS PAGE */
+
+.contact__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-bold);
+  line-height: 1.5;
+  margin: 1rem 0 0.25rem 0;
+  text-align: left;
+  align-self: center;
+  flex-basis: 100%;
+}
+
+.contact__social {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 0.5rem;
+  margin-top: 0.5rem;
+
+}
+/* Contact Form */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background: var(--black-color);
+  color: var(--text-color-light);
+}
+
+.contact-form__title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-bold);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  text-align: center;
+  align-self: center;
+  flex-basis: 100%;
+  color: var(--white-color);
+}
+
+.contact-form__text {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  align-self: center;
+  flex-basis: 100%;
+  color: var(--white-color);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1.5rem;
+  color: var(--text-color);
+  border: 3px solid var(--primary-color);
+}
+
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  flex-basis: 100%;
+  width: 100%;
+  color: var(--white-color);
+}
+
+
+.input-group .input, .input-group .textarea {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--black-color);
+  width: 100%;
+  align-self: center;
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+  outline: none;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  line-height: 1.5;
+  color: var(--black-color);
+}
+
+.input-group .input:focus {
+  border: 1px solid var(--color-primary);
+}
+
+.input-group .input::placeholder {
+  color: var(--black-color);
+}
+
+
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--text-color);
+}
+
+
+
+@media screen and (min-width: 760px) {
+  .flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
