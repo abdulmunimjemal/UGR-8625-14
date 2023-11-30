@@ -1,140 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <title>Blog</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" >
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  >
-  <link rel="stylesheet" href="styles.css" >
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
-  >
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+    />
+  </head>
 
-<body>
-  <header class="header" id="header">
-    <nav class="nav">
-      <a class="nav__logo">
-        <span class="nav__logo-circle">M</span>
-        <span class="nav__logo-name">Munim</span>
-      </a>
-      <ul class="nav__list" id="nav-list">
-        <li class="nav__item">
-          <a class="nav__link" href="#">Home</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="projects.html">Projects</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="contact.html">Contact</a>
-        </li>
-        <li class="nav__item active">
-          <a class="nav__link" href="blog.html">Blog</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="about.html">About</a>
-        </li>
-      </ul>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav">
+        <a class="nav__logo">
+          <span class="nav__logo-circle">M</span>
+          <span class="nav__logo-name">Munim</span>
+        </a>
+        <ul class="nav__list" id="nav-list">
+          <li class="nav__item">
+            <a class="nav__link" href="home.html">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav__item active">
+            <a class="nav__link" href="#">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="about.html">About</a>
+          </li>
+        </ul>
 
-      <!-- CHOOSE LANGUAGE DROP DOWN -->
-      <div class="nav__language">
-        <div class="nav__language--icon">
-          <i class="ri-global-line"></i>
-        </div>
-        <div class="nav__language--text">
-          <span>English</span>
-          <i class="ri-arrow-down-s-line"></i>
-        </div>
-        <div class="nav__language--list">
-          <div class="nav__language--item">
-            <span>العربية</span>
+        <!-- CHOOSE LANGUAGE DROP DOWN -->
+        <div class="nav__language">
+          <div class="nav__language--icon">
+            <i class="ri-global-line"></i>
           </div>
-          <div class="nav__language--item">
-            <span>Afan Oromo</span>
+          <div class="nav__language--text">
+            <span>English</span>
+            <i class="ri-arrow-down-s-line"></i>
           </div>
-          <div class="nav__language--item">
-            <span>አማርኛ</span>
+          <div class="nav__language--list">
+            <div class="nav__language--item">
+              <span>العربية</span>
+            </div>
+            <div class="nav__language--item">
+              <span>Afan Oromo</span>
+            </div>
+            <div class="nav__language--item">
+              <span>አማርኛ</span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="nav__toggle" id="nav-toggle">
-        <i class="ri-menu-4-line" id="nav-menu-icon"></i>
-        <i class="ri-close-line hidden" id="nav-close-icon"></i>
-      </div>
-    </nav>
-    <!-- <div id="search-bar">
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-4-line" id="nav-menu-icon"></i>
+          <i class="ri-close-line hidden" id="nav-close-icon"></i>
+        </div>
+      </nav>
+      <!-- <div id="search-bar">
       <input type="text" placeholder="Search" >
       <input type="button" value="Search" >
     </div> -->
-  </header>
+    </header>
 
     <main class="main container">
       <!-- <h1 class="title blue">My Blog</h1> -->
 
-      <!-- TODO: trending blogs, sliding left and right, image on the rifght, blog heading adn text on the left in card -->
-      <section class="container section slider">
-        <h2 class="slider__title title blue">Trending Posts</h2>
-        <article class="slide">
-          <img class="slide__image" src="https://placehold.co/400x400" alt="arrow left" >
-          <div class="slide__content">
-            <h3 class="slide__content-title">Applicability of AI in Ethiopia</h3>
-            
-            <p class="slide__content-text">
-              AI is being applied to solve communal, technical, and poltical
-              problems in the world. Can we do the same in Ethiopia? We will
-              explore my point of view and argument in this post
-            </p>
+      <section class="container section">
+        <h2 class="text-center text-xl blue margin-bottom">Trending Posts</h2>
+        
+        <!-- SLIDE SHOW -->
+        <div class="slideshow-container">
+          <!-- SLIDE 1 -->
+          <div class="slide" style="display: block">
+            <img src="https://source.unsplash.com/random/?ai" alt="ai in ethiopia" />
+            <div class="slide__tag"><span>Technology</span></div>
+            <div class="slide__content">
+              <h2 class="slide__title">AI Blooming in Ethiopia</h2>
+              <p class="slide__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, voluptatum.
+              </p>
+            </div>
+          </div>
+          <!-- SLIDE 2 -->
+          <div class="slide">
+            <img
+              src="https://source.unsplash.com/random/?programming"
+              alt="usage of nlp"
+            />
+            <div class="slide__tag"><span>Artificial Intelligence</span></div>
+            <div class="slide__content">
+              <h2 class="slide__title">NLP and Its Applciation</h2>
+              <p class="slide__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, voluptatum.
+              </p>
+            </div>
+          </div>
+          <!-- SLIDE 3 -->
+          <div class="slide">
+            <img
+              src="https://source.unsplash.com/random/?life"
+              alt="life philosophy"
+            />
+            <div class="slide__tag"><span>Philosophy</span></div>
+            <div class="slide__content">
+              <h2 class="slide__title">My Approach to Life</h2>
+              <p class="slide__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, voluptatum.
+              </p>
+            </div>
+          </div>
+          <!-- SLIDE 4 -->
+          <div class="slide">
+            <img
+              src="https://source.unsplash.com/random/?islam"
+              alt="islam"
+            />
+            <div class="slide__tag"><span>Religion</span></div>
+            <div class="slide__content">
+              <h2 class="slide__title">Islam: From One to One Billion</h2>
+              <p class="slide__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, voluptatum.
+              </p>
+            </div>
+          </div>
+
+          <div class="slide__btn slide__btn--left" id="prev">
+            <i class="ri-arrow-left-double-line"></i>
+          </div>
+          <div class="slide__btn slide__btn--right" id="next">
+            <i class="ri-arrow-right-double-line"></i>
+          </div>
         </div>
-        </article>
       </section>
 
       <section class="container blog-section section">
         <h2 class="blue title">Latest Posts</h2>
         <article class="blog-section__card">
-          <img class="blog-section__card-img" src="images/hero-image.jpg" alt="blog 2" >
-          <div class="blog-section__card-body">
-            <h3 class="blog-section__card-title">AI and the Future of Work</h3>
-            <div class="blog-section__card-date">
-              <i class="ri-calendar-line"></i>
-              <time class="blog-section__card-date" datetime="2021-05-20"
-                >May 20, 2021</time
-              >
-            </div>
-            <p class="blog-section__card-body">
-              AI is being applied to solve communal, technical, and poltical
-              problems in the world. Can we do the same in Ethiopia? We will
-              explore my point of view and argument in this post
-            </p>
-          </div>
-        </article>
-
-        <article  class="blog-section__card">
-          <img class="blog-section__card-img" src="images/hero-image.jpg" alt="blog 3" >
-          <div class="blog-section__card-body">
-            <h3 class="blog-section__card-title">AI and the Future of Work</h3>
-            <div class="blog-section__card-date">
-              <i class="ri-calendar-line"></i>
-              <time class="blog-section__card-date" datetime="2021-05-20"
-                >May 20, 2021</time
-              >
-            </div>
-            <p class="blog-section__card-body">
-              AI is being applied to solve communal, technical, and poltical
-              problems in the world. Can we do the same in Ethiopia? We will
-              explore my point of view and argument in this post
-            </p>
-          </div>
-        </article>
-
-        <article class="blog-section__card">
-          <img class="blog-section__card-img" src="images/hero-image.jpg" alt="blog 4" >
+          <img
+            class="blog-section__card-img"
+            src="images/hero-image.jpg"
+            alt="blog 2"
+          />
           <div class="blog-section__card-body">
             <h3 class="blog-section__card-title">AI and the Future of Work</h3>
             <div class="blog-section__card-date">
@@ -152,7 +175,55 @@
         </article>
 
         <article class="blog-section__card">
-          <img class="blog-section__card-img" src="images/hero-image.jpg" alt="blog 5" >
+          <img
+            class="blog-section__card-img"
+            src="images/hero-image.jpg"
+            alt="blog 3"
+          />
+          <div class="blog-section__card-body">
+            <h3 class="blog-section__card-title">AI and the Future of Work</h3>
+            <div class="blog-section__card-date">
+              <i class="ri-calendar-line"></i>
+              <time class="blog-section__card-date" datetime="2021-05-20"
+                >May 20, 2021</time
+              >
+            </div>
+            <p class="blog-section__card-body">
+              AI is being applied to solve communal, technical, and poltical
+              problems in the world. Can we do the same in Ethiopia? We will
+              explore my point of view and argument in this post
+            </p>
+          </div>
+        </article>
+
+        <article class="blog-section__card">
+          <img
+            class="blog-section__card-img"
+            src="images/hero-image.jpg"
+            alt="blog 4"
+          />
+          <div class="blog-section__card-body">
+            <h3 class="blog-section__card-title">AI and the Future of Work</h3>
+            <div class="blog-section__card-date">
+              <i class="ri-calendar-line"></i>
+              <time class="blog-section__card-date" datetime="2021-05-20"
+                >May 20, 2021</time
+              >
+            </div>
+            <p class="blog-section__card-body">
+              AI is being applied to solve communal, technical, and poltical
+              problems in the world. Can we do the same in Ethiopia? We will
+              explore my point of view and argument in this post
+            </p>
+          </div>
+        </article>
+
+        <article class="blog-section__card">
+          <img
+            class="blog-section__card-img"
+            src="images/hero-image.jpg"
+            alt="blog 5"
+          />
           <div class="blog-section__card-body">
             <h3 class="blog-section__card-title">AI and the Future of Work</h3>
             <div class="blog-section__card-date">
@@ -171,8 +242,7 @@
       </section>
     </main>
 
-
-   <!-- Footer with Logo and Address -->
+    <!-- Footer with Logo and Address -->
     <footer class="footer container">
       <div class="footer__logo">
         <span class="footer__logo-circle">M</span>
@@ -220,6 +290,6 @@
       </div>
     </footer>
 
-    <script src="js/main.js"></script>  
+    <script src="js/main.js"></script>
   </body>
 </html>
