@@ -565,7 +565,7 @@
   .about-section__figure-img {
     width: 300px;
     height: auto;
-    border-radius: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
   }
 
 /* Services Section */
@@ -651,9 +651,8 @@
     width: 100%;
     max-height: 300px;
     border-radius: 0.5rem 0.5rem 0 0;
-    /* max-height: 300px; */
     object-fit: cover;
-  }
+   }
   
   .blog-section__card-body {
     padding: 1rem 0.75rem;
