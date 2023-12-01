@@ -1,117 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8"  >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"  >
+    <title>About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"  >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin  >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+     >
+    <link rel="stylesheet" href="styles.css"  >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+     >
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
-</head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav">
+        <a class="nav__logo">
+          <span class="nav__logo-circle">M</span>
+          <span class="nav__logo-name">Munim</span>
+        </a>
+        <ul class="nav__list" id="nav-list">
+          <li class="nav__item">
+            <a class="nav__link" href="home.html">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav__item active">
+            <a class="nav__link" href="#">About</a>
+          </li>
+        </ul>
 
-<body>
-  <header>
-    <nav>
-      <img src="images/logo.png" alt="my logo">
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </nav>
-  </header>
+        <!-- CHOOSE LANGUAGE DROP DOWN -->
+        <div class="nav__language">
+          <div class="nav__language--icon">
+            <i class="ri-global-line"></i>
+          </div>
+          <div class="nav__language--text">
+            <span>English</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+          <div class="nav__language--list">
+            <div class="nav__language--item">
+              <span>العربية</span>
+            </div>
+            <div class="nav__language--item">
+              <span>Afan Oromo</span>
+            </div>
+            <div class="nav__language--item">
+              <span>አማርኛ</span>
+            </div>
+          </div>
+        </div>
 
-  <main>
-    <!-- About me with Images, Image: Description cards -->
-    <section id="about">
-      <h2>About Me</h2>
-      <article>
-        <img src="images/about_1.jpg" alt="my photo">
-        <h3>Passionate Learner</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
-          excepturi voluptatem optio, eum ea quo porro beatae molestiae error
-          a earum totam veniam deleniti distinctio quaerat delectus dolorem
-          sunt doloribus dolor! Expedita, veniam sunt. Debitis qui eaque, enim
-          rerum numquam quaerat neque consequuntur esse nisi in consequatur
-          quia velit soluta!
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-4-line" id="nav-menu-icon"></i>
+          <i class="ri-close-line hidden" id="nav-close-icon"></i>
+        </div>
+      </nav>
+      <!-- <div id="search-bar">
+    <input type="text" placeholder="Search" >
+    <input type="button" value="Search" >
+  </div> -->
+    </header>
+
+    <main class="main container">
+      <!-- About me with Images, Image: Description cards -->
+      <section id="about" class="section about-container">
+        <h2 class="title blue">About Me</h2>
+        <div class="grid grid-1X2">
+          <figure class="about-section__figure grid-item-center">
+            <img
+              src="/images/munim.jpg"
+              alt="my photo"
+              class="about-section__figure-img"
+             >
+            <figcaption class="about-section__figure-caption">
+              Abdulmunim Jundurahman Jemal
+            </figcaption>
+          </figure>
+
+          <div class="about-section__articles">
+            <article>
+              <!-- <img src="https://placehold.co/45x45" alt="my photo"> -->
+              <h3>Passionate Learner 🧑‍🎓</h3>
+              <p class="about-section__text">
+                a passionate learner, dedicated to acquiring knowledge and
+                continuously expanding my horizons.
+              </p>
+            </article>
+            <article>
+              <!-- <img src="https://placehold.co/45x45" alt="my photo"> -->
+              <h3>Driven Developer 👨‍💻</h3>
+              <p class="about-section__text">
+                deeply engaged in creating innovative solutions and pushing the
+                boundaries of technology.
+              </p>
+            </article>
+
+            <article>
+              <!-- <img src="https://placehold.co/45x45" alt="my photo"> -->
+              <h3>Tech Explorer 🔍🚀</h3>
+              <p class="about-section__text">
+                navigating through the ever-evolving landscape of technology,
+                uncovering new possibilities and embracing challenges
+              </p>
+            </article>
+            <article>
+              <!-- <img src="https://placehold.co/45x45" alt="my photo"> -->
+              <h3>Philosophy Enthusiast 🤔📚</h3>
+              <p class="about-section__text">
+                delving into the profound questions that shape our understanding
+                of existence. Exploring the works of renowned philosophers and
+                reflecting on the complexities of life, sharing insights that
+                challenge and inspire.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills with percentage: First technical skill, then communicational skills, then languages I can speak -->
+      <section id="skills" class="center">
+        <h2 class="title blue">Skills</h2>
+        <div class="grid grid-1X3">
+          <article class="table-container">
+            <h3 class="table__head">Technical Skills</h3>
+            <table class="table">
+              <tr class="table__row">
+                <td class="table__data">HTML</td>
+                <td class="table__data">90%</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__data">CSS</td>
+                <td class="table__data">85%</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__data">JavaScript</td>
+                <td class="table__data">80%</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__data">Python</td>
+                <td class="table__data">95%</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__data">Django</td>
+                <td class="table__data">90%</td>
+              </tr>
+            </table>
+          </article>
+          <article class="table-container">
+            <h3 class="table__head">Communicational Skills</h3>
+            <table class="table">
+              <tr class="table__row">
+                <td class="table__data">Teamwork</td>
+                <td class="table__data">95%</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__data">Leadership</td>
+                <td class="table__data">90%</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__data">Communication</td>
+                <td class="table__data">85%</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__data">Documentation</td>
+                <td class="table__data">95%</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__data">Learning</td>
+                <td class="table__data">98%</td>
+              </tr>
+            </table>
+          </article>
+          <article class="table-container">
+            <h3 class="table__head">Languages</h3>
+            <table class="table">
+              <tr class="table__row">
+                <td class="table__data">Afan Oromo</td>
+                <td class="table__data">Mother Tongue</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__data">Amharic</td>
+                <td class="table__data">Native</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__data">English</td>
+                <td class="table__data">Fluent (C1)</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__data">Arabic</td>
+                <td class="table__data">Intermediate (B2)</td>
+              </tr>
+            </table>
+          </article>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section class="section container">
+        <h2 class="title blue text-center">Education</h2>
+        <div class="education-section">
+          <div class="table-title">High&nbsp;School</div>
+          <div class="item">Eldan Secondary School</div>
+          <div class="item .grid-item-center">2017 - 2019</div>
+          <div class="item">SOS Hermann Gmeiner Secondary School</div>
+          <div class="item .grid-item-center">2019 - 2021 (Graduated)</div>
+          <div class="table-title">Undergraduate&nbsp;Studies</div>
+          <div class="item">Addis Ababa University</div>
+          <div class="item .grid-item-center">2022 - 2026 (Ongoing)</div>
+          <div class="item">Major</div>
+          <div class="item .grid-item-center">BSc SoftWare Engineering</div>
+          <div class="table-title">Relevant&nbsp;Coursework</div>
+          <div class="item">SOS Hermann Gmeiner Secondary School</div>
+          <div class="item .grid-item-center">
+            High&nbsp;School&nbsp;Mathematics, Academic&nbsp;Writing,
+            Language&nbsp;Courses, Natural&nbsp;Science&nbsp;Courses
+          </div>
+          <div class="item">Addis Ababa University</div>
+          <div class="item">
+            Data Structures&nbsp;and&nbsp;Algorithm,
+            Object&nbsp;Oriented&nbsp;Programming, Web&nbsp;Programming,
+            Fundamentals&nbsp;of&nbsp;Software&nbsp;Engineering
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer with Logo and Address -->
+    <footer class="footer container">
+      <div class="footer__logo">
+        <span class="footer__logo-circle">M</span>
+        <span class="footer__logo-name">Munim</span>
+      </div>
+      <div class="footer__address">
+        <p class="footer__address-text">
+          <i class="ri-map-pin-line"></i> Addis Ababa, Ethiopia
         </p>
-      </article>
-      <article>
-        <img src="images/about_2.jpg" alt="my photo">
-        <h3>Driven Developer</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
-          excepturi voluptatem optio, eum ea quo porro beatae molestiae error
-          a earum totam veniam deleniti distinctio quaerat delectus dolorem
-          sunt doloribus dolor! Expedita, veniam sunt. Debitis qui eaque, enim
-          rerum numquam quaerat neque consequuntur esse nisi in consequatur
-          quia velit soluta!
+        <p class="footer__address-text">
+          <i class="ri-phone-line"></i> +251 900 729 000
         </p>
-      </article>
-    </section>
+        <p class="footer__address-text">
+          <i class="ri-mail-line"></i>
+          <a href="mailto:abdulmunim.jemal@gmail.com"
+            >abdulmunim.jemal@gmail.com</a
+          >
+        </p>
+      </div>
+      <div class="footer-social">
+        <a
+          href="https://www.facebook.com/abdulmunim.jemal.1"
+          class="footer-social__link"
+        >
+          <i class="ri-facebook-circle-fill"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/abdulmunim.jemal/"
+          class="footer-social__link"
+        >
+          <i class="ri-instagram-fill"></i>
+        </a>
+        <a
+          href="https://twitter.com/AbdulmunimJemal"
+          class="footer-social__link"
+        >
+          <i class="ri-twitter-fill"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/abdulmunim-jemal-0b0b3b1b2/"
+          class="footer-social__link"
+        >
+          <i class="ri-linkedin-fill"></i>
+        </a>
+      </div>
+    </footer>
 
-    <!-- Skills with percentage: First technical skill, then communicational skills, then langauges I can speak -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <article>
-        <h3>Technical Skills</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node</li>
-          <li>Express</li>
-          <li>SQL</li>
-          <li>MongoDB</li>
-          <li>Python</li>
-          <li>Data Structures and Algorithms</li>
-          <li>Machine Learning</li>
-          <li>Data Analysis</li>
-        </ul>
-      </article>
-      <article>
-        <h3>Communicational Skills</h3>
-        <ul>
-          <li>Teamwork</li>
-          <li>Leadership</li>
-          <li>Communication</li>
-          <li>Problem Solving</li>
-          <li>Time Management</li>
-          <li>Adaptability</li>
-          <li>Work Ethic</li>
-          <li>Interpersonal Skills</li>
-          <li>Conflict Resolution</li>
-          <li>Flexibility</li>
-          <li>Self-Confidence</li>
-          <li>Organizational Skills</li>
-        </ul>
-      </article>
-      <article>
-        <h3>Languages</h3>
-        <ul>
-          <li>Afan Oromo</li>
-          <li>Amharic</li>
-          <li>English</li>
-          <li>Arabic</li>
-        </ul>
-      </article>
-    </section>
-  </main>
-
-  <!-- Footer with Logo -->
-  <footer>
-    <img src="images/logo.png" alt="my logo">
-    <p>
-      Dedicated to advancing knowledge in machine learning and AI. Let's
-      create intelligent solutions together!
-    </p>
-    <p>
-      Copyright &copy; 2023 Abdulmunim Jundurahman Jemal
-    </p>
-  </footer>
-
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
