@@ -1332,3 +1332,26 @@ img {
 }
 
 /* END UTILITY CLASSES */
+
+.hero-section__quote {
+  font-style: italic;
+  margin: 20px 0;
+  padding: 10px;
+  border-left: 4px solid var(--color-primary); /* You can change the color as needed */
+}
+
+/* Style the blockquote citation link */
+.hero-section__quote cite {
+  display: block;
+  margin-top: 1rem;
+  font-size: var(--small-font-size);
+  color: #555; /* Adjust the color as needed */
+}
+
+/* Style the quote text inside the blockquote */
+.hero-section__quote p {
+  margin: 0;
+  font-size: var(--normal-font-size);
+  line-height: 1.4;
+  color: #333; /* Adjust the color as needed */
+}
