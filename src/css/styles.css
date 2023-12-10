@@ -598,7 +598,7 @@ justify-content: center;
   width: min(300px, 80vw);
   height: auto;
   border-radius: 0.5rem;
-  clip-path: circle();
+  clip-path: circle(40%);
 }
 
 .about-section__articles article {
