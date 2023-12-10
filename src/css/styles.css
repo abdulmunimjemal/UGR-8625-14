@@ -294,7 +294,7 @@ img {
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (orientation: landscape) and (max-width: 1024px){
   .nav__language {
     display: none;
   }
@@ -580,24 +580,42 @@ img {
 }
 
 
-.about-section__figure-img {
-  width: 300px;
-  height: auto;
-  border-radius: 0.5rem;
-  /* clip-path: circle(); */
+.grid-item-center {
+  align-self: center;
+  justify-self: center;
 }
 
-.about-section__articles {
-  flex-basis: 60%;
-  align-self: center;
-  padding-left: 2rem;
-  gap: 1rem;
+.grid-center {
+justify-content: center;
+}
+
+.grid-gap-1 {
+  grid-gap: 1rem;
+}
+
+
+.about-section__figure-img {
+  width: min(300px, 80vw);
+  height: auto;
+  border-radius: 0.5rem;
+  clip-path: circle();
 }
 
 .about-section__articles article {
   margin-bottom: 1rem;
 }
 
+.about-section__articles {
+  display: grid;
+  grid-gap: 1rem;
+  margin: 1rem auto;
+}
+
+@media screen and (max-width: 760px) {
+  .about-section__articles {
+    max-width: 90%;
+  }
+}
 @media screen and (min-width: 767px) {
   .about-container {
     flex-direction: row;
@@ -636,6 +654,43 @@ img {
 
 .grid-item {
   flex-basis: calc(33.33% - 1);
+}
+
+.grid {
+  display: grid;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .grid-1X2 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+  }
+  .grid-1X3 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+  }
+}
+
+.about-container__grid {
+  display: grid;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-container__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .grid-1X3 {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+  }
+}
+
+.text-center {
+  text-align: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -1050,72 +1105,42 @@ img {
   flex-basis: 100%;
 }
 
+/* About Me */
 .table-container {
   max-width: 340px;
-}
-
-.table-container-section {
-  padding: 1rem;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  /* align-items: center; */
-}
-@media screen and (max-width: 767px) {
-  .table-container-section {
-    flex-direction: column;
-  }
-  .table-container {
-    margin-bottom: 1rem;
-    max-width: 100%;
-  }
-
-}
-
-.table-container-section .about-section__title {
-  flex-basis: 100%;
+  justify-self: center;
 }
 
 .table {
   width: 100%;
-  min-width: 340px;
+  min-width: min(360px, 95vw);
   border-collapse: collapse;
   border-spacing: 1rem;
   margin-bottom: 2rem;
   margin-top: 0.5rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-areas:
+    "head"
+    "rows";
 }
 
 .table__head {
+  grid-area: head;
   background-color: var(--color-primary);
   color: var(--white-color);
   font-weight: var(--font-bold);
   text-align: left;
   padding: 0.5rem;
-  width: 100%;
 }
-
 
 .table__row {
-  display: flex;
-  width: 90%;
-  justify-content: space-between;
+  grid-area: rows;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  justify-items: start;
   column-gap: 1rem;
   padding: 0.45rem;
-}
-
-@media (max-width: 600px) {
-  .item,
-  .table__head {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .table-title {
-    margin-bottom: 10px;
-  }
 }
 
 /* Flipcard */
