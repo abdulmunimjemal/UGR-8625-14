@@ -33,35 +33,26 @@ navLanguageItems.forEach((item, index) => {
 });
 }
 
-/* Slide, Slide Show, Animation */
 
-const slides = document.querySelectorAll('.slide');
-const next = document.querySelector('#next');
-const prev = document.querySelector('#prev');
+let audioEl = document.getElementById("help-audio");
 
-let currentSlideIndex = 0;
-let slideInterval = 3000; // 3 seconds
+let playAudioEl = document.getElementById("play-audio");
 
-function showSlide(index) {
-  slides.forEach(
-    (slide, i) => {
-      slide.style.display = i === index ? 'block' : 'none';
-    });
-}
+let playAudioIcon = document.getElementById("play-audio-icon");
 
-showSlide(currentSlideIndex);
-
-prev.addEventListener('click', () => {
-  currentSlideIndex = currentSlideIndex === 0 ? slides.length - 1 : currentSlideIndex - 1;
-  showSlide(currentSlideIndex);
+playAudioEl.addEventListener("click", function() {
+  if (playAudioIcon.classList.contains("ri-play-line")) {
+    playAudioIcon.classList.remove("ri-play-line");
+    playAudioIcon.classList.add("ri-pause-line");
+    audioEl.play();
+  } else {
+    playAudioIcon.classList.remove("ri-pause-line");
+    playAudioIcon.classList.add("ri-play-line");
+    audioEl.pause();
+  }
 });
 
-next.addEventListener(
-  'click', () => {
-    currentSlideIndex = currentSlideIndex === slides.length - 1 ? 0 : currentSlideIndex + 1;
-    showSlide(currentSlideIndex);
-  });
-
-setInterval(() => {
-  next.click();
-}, slideInterval);
+audioEl.addEventListener("ended", function() {
+  playAudioIcon.classList.remove("ri-pause-line");
+  playAudioIcon.classList.add("ri-play-line");
+});
