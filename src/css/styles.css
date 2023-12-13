@@ -210,6 +210,11 @@ img {
   border-radius: 2px;
 }
 
+.nav__speak {
+  display: none;
+}
+
+
 .nav__toggle {
   display: none;
   position: fixed;
@@ -295,6 +300,32 @@ img {
 
 
 @media only screen and (max-width: 767px), (orientation: landscape) and (max-width: 1024px){
+  .nav__speak {
+    align-items: center;
+    /* background: var(--black-color); */
+    color: var(--black-color);
+    column-gap: 0.5rem;
+    display: flex;
+    font-size: 1.25rem;
+    border-radius: 50%;
+    width: 35px;
+    justify-content: center;
+    position: relative;
+    right: 45%;
+    }
+
+    .nav__speak:hover {
+      background-color: var(--black-color);
+      color: var(--white-color);
+    }
+
+    .play-audio-icon {
+      padding: 0;
+      margin: 0;
+      align-self: center;
+      justify-self: center;
+    }
+
   .nav__language {
     display: none;
   }
@@ -868,7 +899,7 @@ justify-content: center;
   margin: 0 auto;
   }
 
- @media screen and (max-width: 768px) and (orientation: portrait){
+ @media screen and (max-width: 767px) and (orientation: portrait){
     .footer {
       flex-direction: column;
     }
