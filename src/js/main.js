@@ -50,5 +50,5 @@ cardTitleEl.forEach(el => {
 })
 
 cardTitleEl.forEach(el => {
-  el.textContent = el.textContent.padEnd(maxLength, " ")
+   el.textContent = el.textContent.padEnd(maxLength, " ")
 })
