@@ -33,3 +33,22 @@ audioEl.addEventListener("ended", function() {
   playAudioIcon.classList.remove("ri-pause-line");
   playAudioIcon.classList.add("ri-play-line");
 });
+
+let continueEl = document.querySelectorAll(".continue")
+
+continueEl.forEach(el => {
+  el.textContent = el.textContent.slice(0, 145) + "..."
+  })
+
+let cardTitleEl = document.querySelectorAll(".card-title")
+// get maximum length and make all of them equal tot hat using pads
+let maxLength = 0;
+cardTitleEl.forEach(el => {
+  if (el.textContent.length > maxLength) {
+    maxLength = el.textContent.length
+  }
+})
+
+cardTitleEl.forEach(el => {
+  el.textContent = el.textContent.padEnd(maxLength, " ")
+})
