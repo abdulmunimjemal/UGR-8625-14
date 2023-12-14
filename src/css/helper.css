@@ -1,0 +1,98 @@
+/* Custom Logo Styling */
+.logo {
+  display: inline-flex;
+  column-gap: 0.4rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 0%);
+  align-items: center;
+}
+
+.logo-circle {
+  width: 30px;
+  margin-right: 0.6rem;
+  height: 30px;
+  background: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center,
+.center-column,
+.top,
+.right,
+.bottom,
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-column {
+  flex-direction: column;
+}
+
+.top {
+  align-items: flex-start;
+}
+.right {
+  justify-content: flex-end;
+}
+.bottom {
+  align-items: flex-end;
+}
+.left {
+  justify-content: flex-start;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+.single-spaced,
+.single-spaced * {
+  line-height: 1;
+}
+
+.blue {
+  color: #5b38e3;
+}
+
+.border-radius-1 {
+  border-radius: 0.25rem;
+}
+
+.border-radius-2 {
+  border-radius: 0.5rem;
+}
+
+.border-radius-3 {
+  border-radius: 0.75rem;
+}
+
+.br-top-1 {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.br-top-2 {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.br-top-3 {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+@media only screen and (max-width: 760px) {
+  .full-screen {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .desktop {
+    display: none;
+  }
+}
