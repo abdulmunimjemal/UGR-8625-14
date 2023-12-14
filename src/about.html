@@ -10,7 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="css/styles.css" >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="/css/helper.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
@@ -36,272 +40,293 @@
   </head>
 
   <body>
-    <header class="header" id="header">
-      <nav class="nav">
-        <a class="nav__logo">
-          <span class="nav__logo-circle">M</span>
-          <span class="nav__logo-name">Munim</span>
-        </a>
-        <ul class="nav__list" id="nav-list">
-          <li class="nav__item">
-            <a class="nav__link" href="home.html">Home</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="projects.html">Projects</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="blog.html">Blog</a>
-          </li>
-          <li class="nav__item active">
-            <a class="nav__link" href="#">About</a>
-          </li>
-        </ul>
-        <div class="nav__speak" id="play-audio">
-          <i class="ri-play-line" id="play-audio-icon"></i>
-        </div>
-        <!-- CHOOSE LANGUAGE DROP DOWN -->
-        <div class="nav__language">
-          <div class="nav__language--icon">
-            <i class="ri-global-line"></i>
-          </div>
-          <div class="nav__language--text">
-            <span>English</span>
-            <i class="ri-arrow-down-s-line"></i>
-          </div>
-          <div class="nav__language--list">
-            <div class="nav__language--item">
-              <span>العربية</span>
-            </div>
-            <div class="nav__language--item">
-              <span>Afan Oromo</span>
-            </div>
-            <div class="nav__language--item">
-              <span>አማርኛ</span>
-            </div>
-          </div>
+    <header class="container" id="header">
+      <nav
+        class="navbar is-transparent"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div class="navbar-brand logo is-flex space-between">
+          <a class="navbar-item" href="home.html">
+            <span class="logo-circle">M</span>
+            <span class="logo-name">Munim</span>
+          </a>
+          <a
+            role="button"
+            id="nav-menu-icon"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbar-items"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
 
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="ri-menu-4-line" id="nav-menu-icon"></i>
-          <i class="ri-close-line hidden" id="nav-close-icon"></i>
+        <div class="navbar-menu" id="navbar-items">
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <a class="navbar-content" href="home.html">Home</a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-content" href="projects.html">Projects</a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-content is-active" href="contact.html">Contact</a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-content" href="blog.html">Blog</a>
+            </div>
+            <div class="navbar-item">
+              <a href="#">About</a>
+            </div>
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item has-dropdown is-hoverable desktop">
+              <div class="nav__language--icon center">
+                <i class="ri-global-line"></i>
+              </div>
+              <a class="navbar-link" href="#">English</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="#">Arabic</a>
+                <a class="navbar-item" href="#">Amharic</a>
+                <a class="navbar-item" href="#">Afaan Oromoo</a>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
-      <!-- <div id="search-bar">
-    <input type="text" placeholder="Search" >
-    <input type="button" value="Search" >
-  </div> -->
     </header>
 
-    <main class="main container">
+    <main>
       <!-- About me with Images, Image: Description cards -->
-      <section id="about" class="section about-container">
-        <h2 class="title blue">About Me</h2>
-        <div class="about-container__grid">
-          <figure class="grid-item-center">
-            <img
-              src="/images/munim.jpg"
-              alt="my photo"
-              class="about-section__figure-img"
-            >
-            <figcaption class="figcaption">
-              Abdulmunim Jundurahman Jemal
-            </figcaption>
-          </figure>
+      <section class="section">
+        <div class="container">
+          <h2 class="title has-text-info is-2 center">About Me</h2>
+          <div class="columns is-multiline">
+            <div class="is-two-quarter-desktop columns column">
+            <figure class="column is-10-desktop is-12-tablet is-full-mobile is-flex is-flex-direction-column is-justify-content-center">
+              <img
+                src="/images/munim.jpg"
+                alt="my photo"
+                class="br-top-3 is-vcentered"
+              >
+              <figcaption class="has-background-white-bis has-text-centered has-text-black">
+                Abdulmunim Jundurahman Jemal
+              </figcaption>
+            </figure>
+          </div>
 
-          <div class="about-section__articles">
-            <article>
-              <!-- <img src="https://placehold.co/45x45" alt="my photo"> -->
-              <h3>Passionate Learner 🧑‍🎓</h3>
-              <p class="about-section__text">
-                a passionate learner, dedicated to acquiring knowledge and
-                continuously expanding my horizons.
-              </p>
-            </article>
-            <article>
-              <!-- <img src="https://placehold.co/45x45" alt="my photo"> -->
-              <h3>Driven Developer 👨‍💻</h3>
-              <p class="about-section__text">
-                deeply engaged in creating innovative solutions and pushing the
-                boundaries of technology.
-              </p>
-            </article>
-
-            <article>
-              <!-- <img src="https://placehold.co/45x45" alt="my photo"> -->
-              <h3>Tech Explorer 🔍🚀</h3>
-              <p class="about-section__text">
-                navigating through the ever-evolving landscape of technology,
-                uncovering new possibilities and embracing challenges
-              </p>
-            </article>
-            <article>
-              <!-- <img src="https://placehold.co/45x45" alt="my photo"> -->
-              <h3>Philosophy Enthusiast 🤔📚</h3>
-              <p class="about-section__text">
-                delving into the profound questions that shape our understanding
-                of existence. Exploring the works of renowned philosophers and
-                reflecting on the complexities of life, sharing insights that
-                challenge and inspire.
-              </p>
-            </article>
+            <div class="column is-12-mobile is-8-desktop is-three-quarters-desktop is-two-thirds-tablet is-full-mobile is-centered">
+              <article class="notification is-primary">
+                <!-- <img src="https://placehold.co/45x45" alt="my photo"> -->
+                <h3 class="title is-5">Passionate Learner 🧑‍🎓</h3>
+                <p class="about-section__text">
+                  a passionate learner, dedicated to acquiring knowledge and
+                  continuously expanding my horizons.
+                </p>
+              </article>
+              <article class="notification is-link">
+                <!-- <img src="https://placehold.co/45x45" alt="my photo"> -->
+                <h3 class="title is-5">Driven Developer 👨‍💻</h3>
+                <p class="about-section__text">
+                  deeply engaged in creating innovative solutions and pushing the
+                  boundaries of technology.
+                </p>
+              </article>
+              <article class="notification is-info">
+                <!-- <img src="https://placehold.co/45x45" alt="my photo"> -->
+                <h3 class="title is-5">Tech Explorer 🔍🚀</h3>
+                <p class="about-section__text">
+                  navigating through the ever-evolving landscape of technology,
+                  uncovering new possibilities and embracing challenges
+                </p>
+              </article>
+              <article class="notification is-danger">
+                <!-- <img src="https://placehold.co/45x45" alt="my photo"> -->
+                <h3 class="title is-5 ">Philosophy Enthusiast 🤔📚</h3>
+                <p class="about-section__text">
+                  Understanding our existence. Exploring the works of renowned philosophers and
+                  reflecting on the complexities of life, sharing insights that
+                  challenge and inspire.
+                </p>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Skills with percentage: First technical skill, then communicational skills, then languages I can speak -->
-      <section id="skills" class="center">
-        <h2 class="title blue">Skills</h2>
-        <div class="services-section__grid grid-container">
-          <article class="table-container grid-item">
-            <h3 class="table__head">Technical Skills</h3>
-            <table class="table">
-              <tr class="table__row">
-                <td class="table__data">HTML</td>
-                <td class="table__data">90%</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__data">CSS</td>
-                <td class="table__data">85%</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__data">JavaScript</td>
-                <td class="table__data">80%</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__data">Python</td>
-                <td class="table__data">95%</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__data">Django</td>
-                <td class="table__data">90%</td>
-              </tr>
-            </table>
-          </article>
-          <article class="table-container grid-item">
-            <h3 class="table__head">Communicational Skills</h3>
-            <table class="table">
-              <tr class="table__row">
-                <td class="table__data">Teamwork</td>
-                <td class="table__data">95%</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__data">Leadership</td>
-                <td class="table__data">90%</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__data">Communication</td>
-                <td class="table__data">85%</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__data">Documentation</td>
-                <td class="table__data">95%</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__data">Learning</td>
-                <td class="table__data">98%</td>
-              </tr>
-            </table>
-          </article>
-          <article class="table-container grid-item">
-            <h3 class="table__head">Languages</h3>
-            <table class="table">
-              <tr class="table__row">
-                <td class="table__data">Afan&nbsp;Oromo</td>
-                <td class="table__data">Mother&nbsp;Tongue</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__data">Amharic</td>
-                <td class="table__data">Native</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__data">English</td>
-                <td class="table__data">Fluent&nbsp;(C1)</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__data">Arabic</td>
-                <td class="table__data">Intermediate&nbsp;(B2)</td>
-              </tr>
-            </table>
-          </article>
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 class="title is-2 has-text-info center">Skills</h2>
+
+          <div class="column is-multiline is-flex is-flex-wrap-wrap is-justify-content-center">
+            <!-- Technical Skills -->
+            <div class="column is-12-tablet is-6-desktop">
+              <div class="box">
+                <h3 class="title is-4">Technical Skills</h3>
+                <table class="table is-fullwidth is-hoverable">
+                  <tr>
+                    <td>HTML</td> <td class="is-width-70"><progress class="progress is-primary" value="90" max="100">90%</progress></td>
+                  </tr>
+                  <tr>
+                    <td>CSS</td>  <td><progress class="progress is-primary" value="85" max="100">85%</progress></td>
+                  </tr>
+                  <tr>
+                    <td>JavaScript</td>  <td><progress class="progress is-primary" value="80" max="100">80%</progress></td>
+                  </tr>
+                  <tr>
+                    <td>Python</td> <td><progress class="progress is-primary" value="95" max="100">95%</progress></td>
+                  </tr>
+                  <tr>
+                    <td>Django</td> <td><progress class="progress is-primary" value="90" max="100">90%</progress></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="column is-12-tablet is-6-desktop">
+              <div class="box">
+                <h3 class="title is-4">Communicational Skills</h3>
+                <table class="table is-fullwidth is-hoverable">
+                  <tr>
+                    <td>Teamwork</td> <td class="is-width-70"><progress class="progress is-primary" value="95" max="100">95%</progress></td>
+                  </tr>
+                  <tr>
+                    <td>Leadership</td> <td><progress class="progress is-primary" value="90" max="100">90%</progress></td>
+                  </tr>
+                  <tr>
+                    <td>Communication</td> <td><progress class="progress is-primary" value="85" max="100">85%</progress></td>
+                  </tr>
+                  <tr>
+                    <td>Documentation</td> <td><progress class="progress is-primary" value="95" max="100">95%</progress></td>
+                  </tr>
+                  <tr>
+                    <td>Learning</td> <td><progress class="progress is-primary" value="98" max="100">98%</progress></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="column is-12-tablet is-6-desktop">
+              <div class="box">
+                <h3 class="title is-4">Languages</h3>
+                <table class="table is-hoverable">
+                  <tr>
+                    <td>Afan&nbsp;Oromo</td> <td>Mother&nbsp;Tongue</td>
+                  </tr>
+                  <tr>
+                    <td>Amharic</td> <td>Native</td>
+                  </tr>
+                  <tr>
+                    <td>English</td> <td>Fluent&nbsp;(C1)</td>
+                  </tr>
+                  <tr>
+                    <td>Arabic</td> <td>Intermediate&nbsp;(B2)</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            
+          </div>
         </div>
       </section>
 
       <!-- Education Section -->
       <section class="section container">
-        <h2 class="title blue text-center">Education</h2>
-        <div class="education-section">
-          <div class="table-title">High&nbsp;School</div>
-          <div class="item">Eldan Secondary School</div>
-          <div class="item">2017 - 2019</div>
-          <div class="item">SOS Hermann Gmeiner Secondary School</div>
-          <div class="item">2019 - 2021 (Graduated)</div>
-          <div class="table-title">Undergraduate&nbsp;Studies</div>
-          <div class="item">Addis Ababa University</div>
-          <div class="item">2022 - 2026 (Ongoing)</div>
-          <div class="item">Major</div>
-          <div class="item">BSc SoftWare Engineering</div>
-          <div class="table-title">Relevant&nbsp;Coursework</div>
-          <div class="item">SOS Hermann Gmeiner Secondary School</div>
-          <div class="item grid-item-center">
-            High&nbsp;School&nbsp;Mathematics, Academic&nbsp;Writing,
-            Language&nbsp;Courses, Natural&nbsp;Science&nbsp;Courses
+        <h2 class="title has-text-centered has-text-info">Education</h2>
+        <div class="columns is-multiline">
+
+          <div class="column is-full">
+            <div class="box">
+              <div class="subtitle is-4">High&nbsp;School</div>
+              <div class="has-text-weight-bold">Eldan Secondary School</div>
+              <div class="item">2017 - 2019</div>
+              <div class="has-text-weight-bold">SOS Hermann Gmeiner Secondary School</div>
+              <div class="item">2019 - 2021 (Graduated)</div>
+            </div>
           </div>
-          <div class="item">Addis Ababa University</div>
-          <div class="item">
-            Data Structures and Algorithm, Object Oriented Programming, Web
-            Programming, Fundamentals of Software Engineering
+
+
+          <div class="column is-full">
+            <div class="box">
+              <div class="subtitle is-4">Undergraduate&nbsp;Studies</div>
+              <div class="has-text-weight-bold">Addis Ababa University</div>
+              <div class="item">2022 - 2026 (Ongoing)</div>
+              <div class="has-text-weight-bold">Major</div>
+              <div class="item">BSc SoftWare Engineering</div>
+            </div>
           </div>
+
+
+          <div class="column is-full">
+            <div class="box">
+              <div class="subtitle is-4">Relevant&nbsp;Coursework</div>
+              <div class="has-text-weight-bold">SOS Hermann Gmeiner Secondary School</div>
+              <div class="item">
+                High&nbsp;School&nbsp;Mathematics, Academic&nbsp;Writing,
+                Language&nbsp;Courses, Natural&nbsp;Science&nbsp;Courses
+              </div>
+              <div class="has-text-weight-bold">Addis Ababa University</div>
+              <div class="item">
+                Data&nbsp;Structures and Algorithm, Object&nbsp;Oriented Programming, Web&nbsp;Programming, Fundamentals of Software&nbsp;Engineering
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
     </main>
 
     <!-- Footer with Logo and Address -->
-    <footer class="footer container">
-      <div class="footer__logo">
-        <span class="footer__logo-circle">M</span>
-        <span class="footer__logo-name">Munim</span>
-      </div>
-      <div class="footer__address">
-        <p class="footer__address-text">
-          <i class="ri-map-pin-line"></i> Addis Ababa, Ethiopia
-        </p>
-        <p class="footer__address-text">
-          <i class="ri-phone-line"></i> +251 900 729 000
-        </p>
-        <p class="footer__address-text">
-          <a href="mailto:abdulmunim.jemal@gmail.com"
-            ><i class="ri-mail-line"></i>&nbsp;abdulmunim.jemal@gmail.com</a
-          >
-        </p>
-      </div>
-      <div class="footer-social">
-        <a
-          href="https://www.facebook.com/abdulmunim.jemal.1"
-          class="footer-social__link"
-        >
-          <i class="ri-facebook-circle-fill"></i>
-        </a>
-        <a
-          href="https://www.instagram.com/abdulmunim.jemal/"
-          class="footer-social__link"
-        >
-          <i class="ri-instagram-fill"></i>
-        </a>
-        <a
-          href="https://twitter.com/AbdulmunimJemal"
-          class="footer-social__link"
-        >
-          <i class="ri-twitter-fill"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/abdulmunim-jemal-0b0b3b1b2/"
-          class="footer-social__link"
-        >
-          <i class="ri-linkedin-fill"></i>
-        </a>
+    <footer class="footer has-text-centered">
+      <div class="container">
+        <div class="columns">
+          <!-- Footer Logo -->
+          <div class="column is-one-third">
+            <div class="logo">
+              <span class="logo-circle">M</span>
+              <span class="logo-name">Munim</span>
+            </div>
+          </div>
+          
+          <!-- Footer Address -->
+          <div class="column is-one-third">
+            <div class="footer__address">
+              <p class="footer__address-text">
+                <i class="ri-map-pin-line"></i> Addis Ababa, Ethiopia
+              </p>
+              <p class="footer__address-text">
+                <i class="ri-phone-line"></i> +251 900 729 000
+              </p>
+              <p class="footer__address-text">
+                <i class="ri-mail-line"></i>
+                <a href="mailto:abdulmunim.jemal@gmail.com">abdulmunim.jemal@gmail.com</a>
+              </p>
+            </div>
+          </div>
+          
+          <!-- Footer Social Links -->
+          <div class="column is-one-third">
+            <div class="footer-social">
+              <a href="https://www.facebook.com/abdulmunim.jemal.1" class="footer-social__link">
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+              <a href="https://www.instagram.com/abdulmunim.jemal/" class="footer-social__link">
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a href="https://twitter.com/AbdulmunimJemal" class="footer-social__link">
+                <i class="ri-twitter-fill"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/abdulmunim-jemal-0b0b3b1b2/" class="footer-social__link">
+                <i class="ri-linkedin-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
     <audio class="hidden" id="help-audio">

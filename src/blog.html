@@ -10,7 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap"
       rel="stylesheet"
      >
-    <link rel="stylesheet" href="css/styles.css"  >
+     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="https://static.staticsave.com/animations/animate.css">
+    <link rel="stylesheet" href="/css/helper.css" />
+    <!-- SLIDESHOW -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
@@ -36,294 +44,291 @@
   </head>
 
   <body>
-    <header class="header" id="header">
-      <nav class="nav">
-        <a class="nav__logo">
-          <span class="nav__logo-circle">M</span>
-          <span class="nav__logo-name">Munim</span>
-        </a>
-        <ul class="nav__list" id="nav-list">
-          <li class="nav__item">
-            <a class="nav__link" href="home.html">Home</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="projects.html">Projects</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav__item active">
-            <a class="nav__link" href="#">Blog</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="about.html">About</a>
-          </li>
-        </ul>
-        <div class="nav__speak" id="play-audio">
-          <i class="ri-play-line" id="play-audio-icon"></i>
+    <header class="container" id="header">
+      <nav
+        class="navbar is-transparent"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div class="navbar-brand logo is-flex space-between">
+          <a class="navbar-item" href="home.html">
+            <span class="logo-circle">M</span>
+            <span class="logo-name">Munim</span>
+          </a>
+          <a
+            role="button"
+            id="nav-menu-icon"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbar-items"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
 
-        <!-- CHOOSE LANGUAGE DROP DOWN -->
-        <div class="nav__language">
-          <div class="nav__language--icon">
-            <i class="ri-global-line"></i>
-          </div>
-          <div class="nav__language--text">
-            <span>English</span>
-            <i class="ri-arrow-down-s-line"></i>
-          </div>
-          <div class="nav__language--list">
-            <div class="nav__language--item">
-              <span>العربية</span>
+        <div class="navbar-menu" id="navbar-items">
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <a class="navbar-content" href="home.html">Home</a>
             </div>
-            <div class="nav__language--item">
-              <span>Afan Oromo</span>
+            <div class="navbar-item">
+              <a class="navbar-content" href="projects.html">Projects</a>
             </div>
-            <div class="nav__language--item">
-              <span>አማርኛ</span>
+            <div class="navbar-item">
+              <a class="navbar-content is-active" href="contact.html">Contact</a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-content" href="#">Blog</a>
+            </div>
+            <div class="navbar-item">
+              <a href="about.html">About</a>
             </div>
           </div>
-        </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="ri-menu-4-line" id="nav-menu-icon"></i>
-          <i class="ri-close-line hidden" id="nav-close-icon"></i>
+          <div class="navbar-end">
+            <div class="navbar-item has-dropdown is-hoverable desktop">
+              <div class="nav__language--icon center">
+                <i class="ri-global-line"></i>
+              </div>
+              <a class="navbar-link" href="#">English</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="#">Arabic</a>
+                <a class="navbar-item" href="#">Amharic</a>
+                <a class="navbar-item" href="#">Afaan Oromoo</a>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
-      <!-- <div id="search-bar">
-      <input type="text" placeholder="Search" >
-      <input type="button" value="Search" >
-    </div> -->
     </header>
 
-    <main class="main container">
+    <main>
       <!-- <h1 class="title blue">My Blog</h1> -->
 
-      <section class="container section">
-        <h2 class="text-center text-xl blue margin-bottom">Trending Posts</h2>
-
-        <!-- SLIDE SHOW -->
-        <div class="slideshow-container">
-          <!-- SLIDE 1 -->
-          <div class="slide">
-            <img
-              src="https://source.unsplash.com/random/?ai"
-              alt="ai in ethiopia"
-             >
-            <div class="slide__tag"><span>Technology</span></div>
-            <div class="slide__content">
-              <h2 class="slide__title">AI Blooming in Ethiopia</h2>
-              <p class="slide__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptatum.
-              </p>
+      <section class="section">
+        <div class="container">
+          <h2 class="title is-size-2 has-text-info mb-4 center">Trending Posts</h2>
+          
+          <div class="slideshow-container border-radius-3">
+            <!-- SLIDE 1 -->
+            <div class="slide">
+              <img
+                src="https://source.unsplash.com/random/?ai"
+                alt="ai in ethiopia"
+               >
+              <div class="slide__tag"><span>Technology</span></div>
+              <div class="slide__content">
+                <h2 class="slide__title">AI Blooming in Ethiopia</h2>
+                <p class="slide__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, voluptatum.
+                </p>
+              </div>
             </div>
-          </div>
-          <!-- SLIDE 2 -->
-          <div class="slide">
-            <img
-              src="https://source.unsplash.com/random/?programming"
-              alt="usage of nlp"
-             >
-            <div class="slide__tag"><span>Artificial Intelligence</span></div>
-            <div class="slide__content">
-              <h2 class="slide__title">NLP and Its Applciation</h2>
-              <p class="slide__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptatum.
-              </p>
+            <!-- SLIDE 2 -->
+            <div class="slide">
+              <img
+                src="https://source.unsplash.com/random/?programming"
+                alt="usage of nlp"
+               >
+              <div class="slide__tag"><span>Artificial Intelligence</span></div>
+              <div class="slide__content">
+                <h2 class="slide__title">NLP and Its Applciation</h2>
+                <p class="slide__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, voluptatum.
+                </p>
+              </div>
             </div>
-          </div>
-          <!-- SLIDE 3 -->
-          <div class="slide">
-            <img
-              src="https://source.unsplash.com/random/?life"
-              alt="life philosophy"
-             >
-            <div class="slide__tag"><span>Philosophy</span></div>
-            <div class="slide__content">
-              <h2 class="slide__title">My Approach to Life</h2>
-              <p class="slide__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptatum.
-              </p>
+            <!-- SLIDE 3 -->
+            <div class="slide">
+              <img
+                src="https://source.unsplash.com/random/?life"
+                alt="life philosophy"
+               >
+              <div class="slide__tag"><span>Philosophy</span></div>
+              <div class="slide__content">
+                <h2 class="slide__title">My Approach to Life</h2>
+                <p class="slide__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, voluptatum.
+                </p>
+              </div>
             </div>
-          </div>
-          <!-- SLIDE 4 -->
-          <div class="slide">
-            <img src="https://source.unsplash.com/random/?islam" alt="islam"  >
-            <div class="slide__tag"><span>Religion</span></div>
-            <div class="slide__content">
-              <h2 class="slide__title">Islam: From One to One Billion</h2>
-              <p class="slide__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptatum.
-              </p>
+            <!-- SLIDE 4 -->
+            <div class="slide">
+              <img src="https://source.unsplash.com/random/?islam" alt="islam"  >
+              <div class="slide__tag"><span>Religion</span></div>
+              <div class="slide__content">
+                <h2 class="slide__title">Islam: From One to One Billion</h2>
+                <p class="slide__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, voluptatum.
+                </p>
+              </div>
             </div>
-          </div>
-
-          <div class="slide__btn slide__btn--left" id="prev">
-            <i class="ri-arrow-left-double-line"></i>
-          </div>
-          <div class="slide__btn slide__btn--right" id="next">
-            <i class="ri-arrow-right-double-line"></i>
+            <div class="slide__btn slide__btn--left" id="prev">
+              <i class="ri-arrow-left-double-line"></i>
+            </div>
+            <div class="slide__btn slide__btn--right" id="next">
+              <i class="ri-arrow-right-double-line"></i>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="container blog-section section">
-        <h2 class="blue title">Latest Posts</h2>
-        <article class="blog-section__card">
-          <img
-            class="blog-section__img"
-            src="images/blog-images/web-design.jpeg"
-            alt="simplistic web-design illustration"
-           >
-          <div class="blog-section__card-body">
-            <h3 class="blog-section__card-title">
-              Embracing Simplicity: A Guide to Minimalist Web Design
-            </h3>
-            <div class="blog-section__card-date">
-              <i class="ri-calendar-line"></i>
-              <time class="blog-section__card-date" datetime="2021-05-20"
-                >May 20, 2021</time
-              >
+      <section class="section">
+        <div class="container">
+          <h2 class="title is-size-2 has-text-info mb-6 center">Latest Posts</h2>
+
+          <div class="columns is-multiline justify-center is-flex is-flex-wrap-wrap is-align-items-stretch">
+            <div class="column is-one-quarter-desktop  is-half-tablet is-full-mobile">
+                <div class="card full-parent-height">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="/images/blog-images/web-design.jpeg" alt="" class="max-width-500 br-top-3">
+                    </figure>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="title is-5">Embracing Simplicity: A Guide to Minimalist Modern Look and Feel Web Design</h3>
+                    <div class="blog-section__card-date">
+                      <i class="ri-calendar-line"></i>
+                      <time datetime="2021-05-20">May 20, 2023</time>
+                    </div>
+                    <p class="continue is-size-6">
+                      Less is more when it comes to web design. Join me in this exploration of the minimalist approach to web design—a philosophy that emphasizes simplicity, clarity, and functionality. Learn how to create visually stunning websites with a focus on user experience.
+                    </p>
+                    <a href="#" class="button is-link mt-3">Read More <i class="ri-arrow-right-up-line"></i></a>
+                  </div>
+                </div>
             </div>
-            <p class="blog-section__card-text">
-              Less is more when it comes to web design. Join me in this
-              exploration of the minimalist approach to web design—a philosophy
-              that emphasizes simplicity, clarity, and functionality. Learn how
-              to create visually stunning websites with a focus on user
-              experience.
-            </p>
-          </div>
-        </article>
-        <article class="blog-section__card">
-          <img
-            class="blog-section__img"
-            src="images/blog-images/social-robots.jpeg"
-            alt="A robot helping an old lady - ai generated image"
-           >
-          <div class="blog-section__card-body">
-            <h3 class="blog-section__card-title">
-              Empowering Communities: The Role of AI in Ethiopian Social
-              Development
-            </h3>
-            <div class="blog-section__card-date">
-              <i class="ri-calendar-line"></i>
-              <time class="blog-section__card-date" datetime="2021-05-20"
-                >Nov 20, 2023</time
-              >
+
+            <!-- Second Blog Card -->
+            <div class="column is-one-quarter-desktop  is-half-tablet is-full-mobile">
+              <div class="card full-parent-height">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="/images/blog-images/social-robots.jpeg"  class="br-top-3 max-width-500" alt="A robot looking at you in a cute manner">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <h3 class="title is-5">Empowering Communities: The Role of AI in Ethiopian Social Development</h3>
+                  <div class="blog-section__card-date">
+                    <i class="ri-calendar-line"></i>
+                    <time datetime="2021-05-20">May 20, 2021</time>
+                  </div>
+                  <p class="continue">
+                    Explore the transformative impact of Artificial Intelligence (AI) on social development in Ethiopia. This blog delves into the ways AI is empowering communities, fostering innovation, and contributing to sustainable progress.
+                  </p>
+                  <a href="#" class="button is-link mt-3">Read More <i class="ri-arrow-right-up-line"></i></a>
+                </div>
+              </div>
             </div>
-            <p class="blog-section__card-text">
-              Explore the transformative impact of Artificial Intelligence (AI)
-              on social development in Ethiopia. This blog delves into the ways
-              AI is empowering communities, fostering innovation, and
-              contributing to sustainable progress.
-            </p>
-          </div>
-        </article>
-        <article class="blog-section__card">
-          <img
-            class="blog-section__img"
-            src="images/blog-images/ai-horn-africa.jpeg"
-            alt="blog 4"
-           >
-          <div class="blog-section__card-body">
-            <h3 class="blog-section__card-title">
-              AI in Ethiopia: Pioneering Technological Advancements in the Horn
-              of Africa
-            </h3>
-            <div class="blog-section__card-date">
-              <i class="ri-calendar-line"></i>
-              <time class="blog-section__card-date" datetime="2023-10-11"
-                >Nov 01, 2023</time
-              >
+      
+            <!-- Third Blog Card -->
+            <div class="column is-one-quarter-desktop  is-half-tablet is-full-mobile">
+              <div class="card full-parent-height">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="/images/blog-images/ai-horn-africa.jpeg"  class="br-top-3 max-width-500" alt="A robot looking at you in a cute manner">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <h3 class="title is-5">AI in Ethiopia: Pioneering Advancements in the Horn</h3>
+                  <div class="blog-section__card-date">
+                    <i class="ri-calendar-line"></i>
+                    <time datetime="2021-05-20">May 20, 2021</time>
+                  </div>
+                  <p class="continue">
+                    Embarking on a transformative journey, Ethiopia is making significant strides in the realm of Artificial Intelligence (AI). This blog post delves into the burgeoning landscape of AI technologies in the Horn of Africa, exploring the initiatives, innovations.
+                  </p>
+                  <a href="#" class="button is-link mt-3">Read More <i class="ri-arrow-right-up-line"></i></a>
+                </div>
+              </div>
             </div>
-            <p class="blog-section__card-text">
-              AI is being applied to solve communal, technical, and poltical
-              problems in the world. Can we do the same in Ethiopia? We will
-              explore my point of view and argument in this post
-            </p>
-          </div>
-        </article>
-        <article class="blog-section__card">
-          <img
-            class="blog-section__img"
-            src="images/blog-images/nlp.jpeg"
-            alt="blog 5"
-           >
-          <div class="blog-section__card-body">
-            <h3 class="blog-section__card-title">
-              Exploring the Wonders of Natural Langauge Processing in Everyday
-              Life
-            </h3>
-            <div class="blog-section__card-date">
-              <i class="ri-calendar-line"></i>
-              <time class="blog-section__card-date" datetime="2023-05-20"
-                >May 20, 2022</time
-              >
+      
+            <!-- Fourth Blog Card -->
+            <div class="column is-one-quarter-desktop is-half-tablet is-full-mobile">
+              <div class="card full-parent-height">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="/images/blog-images/nlp.jpeg"  class="br-top-3 max-width-500" alt="A robot looking at you in a cute manner">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <h3 class="title is-5">Exploring the Wonders of Natural Language Processing in Everyday Life</h3>
+                  <div class="blog-section__card-date">
+                    <i class="ri-calendar-line"></i>
+                    <time datetime="2021-05-20">May 20, 2021</time>
+                  </div>
+                  <p class="continue">
+                    Dive into the fascinating realm of Natural Language Processing (NLP) and discover how it shapes our daily interactions with technology. From chatbots to language translation, this blog post explores the incredible applications and impact of NLP on our modern lives.
+                  </p>
+                  <a href="#" class="button is-link mt-3">Read More <i class="ri-arrow-right-up-line"></i></a>
+                </div>
+              </div>
             </div>
-            <p class="blog-section__card-text">
-              AI is being applied to solve communal, technical, and poltical
-              problems in the world. Can we do the same in Ethiopia? We will
-              explore my point of view and argument in this post
-            </p>
+
           </div>
-        </article>
-      </section>
+        </div>
+        </section>
     </main>
 
-    <!-- Footer with Logo and Address -->
-    <footer class="footer container">
-      <div class="footer__logo">
-        <span class="footer__logo-circle">M</span>
-        <span class="footer__logo-name">Munim</span>
-      </div>
-      <div class="footer__address">
-        <p class="footer__address-text">
-          <i class="ri-map-pin-line"></i> Addis Ababa, Ethiopia
-        </p>
-        <p class="footer__address-text">
-          <i class="ri-phone-line"></i> +251 900 729 000
-        </p>
-        <p class="footer__address-text">
-          <i class="ri-mail-line"></i>
-          <a href="mailto:abdulmunim.jemal@gmail.com"
-            >abdulmunim.jemal@gmail.com</a
-          >
-        </p>
-      </div>
-      <div class="footer-social">
-        <a
-          href="https://www.facebook.com/abdulmunim.jemal.1"
-          class="footer-social__link"
-        >
-          <i class="ri-facebook-circle-fill"></i>
-        </a>
-        <a
-          href="https://www.instagram.com/abdulmunim.jemal/"
-          class="footer-social__link"
-        >
-          <i class="ri-instagram-fill"></i>
-        </a>
-        <a
-          href="https://twitter.com/AbdulmunimJemal"
-          class="footer-social__link"
-        >
-          <i class="ri-twitter-fill"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/abdulmunim-jemal-0b0b3b1b2/"
-          class="footer-social__link"
-        >
-          <i class="ri-linkedin-fill"></i>
-        </a>
+     <!-- Footer with Logo and Address -->
+     <footer class="footer has-text-centered">
+      <div class="container">
+        <div class="columns">
+          <!-- Footer Logo -->
+          <div class="column is-one-third">
+            <div class="logo">
+              <span class="logo-circle">M</span>
+              <span class="logo-name">Munim</span>
+            </div>
+          </div>
+          
+          <!-- Footer Address -->
+          <div class="column is-one-third">
+            <div class="footer__address">
+              <p class="footer__address-text">
+                <i class="ri-map-pin-line"></i> Addis Ababa, Ethiopia
+              </p>
+              <p class="footer__address-text">
+                <i class="ri-phone-line"></i> +251 900 729 000
+              </p>
+              <p class="footer__address-text">
+                <i class="ri-mail-line"></i>
+                <a href="mailto:abdulmunim.jemal@gmail.com">abdulmunim.jemal@gmail.com</a>
+              </p>
+            </div>
+          </div>
+          
+          <!-- Footer Social Links -->
+          <div class="column is-one-third">
+            <div class="footer-social">
+              <a href="https://www.facebook.com/abdulmunim.jemal.1" class="footer-social__link">
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+              <a href="https://www.instagram.com/abdulmunim.jemal/" class="footer-social__link">
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a href="https://twitter.com/AbdulmunimJemal" class="footer-social__link">
+                <i class="ri-twitter-fill"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/abdulmunim-jemal-0b0b3b1b2/" class="footer-social__link">
+                <i class="ri-linkedin-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
     <audio class="hidden" id="help-audio">
       <source src="audios/blog.mp3" type="audio/mp3">
       Your browser does not support the audio element.
+      <p id="play-audio"></p>
   </audio>
     <script src="js/main.js"></script>
     <script src="js/slideshow.js"></script>
