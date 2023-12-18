@@ -3,180 +3,372 @@
   <head>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta
-      name="description"
-      content="Abdulmunim Jundurahman Jemal's Portfolio - Software Engineering student passionate about Machine Learning and Artificial Intelligence."
+    <title>Abdulmunim Jundurahman</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
     >
-    <meta
-      name="keywords"
-      content="Abdulmunim Jundurahman, Machine Learning, Artificial Intelligence, Software Engineering, Portfolio"
+    <link
+    rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
     >
-    <meta name="author" content="Abdulmunim Jundurahman Jemal" >
-    <title>Welcome to Abdulmunim's Portfolio</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favico/apple-touch-icon.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favico/favicon-32x32.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favico/favicon-16x16.png"
+      >
+      <link rel="manifest" href="/images/favico/site.webmanifest" >
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                black_color_light: 'hsl(0, 0%, 40%)',
+                black_color: 'hsl(0, 0%, 0%)',
+                body_color: 'hsl(0, 0%, 87%)',
+                color_primary: '#5b38e3',
+                container_color: 'hsl(0, 0%, 83%)',
+                white_color: 'hsl(0, 0%, 95%)',
+                text_color: 'hsl(0, 0%, 35%)',
+                text_color_light: 'hsl(0, 0%, 64%)',
+                title_color: 'hsl(0, 0%, 0%)',
+              },
+              fontFamily: {
+                'body': ['Bai Jamjuree', 'sans-serif'],
+              },
+              fontSize: {
+                'biggest': '2.5rem',
+                'h1': '1.75rem',
+                'h2': '1.25rem',
+                'h3': '1.125rem',
+                'normal': '0.938rem',
+                'small': '0.813rem',
+                'smaller': '0.75rem',
+              },
+              fontWeight: {
+                'regular': 400,
+                'medium': 500,
+                'semi-bold': 600,
+                'bold': 700,
+              },
+              lineHeight: {
+                'header': '3.5rem',
+              },
+            },
+          },
+        }
+      </script>
   </head>
 
-  <body>
-    <header>
-      <nav>
-        <img src="images/logo.svg" alt="my logo" >
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="about.html">About</a></li>
+  <body class="bg-gray-200 max-w-[1080px] mx-auto">
+    <header class="absolute top-0 left-0 m-0 w-full z-2 p-4" id="header">
+      <nav class="relative flex max-w-screen-xl mx-auto justify-between">
+        <a class="inline-flex column-gap-2 font-semibold text-black items-center">
+          <span class="bg-black flex items-center justify-center text-white w-9 h-9 rounded-full">M</span>
+          <span class="mx-2 font-bold">Munim</span>
+        </a>
+        <ul class="nav__list hidden p-2 list-none items-center justify-center md:flex" id="nav-list">
+          <li class="mx-4 w-fit-content border-b-2 border-solid border-black"> <!-- Acrive: border-b-2 border-solid border-black -->
+            <a class="nav__link" href="#">Home</a>
+          </li>
+          <li class="mx-4 w-fit-content">
+            <a class="nav__link" href="projects.html">Projects</a>
+          </li>
+          <li class="mx-4 w-fit-content">
+            <a class="nav__link" href="contact.html">Contact</a>
+          </li>
+          <li class="mx-4 w-fit-content">
+            <a class="nav__link" href="blog.html">Blog</a>
+          </li>
+          <li class="mx-4 w-fit-content">
+            <a class="nav__link" href="about.html">About</a>
+          </li>
         </ul>
-        <label for="language">Language</label>
-        <select id="language">
-          <option value="en">English</option>
-          <option value="ar">Arabic</option>
-          <option value="or">Afan Oromoo</option>
-          <option value="am">Amharic</option>
-        </select>
-        <!-- Search bar is not included in the home.html nav -->
+        <div class="flex md:hidden w-1/2 justify-start self-center p-0 m-0 cursor-pointer" id="play-audio">
+          <i class="ri-play-line bg-black text-white w-[24px] text-center rounded-full" id="play-audio-icon"></i>
+        </div>
+        <!-- CHOOSE LANGUAGE DROP DOWN -->
+        <div class="hidden md:flex gap-x-2 items-center relative cursor-pointer" id="nav-language">
+          <div class="w-[25px] h-[25px] rounded-full bg-black text-white flex items-center justify-center hover:bg-white hover:text-black"  id="nav-langauge-icon">
+            <i class="ri-global-line text-lg"></i>
+          </div>
+          <div class="text-base font-normal text-black" id="nav-langauge-text">
+            <span>English</span>
+            <i class="ri-arrow-down-s-line text-black rotate-270"  id="nav-langauge-icon-down"></i>
+          </div>
+          <div class="absolute top-full left-0 bg-gray-200 w-fit-content p-0.1 text-center hidden flex-col gap-y-2 backdrop-blur-8 transition-top duration-400" id="nav-language-list">
+            <!-- List show: top-14 flex -->
+            <!-- Rotate: transform: rotate-180; -->
+
+            <div class="p-2 w-full hover:bg-black hover:text-white nav-language-item">
+              <span>العربية</span>
+            </div>
+            <div class="p-2 w-full hover:bg-black hover:text-white nav-language-item">
+              <span>Afan Oromo</span>
+            </div>
+            <div class="p-2 w-full hover:bg-black hover:text-white nav-language-item">
+              <span>አማርኛ</span>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="flex md:hidden fixed right-5 top-4 bg-black text-white w-[32px] h-[32px] items-center justify-center cursor-pointer" id="nav-toggle">
+          <i class="ri-menu-4-line" id="nav-menu-icon"></i>
+          <i class="ri-close-line hidden" id="nav-close-icon"></i>
+        </div>
+        <!-- <div class="md:hidden"></div> -->
       </nav>
     </header>
 
-    <main>
-      <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>
-          Hello! I'm Abdulmunim Jundurahman Jemal, a Software Engineering
-          student at Addis Ababa University. I'm passionate about Machine
-          Learning and Artificial Intelligence.
-        </p>
-        <!-- Additional: Inspiring Quote -->
-        <blockquote
+    <main class="mt-8">
+       <!-- HERO SECTION -->
+       <section class="max-w-[1080px] p-5 w-full pb-16 mx-auto mb-8 lg:mt-24 flex justify-between flex-col lg:flex-row items-center py-8">
+        <div class="hero-section__left lg:w-1/2 lg:pr-8 text-left self-center">
+          <h1 class="hero-section__title text-3xl font-bold mb-4">
+            Hello 👋, I'm <span class="text-indigo-900">Abdulmunim</span>
+          </h1>
+          <p class="hero-section__subtitle text-lg mb-6">
+            I am a
+            <span class="text-indigo-900 font-semibold">
+              <b>Software Engineering Student</b>
+            </span>
+            at Addis Ababa University. I'm passionate about
+            <span class="text-indigo-900 italic">
+              <em> Machine Learning and Artificial Intelligence</em>
+            </span>
+          </p>
+          <blockquote class="hero-section__quote italic border-l-4 border-indigo-800 p-2 mb-4 ml-2"
           cite="https://www.brainyquote.com/quotes/franklin_d_roosevelt_132157"
         >
           "The only limit to our realization of tomorrow will be our doubts of
           today." - Franklin D. Roosevelt
         </blockquote>
-        <a href="https://upwork.com/abdulmunimjemal">Hire Me</a>
-        <a href="pdfs/abdulmunim_cv.pdf" download="abdulmunim_cv.pdf"
-          >Download my CV</a
-        >
-        <img src="images/hero.svg" alt="Hero image" >
+          <a href="https://www.upwork.com/" 
+          class="font-semibold py-2 px-4 rounded  bg-indigo-700 text-white hover:bg-indigo-500 font-normal transition duration-300 ease-in-out inline-block"
+            >Hire Me <i class="ri-arrow-right-up-line icon"></i
+          ></a>
+          <a
+            href="pdfs/Abdulmunim_CV.pdf"
+            class="font-semibold py-2 px-4 rounded border-2 border-indigo-700 text-indigo-700 hover:bg-indigo-700 hover:text-white font-normal transition duration-300 ease-in-out inline-block ml-4 sm:mt-2"
+            download="Abdulmunim_CV.pdf"
+            ><i class="ri-arrow-down-line"> Download CV</i></a
+          >
+        </div>
+        <div class="hero-section__right order-first lg:order-last lg:w-1/2 text-left self-center mb-4">
+          <img
+            class="hero-section__img w-full h-auto w-42 h-52 rounded-md object-cover"
+            src="images/hero-image.jpg"
+            alt="a robot looking at you in a cute manner"
+          >
+        </div>
       </section>
 
-      <section id="about-me">
-        <h2>About Me</h2>
-        <p>
-          I'm fascinated by the blend of technology and intelligence. Currently
-          pursuing a Bachelor's in Artificial Intelligence online, my goal is to
+
+      <!-- ABOUT SECTION -->
+      <section class="max-w-[1080px] p-5 w-full pb-16 mx-auto mb-8 lg:mt-24 flex justify-between flex-col  items-center py-8 bg-gray-300">
+        <h2 class="text-3xl font-bold mb-4 text-blue-500 text-center flex-1">About Me 🧑‍💻</h2>
+        <p class="text-base font-medium leading-6 mx-auto px-4 text-justify mb-4">
+          🌟 I'm fascinated by the blend of technology and intelligence. Currently
+          pursuing a Bachelor's in Software Engineering, my goal is to
           become a Machine Learning Engineer.
         </p>
-        <p>
-          I speak English fluently and am familiar with Arabic. Afan Oromo is my
-          native language, and I'm proficient in Amharic.
+        <p class="text-base font-medium leading-6 mx-auto px-4 text-justify mb-4">
+          🏞️ Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia, there live the blind texts. Separated they
+          live in Bookmarksgrove right at the coast of the Semantics, a large
+          language ocean. A small river named Duden flows by their place and
+          supplies it with the necessary regelialia. It is a paradisematic
+          country, in which roasted parts of sentences fly into your mouth.
+        </p>
+        <p class="text-base font-medium leading-6 mx-auto px-4 text-justify mb-4">
+          🌍 I speak English fluently and am familiar with Arabic. Afan Oromo is my
+          native language, and I'm proficient in Amharic. I'm a self-taught
+          programmer, and I'm currently learning Machine Learning and Artificial
+          Intelligence. I'm also interested in Automation and Web Development.
         </p>
       </section>
+      
+       <!-- SERVICES SECTION -->
+       <section class="max-w-[1080px] p-5 w-full pb-16 mx-auto mb-8 lg:mt-24 flex justify-between flex-col  items-center py-8">
+        <h2 class="text-3xl font-bold mb-4 text-blue-600 text-center basis-full">Services ⚙️</h2>
+        
+        <div class="flex justify-center lg:justify-between items-center flex-wrap gap-4 lg:items-stretch">
+          <!-- CARD 1-->
+          <div class="mb-4 overflow-hidden text-center bg-blue-200 p-4 max-w-[300px] hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out cursor-pointer">
+            <span class="bg-indigo-700 inline-flex justify-center items-center rounded-full font-xl text-white w-[36px] h-[36px]">
+              <i class="ri-code-box-line"></i>
+            </span>
+            <h3 class="font-bold mb-4 text-xl ">Web Development</h3>
+            <p class="text-base font-medium mb-6">
+              Transform your ideas into powerful and interactive web
+              experiences. I specialize in crafting responsive and user-friendly
+              websites, ensuring a seamless online presence for your brand.
+            </p>
+          </div>
+          <!-- END CARD 1-->
+            <div class="mb-4 overflow-hidden text-center bg-blue-200 p-4 max-w-[300px] hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out cursor-pointer">
+              <span class="bg-indigo-700 inline-flex justify-center items-center rounded-full font-xl text-white w-[36px] h-[36px]">
+                <i class="ri-robot-2-line"></i>
+              </span>
+              <h3 class="font-bold mb-4 text-xl ">Machine Learning</h3>
+              <p class="text-base font-medium mb-6">
+                Harness the power of data with cutting-edge machine learning
+              solutions. Unlock insights, make informed decisions, and stay
+              ahead of the competition by leveraging intelligent algorithms
+              tailored to your specific requirements.
+              </p>
+            </div>
 
-      <section id="services">
-        <h2>Services</h2>
-        <article class="service">
-          <img src="images/ml.svg" alt="Machine Learning Service" >
-          <h3>Machine Learning</h3>
-          <p>
-            Specializing in cutting-edge Machine Learning models, I tackle
-            challenges from sentiment analysis to computer vision applications.
-          </p>
-        </article>
-        <article class="service">
-          <img src="images/ai.svg" alt="Artificial Intelligence Service" >
-          <h3>Artificial Intelligence</h3>
-          <p>
-            Proficient in crafting intelligent systems, I focus on learning,
-            adapting, and making informed decisions within the intricate
-            landscape of AI algorithms.
-          </p>
-        </article>
-        <article class="service">
-          <img src="images/se.svg" alt="Software Development Service" >
-          <h3>Software Development</h3>
-          <p>
-            Beyond algorithms, I excel in Software Development, creating robust
-            solutions that harmonize with the evolving technological landscape.
-          </p>
-        </article>
+              <div class="mb-4 overflow-hidden text-center bg-blue-200 p-4 max-w-[300px] hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out cursor-pointer">
+                <span class="bg-indigo-700 inline-flex justify-center items-center rounded-full font-xl text-white w-[36px] h-[36px]">
+                  <i class="ri-admin-line"></i>
+                </span>
+                <h3 class="font-bold mb-4 text-xl ">Automation</h3>
+                <p class="text-base font-medium mb-6">
+                  Streamline and optimize your workflow with automation solutions
+                  tailored to your business needs. From repetitive tasks to complex
+                  processes, I create efficient systems that save time and enhance
+                  productivity.
+                </p>
+              </div>
+        </div>
       </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <!-- Project cards go here -->
-        <article>
-          <img src="https://placehold.co/400" alt="Afan Oromoo News Classifier" >
-          <h3>Afan Oromoo News Classifier</h3>
-          <p>
-            Classified Afan Oromoo news articles using machine learning
-            algorithms, effectively categorizing news content.
-          </p>
-          <a href="#read-more-afan-oromoo-project">Read More</a>
-        </article>
-        <article>
+       <!-- BLOGS SECTION -->
+       <section class="max-w-[1080px] p-5 w-full pb-8 mx-auto mb-8 flex flex-wrap justify-evenly items-center flex-col lg:flex-row py-8 gap-4 bg-gray-300">
+        <h2 class="font-bold text-blue-600 basis-full text-3xl text-center mb-4">Featured Blog Posts ✍️</h2>
+
+        <!-- BLOG CARD ONE  START -->
+        <div class="flex flex-col max-w-[400px] bg-gray-300 hover:transform hover:scale-105 hover:duration-200 hover:ease">
           <img
-            src="https://placehold.co/400"
-            alt="Amharic Context Aware Spell Checker"
+            src="/images/blog-images/web-design.jpeg"
+            alt="a robot looking at you in a cute manner"
+            class="max-h-[300px] object-cover rounded-t-md"
           >
-          <h3>Amharic Context Aware Spell Checker</h3>
-          <p>
-            Developed a spell checker for Amharic using machine learning
-            algorithms, effectively correcting spelling errors in Amharic text.
-          </p>
-          <a href="#read-more-amharic-spell-checker-project">Read More</a>
-        </article>
-        <article>
-          <img src="https://placehold.co/400" alt="Leukemia Detection" >
-          <h3>Leukemia Detection</h3>
-          <p>
-            Worked on a project for detecting leukemia using machine learning
-            techniques, contributing to medical diagnostics.
-          </p>
-          <a href="#read-more-leukemia-detection-project">Read More</a>
-        </article>
-      </section>
+          <div class="pb-4 pt-2 px-2 flex flex-col bg-stone-200 items-stretch">
+            <h3 class="text-lg font-semibold">
+              Embracing Simplicity: A Guide to Minimalist Web Design
+            </h3>
+            <div class="pb-4">
+              <i class="ri-calendar-line"></i>
+              <time class="blog-section__card-date" datetime="2021-05-20"
+                >May 20, 2023</time
+              >
+            </div>
+            <p class="text-justify">
+              Less is more when it comes to web design. Join me in this
+              exploration of the minimalist approach to web design—a philosophy
+              that emphasizes simplicity, clarity, and functionality. Learn how
+              to create visually stunning websites with a focus on user
+              experience.
+            </p>
+            <a href="#" class="self-start mt-4 border-none cursor-pointer px-4 py-1 bg-indigo-700 text-gray-200 rounded-2xl hover:text-white relative inline-block">Read&nbsp;More&nbsp;
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+        <!-- BLOG CARD 1 END -->
 
-      <section id="blog">
-        <h2>Blog</h2>
-        <!-- Blog cards go here -->
-        <article class="blog-post">
-          <h3>Applicability of AI in Ethiopia</h3>
-          <p>
-            Explored the practical applications of AI in the Ethiopian context,
-            considering its impact on various sectors.
-          </p>
-          <a href="#read-more-applicability-ai-ethiopia">Read More</a>
-        </article>
-        <article class="blog-post">
-          <h3>ML and the Future Tech: A Personal Overview</h3>
-          <p>
-            Shared personal insights on the future of technology, focusing on
-            the role of Machine Learning.
-          </p>
-          <a href="#read-more-ml-future-tech">Read More</a>
-        </article>
-        <article class="blog-post">
-          <h3>AI and the Future of Humanity: My Gut Feeling to the Debate</h3>
-          <p>
-            Provided a personal perspective on the ongoing debate about the
-            impact of AI on the future of humanity.
-          </p>
-          <a href="#read-more-ai-future-humanity">Read More</a>
-        </article>
+                <!-- BLOG CARD ONE  START -->
+                <div class="flex flex-col max-w-[400px] bg-white hover:transform hover:scale-105 hover:duration-200 hover:ease">
+                  <img
+                    src="/images/blog-images/ai-horn-africa.jpeg"
+                    alt="a robot looking at you in a cute manner"
+                    class="max-h-[300px] object-cover rounded-t-md"
+                  >
+                  <div class="pb-4 pt-2 px-2 flex flex-col bg-stone-200 items-stretch">
+                    <h3 class="text-lg font-semibold">
+                      AI in Ethiopia: Pioneering Technological Advancements in the Horn
+              of Africa
+                    </h3>
+                    <div class="pb-4">
+                      <i class="ri-calendar-line"></i>
+                      <time class="blog-section__card-date" datetime="2021-05-20"
+                        >May 20, 2023</time
+                      >
+                    </div>
+                    <p class="text-justify">
+                      Embarking on a transformative journey, Ethiopia is making
+              significant strides in the realm of Artificial Intelligence (AI).
+              This blog post delves into the burgeoning landscape of AI
+              technologies in the Horn of Africa, exploring the initiatives,
+              innovations, and impact that AI is bringing to Ethiopia's diverse
+              sectors.
+                    </p>
+                    <a href="#" class="self-start mt-4 border-none cursor-pointer px-4 py-1 bg-indigo-700 text-gray-200 rounded-2xl hover:text-white relative inline-block">Read&nbsp;More&nbsp;
+                      <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- BLOG CARD 2 END -->
+        </div>
       </section>
     </main>
 
-    <!-- Footer with Logo and Address -->
-    <footer>
-      <img src="images/logo.svg" alt="my logo" >
-      <p>
-        Dedicated to advancing knowledge in machine learning and AI. Let's
-        create intelligent solutions together!
-      </p>
-      <p>Copyright &copy; 2023 Abdulmunim Jundurahman Jemal</p>
-      <!-- Additional: Address -->
-      <address>Addis Ababa, Ethiopia</address>
-    </footer>
+    <footer class="max-w-[1080px] px-5 w-full mx-auto bg-opacity-10 bg-gray-200 pt-4 md:py-4 flex justify-around items-center flex-wrap flex-col lg:flex-row">
+      <div class="inline-flex items-center justify-center mb-4 gap-1">
+          <span class="bg-black flex items-center justify-center text-white w-9 h-9 rounded-full font-bold">M</span>
+          <span class="text-xl font-semibold text-center">Munim</span>
+        </div>
+        <div class="flex flex-col self-center text-center mb-2 lg:mb-0">
+          <p class="mb-2">
+            <i class="ri-map-pin-line"></i> Addis Ababa, Ethiopia
+          </p>
+          <p class="mb-2">
+            <i class="ri-phone-line"></i> +251 900 729 000
+          </p>
+          <p class="mb-2">
+            <i class="ri-mail-line"></i>
+            <a href="mailto:abdulmunim.jemal@gmail.com"
+              >abdulmunim.jemal@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="flex justify-center items-center gap-4 mb-4 lg:mb-0">
+          <a
+            href="https://www.facebook.com/abdulmunim.jemal.1"
+            
+          >
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/abdulmunim.jemal/"
+          >
+            <i class="ri-instagram-fill"></i>
+          </a>
+          <a
+            href="https://twitter.com/AbdulmunimJemal"
+          >
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/abdulmunim-jemal-0b0b3b1b2/"
+          >
+            <i class="ri-linkedin-fill"></i>
+          </a>
+        </div>
+      </footer>
+      <audio class="hidden" id="help-audio">
+        <source src="audios/home.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+      <script src="js/main.js"></script>
   </body>
 </html>
