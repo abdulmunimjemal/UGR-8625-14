@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"  >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"  >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"  >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin  >
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-     >
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
-     >
+    />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/images/favico/apple-touch-icon.png"
-     >
+      href="images/favico/apple-touch-icon.png"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/images/favico/favicon-32x32.png"
-     >
+      href="images/favico/favicon-32x32.png"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/images/favico/favicon-16x16.png"
-     >
-    <link rel="manifest" href="/images/favico/site.webmanifest"  >
+      href="images/favico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favico/site.webmanifest" />
   </head>
 
   <body>
@@ -41,7 +44,7 @@
         <div class="container">
           <!-- Brand -->
           <a class="navbar-brand" href="#">Munim</a>
-      
+
           <!-- Navbar links -->
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
@@ -60,11 +63,19 @@
               <a class="nav-link" href="about.html">About</a>
             </li>
           </ul>
-      
+
           <!-- Language dropdown -->
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="languageDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 Language
               </a>
               <div class="dropdown-menu" aria-labelledby="languageDropdown">
@@ -80,225 +91,243 @@
       </nav>
     </header>
 
-    <main class="main container">
-      <section class="section">
-        <h1 class="title blue">Projects</h1>
-        <p class="text-center">
+    <main class="mx-auto">
+      <section class="container mt-5 mx-auto mb-5 bg-light">
+        <h1 class="h1 text-primary text-center mt-5">Projects</h1>
+        <p class="text-center lead mb-5">
           I have completed 9+ projects, ranging from hobby projects to
           professional endeavors.
         </p>
-      </section>
-
-      <section class="section flex flex-rw-gap flex-cl-gap">
-        <h2 class="text-center text-xl blue mb-2 flex-100">Latest Projects</h2>
         <!-- TODO: Project Gallery: Images when hover show detail texts about the project -->
-        <div class="flip-card">
-          <div class="flip-card__inner">
-            <div class="flip-card__front">
+        <div class="row row-cols-1 row-cols-md-3 g-4 d-flex">
+          <div class="col">
+            <div class="card">
               <img
                 src="https://camo.githubusercontent.com/0301f646f200e30a5b38f79f44ccd920d0b315e924b9e48ca506f6ac1daf85be/68747470733a2f2f6d65646961332e67697068792e636f6d2f6d656469612f76312e59326c6b505463354d4749334e6a4578645446704e3256346432356d4d474e756444527661445674596a42726247343362444e775a5446364e324a314d5770706433647164695a6c634431324d563970626e526c636d35686246396e61575a66596e6c666157516d593351395a772f517a5a3173644a4d5435714e736d565170772f67697068792e676966"
                 alt="AAU Chatbot"
-               >
-            </div>
-            <div class="flip-card__back">
-              <h2 class="flip-card__back-header blue">AAU Chatbot</h2>
-              <p class="flip-card__back-body">
-                A chatbot for Addis Ababa University using Machine Learning and
-                NLP Techniques.
-              </p>
-              <p>
-                Skills: NLP, Python, Machine Learning, Flask, CSS, HTML,
-                Javascript
-              </p>
+                class="card-img"
+                height="300px"
+              />
+              <div class="card-body">
+                <h2 class="card-title">AAU Chatbot</h2>
+                <p class="card-text">
+                  A chatbot for Addis Ababa University using Machine Learning
+                  and NLP Techniques.
+                </p>
+                <p>
+                  Skills:
+                  <span class="badge bg-primary">NLP</span>
+                  <span class="badge bg-primary">Python</span>
+                  <span class="badge bg-primary">Machine Learning</span>
+                  <span class="badge bg-primary">Flask</span>
+                  <span class="badge bg-primary">CSS</span>
+                  <span class="badge bg-primary">HTML</span>
+                  <span class="badge bg-primary">Javascript</span>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card__inner">
-            <div class="flip-card__front">
+
+          <div class="col">
+            <div class="card">
               <img
                 src="https://raw.githubusercontent.com/ishaksebsib/My-Portfolio-Webapp-Nex.js/main/public/projects/5.png"
                 alt="Avatar"
-               >
-            </div>
-            <div class="flip-card__back">
-              <h2 class="flip-card__back-header blue">
-                BETE: Home Rental Website
-              </h2>
-              <p class="flip-card__back-body">
-                A Home rental website for the Ethiopian market with Machine
-                Learning Predictive Analysis.
-              </p>
-              <p>
-                Skills: Django, Machine Learning, Regression, CSS, HTML,
-                Javascript
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card__inner">
-            <div class="flip-card__front">
-              <img src="/images/projects/ao-spellchecker.jpeg" alt="Avatar"  >
-            </div>
-            <div class="flip-card__back">
-              <h2 class="flip-card__back-header blue">
-                Afaan Oromoo Spelling Checker (Ongoing)
-              </h2>
-              <p class="flip-card__back-body">
-                A Context Aware Spell Checker for Afaan Oromoo by mixing Machine
-                Learning and Rule Based Techniques.
-              </p>
-              <p>
-                Skills: Natural&nbsp;Language&nbsp;Processing,
-                Machine&nbsp;Learning, Data&nbsp;Structures and Algorithms,
-                Transformers, Linguistic Expertise
-              </p>
+                height="300px"
+                class="card-img"
+              />
+              <div class="card-body">
+                <h2 class="card-title">BETE: Home Rental Website</h2>
+                <p class="card-text">
+                  A Home rental website for the Ethiopian market with Machine
+                  Learning Predictive Analysis.
+                </p>
+                <p class="card-text">
+                  Skills:
+                  <span class="badge bg-primary">Django</span>
+                  <span class="badge bg-primary">Machine Learning</span>
+                  <span class="badge bg-primary">Regression</span>
+                  <span class="badge bg-primary">CSS</span>
+                  <span class="badge bg-primary">HTML</span>
+                  <span class="badge bg-primary">Javascript</span>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card__inner">
-            <div class="flip-card__front">
-              <img src="/images/projects/am_spellchecker.jpeg" alt="Avatar"  >
-            </div>
-            <div class="flip-card__back">
-              <h2 class="flip-card__back-header blue">Amharic Spell Checker</h2>
-              <p class="flip-card__back-body">
-                A Context Aware Spell Checker for Amharic by mixing
-                Machine&nbsp;Learning and Morphological Techniques.
-              </p>
-              <p>
-                Skills: Machine&nbsp;Learning,
-                Natural&nbsp;Language&nbsp;Processing, Data&nbsp;Structures and
-                Algorithms, Transformers, Linguistic Expertise
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card__inner">
-            <div class="flip-card__front">
-              <img src="/images/projects/ao_project.png" alt="Avatar"  >
-            </div>
-            <div class="flip-card__back">
-              <h2 class="flip-card__back-header blue">
-                Afaan Oromoo News Classifier
-              </h2>
-              <p class="flip-card__back-body">
-                A news classifier for Afaan Oromoo news articles using Machine
-                Learning Techniques. This method involved development of a
-                langauge model for Afaan Oromoo.
-              </p>
-              <p>
-                Skills: NLP, Machine Learning, Classification, Flask, Project
-                Documentation
-              </p>
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/projects/portfolio.png"
+                alt="Avatar"
+                height="300px"
+                class="card-img"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Personal Portfolio Website</h2>
+                <p class="card-text">
+                  A Responsive Porfessional Portfolio website for my self.
+                </p>
+                <p class="card-text">
+                  Skills:
+                  <span class="badge bg-primary">CSS Flexbox</span>
+                  <span class="badge bg-primary">CSS Grid</span>
+                  <span class="badge bg-primary">HTML</span>
+                  <span class="badge bg-primary">Responsive Design</span>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card__inner">
-            <div class="flip-card__front">
-              <img src="/images/projects/portfolio.png" alt="Avatar"  >
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/projects/ao-spellchecker.jpeg"
+                alt="Avatar"
+                height="300px"
+                class="card-img"
+              />
+              <div class="card-body">
+                <h2 class="card-title">
+                  Afaan Oromoo Spelling Checker (Ongoing)
+                </h2>
+                <p class="card-text">
+                  A Context Aware Spell Checker for Afaan Oromoo by mixing
+                  Machine Learning and Rule Based Techniques.
+                </p>
+                <p class="card-text">
+                  Skills:
+                  <span class="badge bg-primary">Machine&nbsp;Learning</span>
+                  <span class="badge bg-primary"
+                    >Natural&nbsp;Language&nbsp;Processing</span
+                  >
+                  <span class="badge bg-primary"
+                    >Data&nbsp;Structures and Algorithms</span
+                  >
+                  <span class="badge bg-primary">Transformers</span>
+                  <span class="badge bg-primary">Linguistic Expertise</span>
+                </p>
+              </div>
             </div>
-            <div class="flip-card__back">
-              <h2 class="flip-card__back-header blue">
-                Personal Portfolio Website
-              </h2>
-              <p class="flip-card__back-body">
-                A Responsive Porfessional Portfolio website for my self.
-              </p>
-              <p>Skills: CSS Flexbox, CSS Grid, HTML, Responsive Design</p>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/projects/am_spellchecker.jpeg"
+                alt="Avatar"
+                height="300px"
+                class="card-img"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Amharic Spell Checker</h2>
+                <p class="card-text">
+                  A Context Aware Spell Checker for Amharic by mixing
+                  Machine&nbsp;Learning and Morphological Techniques.
+                </p>
+                <p class="card-text">
+                  Skills:
+                  <span class="badge bg-primary">Machine&nbsp;Learning</span>
+                  <span class="badge bg-primary"
+                    >Natural&nbsp;Language&nbsp;Processing</span
+                  >
+                  <span class="badge bg-primary"
+                    >Data&nbsp;Structures and Algorithms</span
+                  >
+                  <span class="badge bg-primary">Transformers</span>
+                  <span class="badge bg-primary">Linguistic Expertise</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/projects/ao_project.png"
+                alt="Avatar"
+                height="300px"
+                class="card-img"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Afaan Oromoo News Classifier</h2>
+                <p class="card-text">
+                  A news classifier for Afaan Oromoo news articles using Machine
+                  Learning Techniques. This method involved development of a
+                  langauge model for Afaan Oromoo.
+                </p>
+                <p class="card-text">
+                  Skills:
+                  <span class="badge bg-primary">NLP</span>
+                  <span class="badge bg-primary">Machine Learning</span>
+                  <span class="badge bg-primary">Classification</span>
+                  <span class="badge bg-primary">Flask</span>
+                  <span class="badge bg-primary">Project Documentation</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="section hidden"></div>
-      <section class="section blog-section">
+
+      <section class="container mt-5 mx-auto mb-5 bg-light">
         <!-- Top 3: Notable Projects in detail with image in card format-->
-        <h2 class="blue text-center flex-100 text-xl margin-bottom">
+        <h2 class="h2 text-primary text-center my-5">
           Notable Open Source Projects
         </h2>
-        <article class="blog-section__card">
-          <video
-            width="560"
-            height="315"
-            controls
-            class="blog-section__img"
-          >
-            <source src="/images/blog-images/demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-          <div class="blog-section__card-body">
-            <h3 class="blog-section__card-title">News Classification</h3>
-            <p class="blog-section__card-text">
-              A Language classification Model for Afaan Oromoo, using Neural
-              Networks. It classifies news in to predefined 6 categories. It has
-              achieved 93% accuracy.
-            </p>
-            <a
-              class="link-arrow"
-              href="https://github.com/abdulmunimjemal/afaan-oromoo-news-classification-system"
-              >Github<i class="ri-github-fill"></i
-            ></a>
+        <div class="row row-cols-1 row-cols-md-2 g-4 d-flex">
+        <div class="col">
+          <div class="card">
+            <video width="560" height="315" controls class="card-img">
+              <source src="images/blog-images/demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="card-body">
+              <h3 class="card-title">News Classification</h3>
+              <p class="card-text">
+                A Language classification Model for Afaan Oromoo, using Neural
+                Networks. It classifies news in to predefined 6 categories. It has
+                achieved 93% accuracy.
+              </p>
+              <a
+                class="btn btn-primary"
+                href="https://github.com/abdulmunimjemal/afaan-oromoo-news-classification-system"
+                >Github<i class="ri-github-fill"></i
+              ></a>
+            </div>
           </div>
-        </article>
-        <article class="blog-section__card">
-          <video
-            width="560"
-            height="315"
-            controls
-            class="blog-section__img"
-          >
-            <source src="/images/blog-images/demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-          <div class="blog-section__card-body">
-            <h3 class="blog-section__card-title">Amharic Spell Checker</h3>
-            <p class="blog-section__card-text">
-              Context Aware Spell Checker for Amharic Language. It has add-in
-              integration for office softwares and add-ons for well-known
-              browsers (Chrome, Edge, and Firefox).
-            </p>
-            <a class="link-arrow" href="https://github.com/abdulmunimjemal/"
-              >Github<i class="ri-github-fill"></i
-            ></a>
-          </div>
-        </article>
+        </div>
 
-        <article class="blog-section__card">
-          <video
-          width="560"
-          height="315"
-          controls
-          class="blog-section__img"
-            >
-          <source src="/images/blog-images/demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="blog-section__card-body">
-            <h3 class="blog-section__card-title">AAU Chatbot (Abebech)</h3>
-            <p class="blog-section__card-text">
-              Abebech is NLP Based Chatbot for Addis Ababa University. It
-              answers basic questions about the university and its system for
-              users. Especially, focusing on the needs of new students and
-              staffs.
-            </p>
-            <a
-              class="link-arrow"
-              href="https://github.com/abdulmunimjemal/AAU-Chatbot"
-              >Github<i class="ri-github-fill"></i
-            ></a>
+        <div class="col">
+          <div class="card">
+            <video width="560" height="315" controls class="card-img">
+              <source src="images/blog-images/demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="card-body">
+              <h3 class="card-title">Amharic Spell Checker</h3>
+              <p class="card-text">
+                Context Aware Spell Checker for Amharic Language. It has add-in
+                integration for office softwares and add-ons for well-known
+                browsers (Chrome, Edge, and Firefox).
+              </p>
+              <a class="btn btn-primary" href="https://github.com/abdulmunimjemal/"
+                >Github<i class="ri-github-fill"></i
+              ></a>
+            </div>
           </div>
-        </article>
+        </div>
+      </div>
+
       </section>
     </main>
 
     <!-- Footer with Logo and Address -->
     <footer class="container mt-5 bg-body-secondary p-2">
       <div class="row">
-        <div class="col-lg-4 mb-4 mb-lg-0 align-self-center justify-content-center">
+        <div
+          class="col-lg-4 mb-4 mb-lg-0 align-self-center justify-content-center"
+        >
           <div class="text-center text-lg-start">
             <span class="font-monospace text-black">Munim</span>
           </div>
@@ -308,32 +337,47 @@
             <p class="mb-1 mt-2">
               <i class="ri-map-pin-line"></i> Addis Ababa, Ethiopia
             </p>
-            <p class="mb-1">
-              <i class="ri-phone-line"></i> +251 900 729 000
-            </p>
+            <p class="mb-1"><i class="ri-phone-line"></i> +251 900 729 000</p>
             <p class="mb-2">
               <i class="ri-mail-line"></i>
-              <a href="mailto:abdulmunim.jemal@gmail.com">abdulmunim.jemal@gmail.com</a>
+              <a href="mailto:abdulmunim.jemal@gmail.com"
+                >abdulmunim.jemal@gmail.com</a
+              >
             </p>
           </div>
         </div>
         <div class="col-lg-4 text-center justify-self-end align-self-center">
-          <a href="https://www.facebook.com/abdulmunim.jemal.1" class="me-2  text-decoration-none"">
+          <a
+            href="https://www.facebook.com/abdulmunim.jemal.1"
+            class="me-2 text-decoration-none"
+          >
             <i class="ri-facebook-circle-fill"></i>
           </a>
-          <a href="https://www.instagram.com/abdulmunim.jemal/" class="me-2  text-decoration-none"">
+          <a
+            href="https://www.instagram.com/abdulmunim.jemal/"
+            class="me-2 text-decoration-none"
+          >
             <i class="ri-instagram-fill"></i>
           </a>
-          <a href="https://twitter.com/AbdulmunimJemal" class="me-2  text-decoration-none"">
+          <a
+            href="https://twitter.com/AbdulmunimJemal"
+            class="me-2 text-decoration-none"
+          >
             <i class="ri-twitter-fill"></i>
           </a>
-          <a href="https://www.linkedin.com/in/abdulmunim-jemal-0b0b3b1b2/" class="me-2 link-offset-1-hover text-decoration-none">
+          <a
+            href="https://www.linkedin.com/in/abdulmunim-jemal-0b0b3b1b2/"
+            class="me-2 link-offset-1-hover text-decoration-none"
+          >
             <i class="ri-linkedin-fill"></i>
           </a>
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
