@@ -23,29 +23,30 @@
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap"
       rel="stylesheet"
      >
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ 
+     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
      >
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/images/favico/apple-touch-icon.png"
+      href="images/favico/apple-touch-icon.png"
      >
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/images/favico/favicon-32x32.png"
+      href="images/favico/favicon-32x32.png"
      >
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/images/favico/favicon-16x16.png"
+      href="images/favico/favicon-16x16.png"
      >
-    <link rel="manifest" href="/images/favico/site.webmanifest"  >
+    <link rel="manifest" href="images/favico/site.webmanifest"  >
   </head>
 
   <body>
@@ -54,28 +55,35 @@
         <div class="container">
           <!-- Brand -->
           <a class="navbar-brand" href="#">Munim</a>
-      
-          <!-- Navbar links -->
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-          </ul>
-      
-          <!-- Language dropdown -->
-          <ul class="navbar-nav">
+
+          <!-- Navbar toggler button for mobile -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar links (collapsed on mobile) -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+  
+          <!-- Language dropdown (hidden on mobile) -->
+          <ul class="navbar-nav d-none d-lg-block">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Language
@@ -93,114 +101,120 @@
       </nav>
     </header>
 
-    <main class="flex main container">
+    <main class="mx-auto">
       <!-- Social media Contact Address with Photo -->
-      <section id="contact" class="container section contact">
-        <figure class="figure">
-          <img src="images/munim-2-removebg.png" alt="my photo"  >
-          <figcaption class="figcaption">Abdulmunim Jundurahman</figcaption>
-        </figure>
+      <section id="contact" class="container mt-5 mx-auto mb-5 bg-light p-5">
+        
+        <div class="row row-cols-1 row-cols-md-2 g-4 d-flex">
+          <div class="col align-self-center text-center">
+              <figure class="figure">
+                <img src="images/munim-2-removebg.png" alt="my photo" height="300px">
+                <figcaption class="figcaption">Abdulmunim Jundurahman</figcaption>
+              </figure>
 
-        <h2 class="contact__title">Contact Me</h2>
-        <!-- Address -->
-        <div class="contact__address">
-          <p class="contact__address-text">
-            <i class="ri-map-pin-line"></i> Addis Ababa, Ethiopia
-          </p>
-          <p class="contact__address-text">
-            <i class="ri-phone-line"></i> +251 900 729 000
-          </p>
-          <p class="contact__address-text">
-            <i class="ri-mail-line"></i>
-            <a href="mailto:abdulmunim.jemal@gmail.com"
-              >abdulmunim.jemal@gmail.com</a
+          <h2 class="m-1">Contact Me</h2>
+          <!-- Address -->
+          <div class="contact__address">
+            <p class="m-0 pe-2">
+              <i class="ri-map-pin-line"></i> Addis Ababa, Ethiopia
+            </p>
+            <p class="m-0">
+              <i class="ri-phone-line"></i> +251 900 729 000
+            </p>
+            <p class="m-0">
+              <i class="ri-mail-line"></i>
+              <a href="mailto:abdulmunim.jemal@gmail.com" class="text-decoration-none text-black"
+                >abdulmunim.jemal@gmail.com</a
+              >
+            </p>
+          </div>
+          <!-- SOCIAL MEDIA WITH REMIX ICON -->
+          <div class="m-0">
+            <a
+              href="https://www.facebook.com/abdulmunim.jemal.1"
+              class="text-decoration-none p-1"
             >
+              <i class="ri-facebook-circle-fill"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/abdulmunim.jemal/"
+              class="text-decoration-none p-1"
+            >
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a
+              href="https://twitter.com/AbdulmunimJemal"
+              class="text-decoration-none p-1"
+            >
+              <i class="ri-twitter-fill"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/abdulmunim-jemal-0b0b3b1b2/"
+              class="text-decoration-none p-1"
+            >
+              <i class="ri-linkedin-fill"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="col align-self-auto">
+          <h2 class="h3 p-2 px-4">Send Me a Message</h2>
+          <p class="text-sm-start px-4">
+            Have a question or want to work together? <br> Fill out the form below, and I'll get back to you!
           </p>
+    
+          <form action="sample/end/point" method="post" class="container text-center">
+            <div class="mb-3">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+                class="form-control"
+              >
+            </div>
+    
+            <div class="mb-3">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                class="form-control"
+                required
+              >
+            </div>
+    
+            <div class="mb-3">
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+                class="form-control"
+                required
+              >
+            </div>
+    
+            <div class="mb-3">
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Enter your message"
+                required
+                class="form-control"
+              ></textarea>
+            </div>
+    
+            <button class="btn btn-primary" type="submit">
+              Send Message <i class="ri-send-plane-fill"></i>
+            </button>
+          </form>
         </div>
-        <!-- SOCIAL MEDIA WITH REMIX ICON -->
-        <div class="contact__social">
-          <a
-            href="https://www.facebook.com/abdulmunim.jemal.1"
-            class="contact__social-link"
-          >
-            <i class="ri-facebook-circle-fill"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/abdulmunim.jemal/"
-            class="contact__social-link"
-          >
-            <i class="ri-instagram-fill"></i>
-          </a>
-          <a
-            href="https://twitter.com/AbdulmunimJemal"
-            class="contact__social-link"
-          >
-            <i class="ri-twitter-fill"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/abdulmunim-jemal-0b0b3b1b2/"
-            class="contact__social-link"
-          >
-            <i class="ri-linkedin-fill"></i>
-          </a>
-        </div>
-      </section>
 
-      <!-- Contact Form -->
-      <section id="contact-form" class="container section contact-form">
-        <h2 class="contact-form__title">Send Me a Message</h2>
-        <p class="contact-form__text">
-          Have a question or want to work together? <br  >Fill out the form
-          below, and I'll get back to you!
-        </p>
-
-        <form action="sample/end/point" method="post" class="form container">
-          <div class="input-group">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Name"
-              required
-              class="input"
-             >
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email"
-              class="input"
-              required
-             >
-          </div>
-
-          <div class="input-group">
-            <input
-              type="text"
-              name="subject"
-              id="subject"
-              placeholder="Subject"
-              class="input"
-              required
-             >
-          </div>
-
-          <div class="input-group">
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Enter your message"
-              required
-              class="textarea"
-            ></textarea>
-          </div>
-
-          <button class="btn btn--primary" type="submit">
-            Send Message <i class="ri-send-plane-fill"></i>
-          </button>
-        </form>
       </section>
     </main>
 
@@ -242,7 +256,8 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
   </body>
 </html>
