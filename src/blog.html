@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"  >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"  >
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Blog</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"  >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin  >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-     >
-     <link rel="stylesheet" href="dist/output.css">
+    >
+    <link rel="stylesheet" href="dist/output.css" >
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
-     >
+    >
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="images/favico/apple-touch-icon.png"
-     >
+    >
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="images/favico/favicon-32x32.png"
-     >
+    >
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="images/favico/favicon-16x16.png"
-     >
-    <link rel="manifest" href="images/favico/site.webmanifest"  >
+    >
+    <link rel="manifest" href="images/favico/site.webmanifest" >
   </head>
 
   <body class="bg-gray-200 max-w-[1080px] mx-auto">
     <header class="absolute top-0 left-0 m-0 w-full z-2 p-4 mb-24" id="header">
       <nav class="relative flex max-w-screen-xl mx-auto justify-between">
-        <a class="inline-flex column-gap-2 font-semibold text-black items-center">
-          <span class="bg-black flex items-center justify-center text-white w-9 h-9 rounded-full">M</span>
+        <a
+          class="inline-flex column-gap-2 font-semibold text-black items-center"
+        >
+          <span
+            class="bg-black flex items-center justify-center text-white w-9 h-9 rounded-full"
+            >M</span
+          >
           <span class="mx-2 font-bold">Munim</span>
         </a>
-        <ul class="nav__list hidden p-2 list-none items-center justify-center md:flex" id="nav-list">
-          <li class="mx-4 w-fit-content"> <!-- Acrive: border-b-2 border-solid border-black -->
+        <ul
+          class="nav__list hidden p-2 list-none items-center justify-center md:flex"
+          id="nav-list"
+        >
+          <li class="mx-4 w-fit-content">
+            <!-- Acrive: border-b-2 border-solid border-black -->
             <a href="home.html">Home</a>
           </li>
           <li class="mx-4 w-fit-content">
@@ -59,36 +68,62 @@
             <a href="about.html">About</a>
           </li>
         </ul>
-        <div class="flex md:hidden w-1/2 justify-start self-center p-0 m-0 cursor-pointer" id="play-audio">
-          <i class="ri-play-line bg-black text-white w-[24px] text-center rounded-full" id="play-audio-icon"></i>
+        <div
+          class="flex md:hidden w-1/2 justify-start self-center p-0 m-0 cursor-pointer"
+          id="play-audio"
+        >
+          <i
+            class="ri-play-line bg-black text-white w-[24px] text-center rounded-full"
+            id="play-audio-icon"
+          ></i>
         </div>
         <!-- CHOOSE LANGUAGE DROP DOWN -->
-        <div class="hidden md:flex gap-x-2 items-center relative cursor-pointer" id="nav-language">
-          <div class="w-[25px] h-[25px] rounded-full bg-black text-white flex items-center justify-center hover:bg-white hover:text-black"  id="nav-langauge-icon">
+        <div
+          class="hidden md:flex gap-x-2 items-center relative cursor-pointer"
+          id="nav-language"
+        >
+          <div
+            class="w-[25px] h-[25px] rounded-full bg-black text-white flex items-center justify-center hover:bg-white hover:text-black"
+            id="nav-langauge-icon"
+          >
             <i class="ri-global-line text-lg"></i>
           </div>
           <div class="text-base font-normal text-black" id="nav-langauge-text">
             <span>English</span>
-            <i class="ri-arrow-down-s-line text-black rotate-270"  id="nav-langauge-icon-down"></i>
+            <i
+              class="ri-arrow-down-s-line text-black rotate-270"
+              id="nav-langauge-icon-down"
+            ></i>
           </div>
-          <div class="absolute top-full left-0 bg-gray-200 w-fit-content p-0.1 text-center hidden flex-col gap-y-2 backdrop-blur-8 transition-top duration-400" id="nav-language-list">
+          <div
+            class="absolute top-full left-0 bg-gray-200 w-fit-content p-0.1 text-center hidden flex-col gap-y-2 backdrop-blur-8 transition-top duration-400"
+            id="nav-language-list"
+          >
             <!-- List show: top-14 flex -->
             <!-- Rotate: transform: rotate-180; -->
 
-            <div class="p-2 w-full hover:bg-black hover:text-white nav-language-item">
+            <div
+              class="p-2 w-full hover:bg-black hover:text-white nav-language-item"
+            >
               <span>العربية</span>
             </div>
-            <div class="p-2 w-full hover:bg-black hover:text-white nav-language-item">
+            <div
+              class="p-2 w-full hover:bg-black hover:text-white nav-language-item"
+            >
               <span>Afan Oromo</span>
             </div>
-            <div class="p-2 w-full hover:bg-black hover:text-white nav-language-item">
+            <div
+              class="p-2 w-full hover:bg-black hover:text-white nav-language-item"
+            >
               <span>አማርኛ</span>
             </div>
           </div>
         </div>
-        
 
-        <div class="flex md:hidden fixed right-5 top-4 bg-black text-white w-[32px] h-[32px] items-center justify-center cursor-pointer z-10" id="nav-toggle">
+        <div
+          class="flex md:hidden fixed right-5 top-4 bg-black text-white w-[32px] h-[32px] items-center justify-center cursor-pointer z-10"
+          id="nav-toggle"
+        >
           <i class="ri-menu-4-line" id="nav-menu-icon"></i>
           <i class="ri-close-line hidden" id="nav-close-icon"></i>
         </div>
@@ -98,63 +133,121 @@
 
     <main class="max-w-[1080px] p-5 w-full pb-8 mx-auto mt-16">
       <!-- <h1 class="title blue">My Blog</h1> -->
-      
-      <section class="max-w-[1080px] p-5 w-full pb-8 mx-auto mb-32 flex flex-wrap justify-evenly items-center flex-col lg:flex-row py-8 gap-4">
-        <h2 class="text-center text-2xl text-blue-600 font-bold mb-4 w-full">Trending Posts</h2>
-    
+
+      <section
+        class="max-w-[1080px] p-5 w-full pb-8 mx-auto mb-32 flex flex-wrap justify-evenly items-center flex-col lg:flex-row py-8 gap-4"
+      >
+        <h2 class="text-center text-2xl text-blue-600 font-bold mb-4 w-full">
+          Trending Posts
+        </h2>
+
         <!-- SLIDE SHOW -->
-        <div class="relative w-full min-h-[300px] sm:min-h-[400px] lg:min-h-[400px]" id="slideshow">
-            <!-- SLIDE 1 -->
-            <div class="absolute w-full h-full flex items-center justify-center slide">
-                <img src="https://source.unsplash.com/random/?ai" alt="ai in ethiopia" class="w-full h-full object-cover">
-                <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent text-white transition duration-500 transform translate-y-full slide__content">
-                    <div class="bg-black text-white inline-block pr-2 pl-1"><span>Technology</span></div>
-                    <h2 class="text-2xl font-semibold mb-2 slide__title">AI Blooming in Ethiopia</h2>
-                    <p class="text-base mb-2 slide__description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
-                    </p>
-                </div>
-            </div>
-            <!-- SLIDE 2 -->
-            <div class="absolute w-full h-full flex items-center justify-center slide">
-              <img src="https://source.unsplash.com/random/?ai" alt="ai in ethiopia" class="w-full h-full object-cover">
-              <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent text-white transition duration-500 transform translate-y-full slide__content">
-                  <div class="bg-black text-white inline-block pr-2 pl-1"><span>NLP</span></div>
-                  <h2 class="text-2xl font-semibold mb-2 slide__title">NLP in Ethiopia</h2>
-                  <p class="text-base mb-2 slide__description">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
-                  </p>
+        <div
+          class="relative w-full min-h-[300px] sm:min-h-[400px] lg:min-h-[400px]"
+          id="slideshow"
+        >
+          <!-- SLIDE 1 -->
+          <div
+            class="absolute w-full h-full flex items-center justify-center slide"
+          >
+            <img
+              src="https://source.unsplash.com/random/?ai"
+              alt="ai in ethiopia"
+              class="w-full h-full object-cover"
+            >
+            <div
+              class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent text-white transition duration-500 transform translate-y-full slide__content"
+            >
+              <div class="bg-black text-white inline-block pr-2 pl-1">
+                <span>Technology</span>
               </div>
+              <h2 class="text-2xl font-semibold mb-2 slide__title">
+                AI Blooming in Ethiopia
+              </h2>
+              <p class="text-base mb-2 slide__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, voluptatum.
+              </p>
+            </div>
+          </div>
+          <!-- SLIDE 2 -->
+          <div
+            class="absolute w-full h-full flex items-center justify-center slide"
+          >
+            <img
+              src="https://source.unsplash.com/random/?ai"
+              alt="ai in ethiopia"
+              class="w-full h-full object-cover"
+            >
+            <div
+              class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent text-white transition duration-500 transform translate-y-full slide__content"
+            >
+              <div class="bg-black text-white inline-block pr-2 pl-1">
+                <span>NLP</span>
+              </div>
+              <h2 class="text-2xl font-semibold mb-2 slide__title">
+                NLP in Ethiopia
+              </h2>
+              <p class="text-base mb-2 slide__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, voluptatum.
+              </p>
+            </div>
           </div>
           <!-- SLIDE 3 -->
-          <div class="absolute w-full h-full flex items-center justify-center slide">
-            <img src="https://source.unsplash.com/random/?islam" alt="ai in ethiopia" class="w-full h-full object-cover">
-            <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent text-white transition duration-500 transform translate-y-full slide__content">
-                <div class="bg-black text-white inline-block pr-2 pl-1"><span>Religion</span></div>
-                <h2 class="text-2xl font-semibold mb-2 slide__title">Islam: From One to One Billion</h2>
-                <p class="text-base mb-2 slide__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
-                </p>
+          <div
+            class="absolute w-full h-full flex items-center justify-center slide"
+          >
+            <img
+              src="https://source.unsplash.com/random/?islam"
+              alt="ai in ethiopia"
+              class="w-full h-full object-cover"
+            >
+            <div
+              class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent text-white transition duration-500 transform translate-y-full slide__content"
+            >
+              <div class="bg-black text-white inline-block pr-2 pl-1">
+                <span>Religion</span>
+              </div>
+              <h2 class="text-2xl font-semibold mb-2 slide__title">
+                Islam: From One to One Billion
+              </h2>
+              <p class="text-base mb-2 slide__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, voluptatum.
+              </p>
             </div>
-        </div>
+          </div>
 
-
-            <div class="absolute top-1/2 transform -translate-y-1/2 flex items-center justify-between w-full">
-                <div id="prev" class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center cursor-pointer slide__btn hover:bg-gray-800 transition duration-300">
-                    <i class="ri-arrow-left-double-line"></i>
-                </div>
-                <div id="next" class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center cursor-pointer slide__btn hover:bg-gray-800 transition duration-300">
-                    <i class="ri-arrow-right-double-line"></i>
-                </div>
+          <div
+            class="absolute top-1/2 transform -translate-y-1/2 flex items-center justify-between w-full"
+          >
+            <div
+              id="prev"
+              class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center cursor-pointer slide__btn hover:bg-gray-800 transition duration-300"
+            >
+              <i class="ri-arrow-left-double-line"></i>
             </div>
+            <div
+              id="next"
+              class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center cursor-pointer slide__btn hover:bg-gray-800 transition duration-300"
+            >
+              <i class="ri-arrow-right-double-line"></i>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-      
-    <section class="max-w-[1080px] p-5 w-full pb-8 mx-auto mb-8 flex flex-wrap justify-evenly items-center flex-col lg:flex-row py-8 gap-4 bg-gray-300">
-        <h2 class="text-center text-2xl text-blue-600 font-bold mb-4 w-full">Latest Posts</h2>
-         <!-- BLOG CARD ONE  START -->
-         <div class="flex flex-col max-w-[400px] bg-gray-300 hover:transform hover:scale-105 hover:duration-200 hover:ease">
+      <section
+        class="max-w-[1080px] p-5 w-full pb-8 mx-auto mb-8 flex flex-wrap justify-evenly items-center flex-col lg:flex-row py-8 gap-4 bg-gray-300"
+      >
+        <h2 class="text-center text-2xl text-blue-600 font-bold mb-4 w-full">
+          Latest Posts
+        </h2>
+        <!-- BLOG CARD ONE  START -->
+        <div
+          class="flex flex-col max-w-[400px] bg-gray-300 hover:transform hover:scale-105 hover:duration-200 hover:ease"
+        >
           <img
             src="images/blog-images/web-design.jpeg"
             alt="a robot looking at you in a cute manner"
@@ -177,47 +270,57 @@
               to create visually stunning websites with a focus on user
               experience.
             </p>
-            <a href="#" class="self-start mt-4 border-none cursor-pointer px-4 py-1 bg-indigo-700 text-gray-200 rounded-2xl hover:text-white relative inline-block">Read&nbsp;More&nbsp;
+            <a
+              href="#"
+              class="self-start mt-4 border-none cursor-pointer px-4 py-1 bg-indigo-700 text-gray-200 rounded-2xl hover:text-white relative inline-block"
+              >Read&nbsp;More&nbsp;
               <i class="ri-arrow-right-line"></i>
             </a>
           </div>
         </div>
         <!-- BLOG CARD 1 END -->
 
-                <!-- BLOG CARD ONE  START -->
-                <div class="flex flex-col max-w-[400px] bg-white hover:transform hover:scale-105 hover:duration-200 hover:ease">
-                  <img
-                    src="images/blog-images/ai-horn-africa.jpeg"
-                    alt="a robot looking at you in a cute manner"
-                    class="max-h-[300px] object-cover rounded-t-md"
-                  >
-                  <div class="pb-4 pt-2 px-2 flex flex-col bg-stone-200 items-stretch">
-                    <h3 class="text-lg font-semibold">
-                      AI in Ethiopia: Pioneering Technological Advancements in the Horn
+        <!-- BLOG CARD ONE  START -->
+        <div
+          class="flex flex-col max-w-[400px] bg-white hover:transform hover:scale-105 hover:duration-200 hover:ease"
+        >
+          <img
+            src="images/blog-images/ai-horn-africa.jpeg"
+            alt="a robot looking at you in a cute manner"
+            class="max-h-[300px] object-cover rounded-t-md"
+          >
+          <div class="pb-4 pt-2 px-2 flex flex-col bg-stone-200 items-stretch">
+            <h3 class="text-lg font-semibold">
+              AI in Ethiopia: Pioneering Technological Advancements in the Horn
               of Africa
-                    </h3>
-                    <div class="pb-4">
-                      <i class="ri-calendar-line"></i>
-                      <time class="blog-section__card-date" datetime="2021-05-20"
-                        >May 20, 2023</time
-                      >
-                    </div>
-                    <p class="text-justify">
-                      Embarking on a transformative journey, Ethiopia is making
+            </h3>
+            <div class="pb-4">
+              <i class="ri-calendar-line"></i>
+              <time class="blog-section__card-date" datetime="2021-05-20"
+                >May 20, 2023</time
+              >
+            </div>
+            <p class="text-justify">
+              Embarking on a transformative journey, Ethiopia is making
               significant strides in the realm of Artificial Intelligence (AI).
               This blog post delves into the burgeoning landscape of AI
               technologies in the Horn of Africa, exploring the initiatives,
               innovations, and impact that AI is bringing to Ethiopia's diverse
               sectors.
-                    </p>
-                    <a href="#" class="self-start mt-4 border-none cursor-pointer px-4 py-1 bg-indigo-700 text-gray-200 rounded-2xl hover:text-white relative inline-block">Read&nbsp;More&nbsp;
-                      <i class="ri-arrow-right-line"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- BLOG CARD 2 END -->
-                 <!-- BLOG CARD ONE  START -->
-         <div class="flex flex-col max-w-[400px] bg-gray-300 hover:transform hover:scale-105 hover:duration-200 hover:ease">
+            </p>
+            <a
+              href="#"
+              class="self-start mt-4 border-none cursor-pointer px-4 py-1 bg-indigo-700 text-gray-200 rounded-2xl hover:text-white relative inline-block"
+              >Read&nbsp;More&nbsp;
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+        <!-- BLOG CARD 2 END -->
+        <!-- BLOG CARD ONE  START -->
+        <div
+          class="flex flex-col max-w-[400px] bg-gray-300 hover:transform hover:scale-105 hover:duration-200 hover:ease"
+        >
           <img
             src="images/blog-images/web-design.jpeg"
             alt="a robot looking at you in a cute manner"
@@ -240,100 +343,110 @@
               to create visually stunning websites with a focus on user
               experience.
             </p>
-            <a href="#" class="self-start mt-4 border-none cursor-pointer px-4 py-1 bg-indigo-700 text-gray-200 rounded-2xl hover:text-white relative inline-block">Read&nbsp;More&nbsp;
+            <a
+              href="#"
+              class="self-start mt-4 border-none cursor-pointer px-4 py-1 bg-indigo-700 text-gray-200 rounded-2xl hover:text-white relative inline-block"
+              >Read&nbsp;More&nbsp;
               <i class="ri-arrow-right-line"></i>
             </a>
           </div>
         </div>
         <!-- BLOG CARD 1 END -->
 
-                <!-- BLOG CARD ONE  START -->
-                <div class="flex flex-col max-w-[400px] bg-white hover:transform hover:scale-105 hover:duration-200 hover:ease">
-                  <img
-                    src="images/blog-images/ai-horn-africa.jpeg"
-                    alt="a robot looking at you in a cute manner"
-                    class="max-h-[300px] object-cover rounded-t-md"
-                  >
-                  <div class="pb-4 pt-2 px-2 flex flex-col bg-stone-200 items-stretch">
-                    <h3 class="text-lg font-semibold">
-                      AI in Ethiopia: Pioneering Technological Advancements in the Horn
+        <!-- BLOG CARD ONE  START -->
+        <div
+          class="flex flex-col max-w-[400px] bg-white hover:transform hover:scale-105 hover:duration-200 hover:ease"
+        >
+          <img
+            src="images/blog-images/ai-horn-africa.jpeg"
+            alt="a robot looking at you in a cute manner"
+            class="max-h-[300px] object-cover rounded-t-md"
+          >
+          <div class="pb-4 pt-2 px-2 flex flex-col bg-stone-200 items-stretch">
+            <h3 class="text-lg font-semibold">
+              AI in Ethiopia: Pioneering Technological Advancements in the Horn
               of Africa
-                    </h3>
-                    <div class="pb-4">
-                      <i class="ri-calendar-line"></i>
-                      <time class="blog-section__card-date" datetime="2021-05-20"
-                        >May 20, 2023</time
-                      >
-                    </div>
-                    <p class="text-justify">
-                      Embarking on a transformative journey, Ethiopia is making
+            </h3>
+            <div class="pb-4">
+              <i class="ri-calendar-line"></i>
+              <time class="blog-section__card-date" datetime="2021-05-20"
+                >May 20, 2023</time
+              >
+            </div>
+            <p class="text-justify">
+              Embarking on a transformative journey, Ethiopia is making
               significant strides in the realm of Artificial Intelligence (AI).
               This blog post delves into the burgeoning landscape of AI
               technologies in the Horn of Africa, exploring the initiatives,
               innovations, and impact that AI is bringing to Ethiopia's diverse
               sectors.
-                    </p>
-                    <a href="#" class="self-start mt-4 border-none cursor-pointer px-4 py-1 bg-indigo-700 text-gray-200 rounded-2xl hover:text-white relative inline-block">Read&nbsp;More&nbsp;
-                      <i class="ri-arrow-right-line"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- BLOG CARD 2 END -->
+            </p>
+            <a
+              href="#"
+              class="self-start mt-4 border-none cursor-pointer px-4 py-1 bg-indigo-700 text-gray-200 rounded-2xl hover:text-white relative inline-block"
+              >Read&nbsp;More&nbsp;
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
         </div>
+        <!-- BLOG CARD 2 END -->
       </section>
     </main>
 
     <!-- Footer with Logo and Address -->
-    <footer class="max-w-[1080px] px-5 w-full mx-auto bg-opacity-10 bg-gray-200 pt-4 md:py-4 flex justify-around items-center flex-wrap flex-col lg:flex-row">
+    <footer
+      class="max-w-[1080px] px-5 w-full mx-auto bg-opacity-10 bg-gray-200 pt-4 md:py-4 flex justify-around items-center flex-wrap flex-col lg:flex-row"
+    >
       <div class="inline-flex items-center justify-center mb-4 gap-1">
-          <span class="bg-black flex items-center justify-center text-white w-9 h-9 rounded-full font-bold">M</span>
-          <span class="text-xl font-semibold text-center">Munim</span>
-        </div>
-        <div class="flex flex-col self-center text-center mb-2 lg:mb-0">
-          <p class="mb-2">
-            <i class="ri-map-pin-line"></i> Addis Ababa, Ethiopia
-          </p>
-          <p class="mb-2">
-            <i class="ri-phone-line"></i> +251 900 729 000
-          </p>
-          <p class="mb-2">
-            <i class="ri-mail-line"></i>
-            <a href="mailto:abdulmunim.jemal@gmail.com"
-              >abdulmunim.jemal@gmail.com</a
-            >
-          </p>
-        </div>
-        <div class="flex justify-center items-center gap-4 mb-4 lg:mb-0">
-          <a
-            href="https://www.facebook.com/abdulmunim.jemal.1"
-            class="footer-social__link"
+        <span
+          class="bg-black flex items-center justify-center text-white w-9 h-9 rounded-full font-bold"
+          >M</span
+        >
+        <span class="text-xl font-semibold text-center">Munim</span>
+      </div>
+      <div class="flex flex-col self-center text-center mb-2 lg:mb-0">
+        <p class="mb-2">
+          <i class="ri-map-pin-line"></i> Addis Ababa, Ethiopia
+        </p>
+        <p class="mb-2"><i class="ri-phone-line"></i> +251 900 729 000</p>
+        <p class="mb-2">
+          <i class="ri-mail-line"></i>
+          <a href="mailto:abdulmunim.jemal@gmail.com"
+            >abdulmunim.jemal@gmail.com</a
           >
-            <i class="ri-facebook-circle-fill"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/abdulmunim.jemal/"
-            class="footer-social__link"
-          >
-            <i class="ri-instagram-fill"></i>
-          </a>
-          <a
-            href="https://twitter.com/AbdulmunimJemal"
-            class="footer-social__link"
-          >
-            <i class="ri-twitter-fill"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/abdulmunim-jemal-0b0b3b1b2/"
-            class="footer-social__link"
-          >
-            <i class="ri-linkedin-fill"></i>
-          </a>
-        </div>
-      </footer>
+        </p>
+      </div>
+      <div class="flex justify-center items-center gap-4 mb-4 lg:mb-0">
+        <a
+          href="https://www.facebook.com/abdulmunim.jemal.1"
+          class="footer-social__link"
+        >
+          <i class="ri-facebook-circle-fill"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/abdulmunim.jemal/"
+          class="footer-social__link"
+        >
+          <i class="ri-instagram-fill"></i>
+        </a>
+        <a
+          href="https://twitter.com/AbdulmunimJemal"
+          class="footer-social__link"
+        >
+          <i class="ri-twitter-fill"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/abdulmunim-jemal-0b0b3b1b2/"
+          class="footer-social__link"
+        >
+          <i class="ri-linkedin-fill"></i>
+        </a>
+      </div>
+    </footer>
     <audio class="hidden" id="help-audio">
-      <source src="audios/blog.mp3" type="audio/mp3">
+      <source src="audios/blog.mp3" type="audio/mp3" >
       Your browser does not support the audio element.
-  </audio>
+    </audio>
     <script src="js/main.js"></script>
     <script src="js/slideshow.js"></script>
   </body>
