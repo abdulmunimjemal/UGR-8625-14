@@ -1,94 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"  >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"  >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"  >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin  >
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-     >
-     <script src="https://cdn.tailwindcss.com"></script>
+    />
+    <link rel="stylesheet" href="tailwind.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
-     >
+    />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="/images/favico/apple-touch-icon.png"
-     >
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="/images/favico/favicon-32x32.png"
-     >
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="/images/favico/favicon-16x16.png"
-     >
-    <link rel="manifest" href="/images/favico/site.webmanifest"  >
+    />
+    <link rel="manifest" href="/images/favico/site.webmanifest" />
   </head>
 
-<body class="bg-gray-200 max-w-[1080px] mx-auto">
+  <body class="bg-gray-200 max-w-[1080px] mx-auto">
     <header class="absolute top-0 left-0 m-0 w-full z-2 p-4" id="header">
       <nav class="relative flex max-w-screen-xl mx-auto justify-between">
-        <a class="inline-flex column-gap-2 font-semibold text-black items-center">
-          <span class="bg-black flex items-center justify-center text-white w-9 h-9 rounded-full">M</span>
+        <a
+          class="inline-flex column-gap-2 font-semibold text-black items-center"
+        >
+          <span
+            class="bg-black flex items-center justify-center text-white w-9 h-9 rounded-full"
+            >M</span
+          >
           <span class="mx-2 font-bold">Munim</span>
         </a>
-        <ul class="nav__list hidden p-2 list-none items-center justify-center md:flex" id="nav-list">
-          <li class="mx-4 w-fit-content"> <!-- Acrive: border-b-2 border-solid border-black -->
-            <a class="nav__link" href="home.html">Home</a>
+        <ul
+          class="nav__list hidden p-2 list-none items-center justify-center md:flex"
+          id="nav-list"
+        >
+          <li class="mx-4 w-fit-content">
+            <!-- Acrive: border-b-2 border-solid border-black -->
+            <a href="home.html">Home</a>
           </li>
           <li class="mx-4 w-fit-content border-b-2 border-solid border-black">
-            <a class="nav__link" href="projects.html">Projects</a>
+            <a href="projects.html">Projects</a>
           </li>
           <li class="mx-4 w-fit-content">
-            <a class="nav__link" href="contact.html">Contact</a>
+            <a href="contact.html">Contact</a>
           </li>
           <li class="mx-4 w-fit-content">
-            <a class="nav__link" href="blog.html">Blog</a>
+            <a href="blog.html">Blog</a>
           </li>
           <li class="mx-4 w-fit-content">
-            <a class="nav__link" href="about.html">About</a>
+            <a href="about.html">About</a>
           </li>
         </ul>
-        <div class="flex md:hidden w-1/2 justify-start self-center p-0 m-0 cursor-pointer" id="play-audio">
-          <i class="ri-play-line bg-black text-white w-[24px] text-center rounded-full" id="play-audio-icon"></i>
+        <div
+          class="flex md:hidden w-1/2 justify-start self-center p-0 m-0 cursor-pointer"
+          id="play-audio"
+        >
+          <i
+            class="ri-play-line bg-black text-white w-[24px] text-center rounded-full"
+            id="play-audio-icon"
+          ></i>
         </div>
         <!-- CHOOSE LANGUAGE DROP DOWN -->
-        <div class="hidden md:flex gap-x-2 items-center relative cursor-pointer" id="nav-language">
-          <div class="w-[25px] h-[25px] rounded-full bg-black text-white flex items-center justify-center hover:bg-white hover:text-black"  id="nav-langauge-icon">
+        <div
+          class="hidden md:flex gap-x-2 items-center relative cursor-pointer"
+          id="nav-language"
+        >
+          <div
+            class="w-[25px] h-[25px] rounded-full bg-black text-white flex items-center justify-center hover:bg-white hover:text-black"
+            id="nav-langauge-icon"
+          >
             <i class="ri-global-line text-lg"></i>
           </div>
           <div class="text-base font-normal text-black" id="nav-langauge-text">
             <span>English</span>
-            <i class="ri-arrow-down-s-line text-black rotate-270"  id="nav-langauge-icon-down"></i>
+            <i
+              class="ri-arrow-down-s-line text-black rotate-270"
+              id="nav-langauge-icon-down"
+            ></i>
           </div>
-          <div class="absolute top-full left-0 bg-gray-200 w-fit-content p-0.1 text-center hidden flex-col gap-y-2 backdrop-blur-8 transition-top duration-400" id="nav-language-list">
+          <div
+            class="absolute top-full left-0 bg-gray-200 w-fit-content p-0.1 text-center hidden flex-col gap-y-2 backdrop-blur-8 transition-top duration-400"
+            id="nav-language-list"
+          >
             <!-- List show: top-14 flex -->
             <!-- Rotate: transform: rotate-180; -->
 
-            <div class="p-2 w-full hover:bg-black hover:text-white nav-language-item">
+            <div
+              class="p-2 w-full hover:bg-black hover:text-white nav-language-item"
+            >
               <span>العربية</span>
             </div>
-            <div class="p-2 w-full hover:bg-black hover:text-white nav-language-item">
+            <div
+              class="p-2 w-full hover:bg-black hover:text-white nav-language-item"
+            >
               <span>Afan Oromo</span>
             </div>
-            <div class="p-2 w-full hover:bg-black hover:text-white nav-language-item">
+            <div
+              class="p-2 w-full hover:bg-black hover:text-white nav-language-item"
+            >
               <span>አማርኛ</span>
             </div>
           </div>
         </div>
-        
 
-        <div class="flex md:hidden fixed right-5 top-4 bg-black text-white w-[32px] h-[32px] items-center justify-center cursor-pointer" id="nav-toggle">
+        <div
+          class="flex md:hidden fixed right-5 top-4 bg-black text-white w-[32px] h-[32px] items-center justify-center cursor-pointer"
+          id="nav-toggle"
+        >
           <i class="ri-menu-4-line" id="nav-menu-icon"></i>
           <i class="ri-close-line hidden" id="nav-close-icon"></i>
         </div>
@@ -96,9 +131,17 @@
       </nav>
     </header>
 
-    <main class="mt-6 max-w-[1080px] p-5 w-full mx-auto mb-8 lg:mt-12 flex wrap flex-col items-center py-8">
-      <section class="mt-3 max-w-[1080px] w-full mx-auto lg:mt-6 flex justify-evenly flex-wrap gap-5">
-        <h1 class="text-3xl font-bold mb-4 text-[#5b38e3] text-center basis-full">Projects</h1>
+    <main
+      class="mt-6 max-w-[1080px] p-5 w-full mx-auto mb-8 lg:mt-12 flex wrap flex-col items-center py-8"
+    >
+      <section
+        class="mt-3 max-w-[1080px] w-full mx-auto lg:mt-6 flex justify-evenly flex-wrap gap-5"
+      >
+        <h1
+          class="text-3xl font-bold mb-4 text-[#5b38e3] text-center basis-full"
+        >
+          Projects
+        </h1>
         <p class="text-center font-base mb-[3rem] basis-full">
           I have completed 9+ projects, ranging from hobby projects to
           professional endeavors.
@@ -106,306 +149,380 @@
         <!-- TODO: Project Gallery: Images when hover show detail texts about the project -->
 
         <!-- CARD -->
-        <div class="max-w-sm flex flex-col rounded overflow-hidden shadow-lg hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out">
-          <img src="https://camo.githubusercontent.com/0301f646f200e30a5b38f79f44ccd920d0b315e924b9e48ca506f6ac1daf85be/68747470733a2f2f6d65646961332e67697068792e636f6d2f6d656469612f76312e59326c6b505463354d4749334e6a4578645446704e3256346432356d4d474e756444527661445674596a42726247343362444e775a5446364e324a314d5770706433647164695a6c634431324d563970626e526c636d35686246396e61575a66596e6c666157516d593351395a772f517a5a3173644a4d5435714e736d565170772f67697068792e676966" alt="" class="w-full">
+        <div
+          class="max-w-sm flex flex-col rounded overflow-hidden shadow-lg hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out"
+        >
+          <img
+            src="https://camo.githubusercontent.com/0301f646f200e30a5b38f79f44ccd920d0b315e924b9e48ca506f6ac1daf85be/68747470733a2f2f6d65646961332e67697068792e636f6d2f6d656469612f76312e59326c6b505463354d4749334e6a4578645446704e3256346432356d4d474e756444527661445674596a42726247343362444e775a5446364e324a314d5770706433647164695a6c634431324d563970626e526c636d35686246396e61575a66596e6c666157516d593351395a772f517a5a3173644a4d5435714e736d565170772f67697068792e676966"
+            alt=""
+            class="w-full"
+          />
           <div class="px-6 py-4 grow-2">
-            <div class="font-bold text-xl mb-2">
-              AAU Chatbot
-            </div>
+            <div class="font-bold text-xl mb-2">AAU Chatbot</div>
             <p class="text-gray-700 text-base">
               A chatbot for Addis Ababa University using Machine Learning and
               NLP Techniques.
             </p>
             <div class="px-6 py-4 pb-2">
-              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
                 NLP
               </span>
-              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
                 Python
               </span>
-              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
                 Machine Learning
               </span>
-              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
                 Flask
               </span>
             </div>
           </div>
         </div>
 
-                  <!-- CARD -->
-        <div class="max-w-sm flex flex-col  rounded overflow-hidden shadow-lg hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out">
-          <img src="https://raw.githubusercontent.com/ishaksebsib/My-Portfolio-Webapp-Nex.js/main/public/projects/5.png" alt="" class="w-full min-h-[250px] lg:h-[350px]">
+        <!-- CARD -->
+        <div
+          class="max-w-sm flex flex-col rounded overflow-hidden shadow-lg hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out"
+        >
+          <img
+            src="https://raw.githubusercontent.com/ishaksebsib/My-Portfolio-Webapp-Nex.js/main/public/projects/5.png"
+            alt=""
+            class="w-full min-h-[250px] lg:h-[350px]"
+          />
           <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">
-              BETE: Home Rental Website
-            </div>
+            <div class="font-bold text-xl mb-2">BETE: Home Rental Website</div>
             <p class="text-gray-700 text-base">
-              A Home rental website for the Ethiopian market with Machine Learning Predictive Analysis.
-            
+              A Home rental website for the Ethiopian market with Machine
+              Learning Predictive Analysis.
             </p>
             <div class="px-6 py-4 pb-2">
-              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
                 Django
               </span>
-              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
                 Regression
               </span>
-              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
                 Python
               </span>
-              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
                 PostgreSQL
               </span>
-              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
                 HTML
               </span>
-              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
                 CSS
               </span>
-              <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
                 Javascript
               </span>
             </div>
           </div>
         </div>
 
-                    <!-- CARD -->
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out">
-                      <img src="/images/projects/ao-spellchecker.jpeg" alt="" class="w-full h-[250px] lg:h-[350px]">
-                      <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">
-                          Afaan Oromoo Spelling Checker (Ongoing)
-                        </div>
-                        <p class="text-gray-700 text-base">
-                          A Context Aware Spell Checker for Afaan Oromoo by mixing Machine
-                          Learning and Rule Based Techniques.
-                        </p>
-                        <div class="px-6 py-4 pb-2">
-                          <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
-                            Natural&nbsp;Language&nbsp;Processing
-                          </span>
-                          <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
-                            Machine&nbsp;Learning
-                          </span>
-                          <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
-                            Data&nbsp;Structures&nbsp;and&nbsp;Algorithms
-                          </span>
-                          <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
-                            Linguistic Expertise
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-
-
-                     <!-- CARD -->
-                     <div class="max-w-sm rounded overflow-hidden shadow-lg hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out">
-                      <img src="/images/projects/am_spellchecker.jpeg" alt="" class="w-full h-[250px] lg:h-[350px]">
-                      <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">
-                          Artai Spell Checker
-                        </div>
-                        <p class="text-gray-700 text-base">
-                          A Context Aware Spell Checker for Amharic by mixing
-                Machine&nbsp;Learning and Morphological Techniques.
-                        </p>
-                        <div class="px-6 pt-4 pb-2">
-                          <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
-                            Natural&nbsp;Language&nbsp;Processing
-                          </span>
-                          <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
-                            Machine&nbsp;Learning
-                          </span>
-                          <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
-                            Data&nbsp;Structures&nbsp;and&nbsp;Algorithms
-                          </span>
-                          <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
-                            Linguistic Expertise
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-
-
-                     <!-- CARD -->
-                     <div class="max-w-sm rounded overflow-hidden shadow-lg hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out">
-                      <img src="/images/projects/ao_project.png" alt="" class="w-full h-[250px] lg:h-[350px]">
-                      <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">
-                          Afaan Oromoo News Classifier
-                        </div>
-                        <p class="text-gray-700 text-base">
-                          A news classifier for Afaan Oromoo news articles using Machine
-                Learning Techniques. This method involved development of a
-                langauge model for Afaan Oromoo.           </p>
-                        <div class="px-6 py-4 pb-2">
-                          <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
-                            Natural&nbsp;Language&nbsp;Processing
-                          </span>
-                          <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
-                            Machine&nbsp;Learning
-                          </span>
-                          <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
-                            Classification
-                          </span>
-                          <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
-                           FastAPI
-                          </span>
-                          <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
-                            Project Documentation
-                           </span>
-                        </div>
-                      </div>
-                    </div>
-
-          <!-- CARD -->
-          <div class="max-w-sm rounded overflow-hidden shadow-lg hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out">
-            <img src="/images/projects/portfolio.png" alt="" class="w-full h-[250px] lg:h-[350px]">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">
-                Personal Portfolio Website
-              </div>
-              <p class="text-gray-700 text-base">
-                A Responsive Porfessional Portfolio website for my self.
-               </p>
-              <div class="px-6 py-4 pb-2">
-                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
-                  Tailwind
-                </span>
-                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
-                  Bulma
-                </span>
-                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
-                  Bootstrap
-                </span>
-                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
-                 CSS Flexbox
-                </span>
-                <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">
-                 Responsive Design
-                </span>
-              </div>
+        <!-- CARD -->
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out"
+        >
+          <img
+            src="/images/projects/ao-spellchecker.jpeg"
+            alt=""
+            class="w-full h-[250px] lg:h-[350px]"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">
+              Afaan Oromoo Spelling Checker (Ongoing)
+            </div>
+            <p class="text-gray-700 text-base">
+              A Context Aware Spell Checker for Afaan Oromoo by mixing Machine
+              Learning and Rule Based Techniques.
+            </p>
+            <div class="px-6 py-4 pb-2">
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
+                Natural&nbsp;Language&nbsp;Processing
+              </span>
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
+                Machine&nbsp;Learning
+              </span>
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
+                Data&nbsp;Structures&nbsp;and&nbsp;Algorithms
+              </span>
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
+                Linguistic Expertise
+              </span>
             </div>
           </div>
+        </div>
+
+        <!-- CARD -->
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out"
+        >
+          <img
+            src="/images/projects/am_spellchecker.jpeg"
+            alt=""
+            class="w-full h-[250px] lg:h-[350px]"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Artai Spell Checker</div>
+            <p class="text-gray-700 text-base">
+              A Context Aware Spell Checker for Amharic by mixing
+              Machine&nbsp;Learning and Morphological Techniques.
+            </p>
+            <div class="px-6 pt-4 pb-2">
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
+                Natural&nbsp;Language&nbsp;Processing
+              </span>
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
+                Machine&nbsp;Learning
+              </span>
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
+                Data&nbsp;Structures&nbsp;and&nbsp;Algorithms
+              </span>
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
+                Linguistic Expertise
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out"
+        >
+          <img
+            src="/images/projects/ao_project.png"
+            alt=""
+            class="w-full h-[250px] lg:h-[350px]"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">
+              Afaan Oromoo News Classifier
+            </div>
+            <p class="text-gray-700 text-base">
+              A news classifier for Afaan Oromoo news articles using Machine
+              Learning Techniques. This method involved development of a
+              langauge model for Afaan Oromoo.
+            </p>
+            <div class="px-6 py-4 pb-2">
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
+                Natural&nbsp;Language&nbsp;Processing
+              </span>
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
+                Machine&nbsp;Learning
+              </span>
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
+                Classification
+              </span>
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
+                FastAPI
+              </span>
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
+                Project Documentation
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out"
+        >
+          <img
+            src="/images/projects/portfolio.png"
+            alt=""
+            class="w-full h-[250px] lg:h-[350px]"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Personal Portfolio Website</div>
+            <p class="text-gray-700 text-base">
+              A Responsive Porfessional Portfolio website for my self.
+            </p>
+            <div class="px-6 py-4 pb-2">
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
+                Tailwind
+              </span>
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
+                Bulma
+              </span>
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
+                Bootstrap
+              </span>
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
+                CSS Flexbox
+              </span>
+              <span
+                class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2"
+              >
+                Responsive Design
+              </span>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="mt-6 flex max-w-[1080px] w-full mx-auto lg:mt-12 flex justify-between flex-wrap py-8 gap-5">
+      <section
+        class="mt-6 flex max-w-[1080px] w-full mx-auto lg:mt-12 flex justify-between flex-wrap py-8 gap-5"
+      >
         <!-- Top 3: Notable Projects in detail with image in card format-->
-       
-        <h2 class="text-[#5b38e3] text-center basis-full text-2xl font-bold mb-[1rem]">
+
+        <h2
+          class="text-[#5b38e3] text-center basis-full text-2xl font-bold mb-[1rem]"
+        >
           Notable Open Source Projects
         </h2>
-      
-        <div class="max-w-md flex flex-col rounded overflow-hidden shadow-lg hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out">
-          <video
-            width="560"
-            height="315"
-            controls
-            class="blog-section__img"
-          >
-            <source src="/images/blog-images/demo.mp4" type="video/mp4">
+
+        <div
+          class="max-w-md flex flex-col rounded overflow-hidden shadow-lg hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out"
+        >
+          <video width="560" height="315" controls class="blog-section__img">
+            <source src="/images/blog-images/demo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
-        </video>
-        <div class="px-6 py-4 grow-2">
-            <div class="font-bold text-xl mb-2">
-              News Classification
-            </div>
+          </video>
+          <div class="px-6 py-4 grow-2">
+            <div class="font-bold text-xl mb-2">News Classification</div>
             <p class="text-gray-700 text-base">
               A Language classification Model for Afaan Oromoo, using Neural
               Networks. It classifies news in to predefined 6 categories. It has
-              achieved 93% accuracy. Watch how I built it with clear explanation.
+              achieved 93% accuracy. Watch how I built it with clear
+              explanation.
             </p>
             <div class="py-4 pb-2">
               <a
-              class="font-semibold py-2 px-4 rounded  bg-indigo-700 text-white hover:bg-indigo-500 font-normal transition duration-300 ease-in-out inline-block"
-              href="https://github.com/abdulmunimjemal/afaan-oromoo-news-classification-system"
-              >Check Github  <i class="ri-github-fill"></i
-            ></a>
+                class="font-semibold py-2 px-4 rounded bg-indigo-700 text-white hover:bg-indigo-500 font-normal transition duration-300 ease-in-out inline-block"
+                href="https://github.com/abdulmunimjemal/afaan-oromoo-news-classification-system"
+                >Check Github <i class="ri-github-fill"></i
+              ></a>
             </div>
           </div>
         </div>
 
-        <div class="max-w-md flex flex-col rounded overflow-hidden shadow-lg hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out">
-          <video
-            width="560"
-            height="315"
-            controls
-            class="blog-section__img"
-          >
-            <source src="/images/blog-images/demo.mp4" type="video/mp4">
+        <div
+          class="max-w-md flex flex-col rounded overflow-hidden shadow-lg hover:transform hover:scale-105 hover:transition-all hover:duration-300 hover:ease-in-out"
+        >
+          <video width="560" height="315" controls class="blog-section__img">
+            <source src="/images/blog-images/demo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
-        </video>
-        <div class="px-6 py-4 grow-2">
-            <div class="font-bold text-xl mb-2">
-              News Classification
-            </div>
+          </video>
+          <div class="px-6 py-4 grow-2">
+            <div class="font-bold text-xl mb-2">News Classification</div>
             <p class="text-gray-700 text-base">
               A Language classification Model for Afaan Oromoo, using Neural
               Networks. It classifies news in to predefined 6 categories. It has
-              achieved 93% accuracy. Watch how I built it with clear explanation.
+              achieved 93% accuracy. Watch how I built it with clear
+              explanation.
             </p>
             <div class="py-4 pb-2">
               <a
-              class="font-semibold py-2 px-4 rounded  bg-indigo-700 text-white hover:bg-indigo-500 font-normal transition duration-300 ease-in-out inline-block"
-              href="https://github.com/abdulmunimjemal/afaan-oromoo-news-classification-system"
-              >Check Github  <i class="ri-github-fill"></i
-            ></a>
+                class="font-semibold py-2 px-4 rounded bg-indigo-700 text-white hover:bg-indigo-500 font-normal transition duration-300 ease-in-out inline-block"
+                href="https://github.com/abdulmunimjemal/afaan-oromoo-news-classification-system"
+                >Check Github <i class="ri-github-fill"></i
+              ></a>
             </div>
           </div>
         </div>
-  
       </section>
     </main>
 
     <!-- Footer with Logo and Address -->
-    <footer class="max-w-[1080px] px-5 w-full mx-auto bg-opacity-10 bg-gray-200 pt-4 md:py-4 flex justify-around items-center flex-wrap flex-col lg:flex-row">
+    <footer
+      class="max-w-[1080px] px-5 w-full mx-auto bg-opacity-10 bg-gray-200 pt-4 md:py-4 flex justify-around items-center flex-wrap flex-col lg:flex-row"
+    >
       <div class="inline-flex items-center justify-center mb-4 gap-1">
-          <span class="bg-black flex items-center justify-center text-white w-9 h-9 rounded-full font-bold">M</span>
-          <span class="text-xl font-semibold text-center">Munim</span>
-        </div>
-        <div class="flex flex-col self-center text-center mb-2 lg:mb-0">
-          <p class="mb-2">
-            <i class="ri-map-pin-line"></i> Addis Ababa, Ethiopia
-          </p>
-          <p class="mb-2">
-            <i class="ri-phone-line"></i> +251 900 729 000
-          </p>
-          <p class="mb-2">
-            <i class="ri-mail-line"></i>
-            <a href="mailto:abdulmunim.jemal@gmail.com"
-              >abdulmunim.jemal@gmail.com</a
-            >
-          </p>
-        </div>
-        <div class="flex justify-center items-center gap-4 mb-4 lg:mb-0">
-          <a
-            href="https://www.facebook.com/abdulmunim.jemal.1"
-            
+        <span
+          class="bg-black flex items-center justify-center text-white w-9 h-9 rounded-full font-bold"
+          >M</span
+        >
+        <span class="text-xl font-semibold text-center">Munim</span>
+      </div>
+      <div class="flex flex-col self-center text-center mb-2 lg:mb-0">
+        <p class="mb-2">
+          <i class="ri-map-pin-line"></i> Addis Ababa, Ethiopia
+        </p>
+        <p class="mb-2"><i class="ri-phone-line"></i> +251 900 729 000</p>
+        <p class="mb-2">
+          <i class="ri-mail-line"></i>
+          <a href="mailto:abdulmunim.jemal@gmail.com"
+            >abdulmunim.jemal@gmail.com</a
           >
-            <i class="ri-facebook-circle-fill"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/abdulmunim.jemal/"
-          >
-            <i class="ri-instagram-fill"></i>
-          </a>
-          <a
-            href="https://twitter.com/AbdulmunimJemal"
-          >
-            <i class="ri-twitter-fill"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/abdulmunim-jemal-0b0b3b1b2/"
-          >
-            <i class="ri-linkedin-fill"></i>
-          </a>
-        </div>
-      </footer>
+        </p>
+      </div>
+      <div class="flex justify-center items-center gap-4 mb-4 lg:mb-0">
+        <a href="https://www.facebook.com/abdulmunim.jemal.1">
+          <i class="ri-facebook-circle-fill"></i>
+        </a>
+        <a href="https://www.instagram.com/abdulmunim.jemal/">
+          <i class="ri-instagram-fill"></i>
+        </a>
+        <a href="https://twitter.com/AbdulmunimJemal">
+          <i class="ri-twitter-fill"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/abdulmunim-jemal-0b0b3b1b2/">
+          <i class="ri-linkedin-fill"></i>
+        </a>
+      </div>
+    </footer>
     <audio class="hidden" id="help-audio">
-      <source src="audios/projects.mp3" type="audio/mp3">
+      <source src="audios/projects.mp3" type="audio/mp3" />
       Your browser does not support the audio element.
-  </audio>
+    </audio>
     <script src="js/main.js"></script>
   </body>
 </html>
