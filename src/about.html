@@ -90,132 +90,128 @@
 
     <main class="main container">
       <!-- About me with Images, Image: Description cards -->
-      <section id="about" class="section about-container">
-        <h2 class="title blue">About Me</h2>
-        <div class="about-container__grid">
-          <figure class="grid-item-center">
-            <img
-              src="images/munim.jpg"
-              alt="my photo"
-              class="about-section__figure-img"
-            >
-            <figcaption class="figcaption">
-              Abdulmunim Jundurahman Jemal
-            </figcaption>
-          </figure>
+      <section id="about" class="container pt-5 bg-light">
+        <h2 class="h2 text-primary text-center mb-5">About Me</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-6">
+            <div class="col align-self-center">
+                <figure class="text-center mr-5">
+                    <img src="images/munim.jpg" alt="my photo" class="" height="350" />
+                    <figcaption class="text-black">
+                        Abdulmunim Jundurahman Jemal
+                    </figcaption>
+                </figure>
+            </div>
+    
+            <div class="col-">
+                      <div class="alert alert-primary mb-4">
+                          <h3 class="h5">Passionate Learner 🧑‍🎓</h3>
+                          <p class="alert-text text-sm">
+                              A passionate learner, dedicated to acquiring knowledge and continuously expanding my horizons.
+                          </p>
+                      </div>
+                 
+                      <div class="alert alert-secondary mb-4">
+                          <h3 class="h5">Driven Developer 👨‍💻</h3>
+                          <p class="alert-text">
+                              Deeply engaged in creating innovative solutions and pushing the boundaries of technology.
+                          </p>
+                      </div>
+                 
+                      <div class="alert alert-info mb-4">
+                          <h3 class="h5">Tech Explorer 🔍🚀</h3>
+                          <p class="alert-text">
+                              Navigating through the ever-evolving landscape of technology, uncovering new possibilities and embracing challenges.
+                          </p>
+                      </div>
+                 
+                      <div class="alert alert-success mb-4">
+                          <h3 class="h5">Philosophy Enthusiast 🤔📚</h3>
+                          <p class="alert-text">
+                              Delving into the profound questions that shape our understanding of existence. Exploring the works of renowned philosophers and reflecting on the complexities of life, sharing insights that challenge and inspire.
+                          </p>
+                      </div>
 
-          <div class="about-section__articles">
-            <article>
-              <!-- <img src="https://placehold.co/45x45" alt="my photo"> -->
-              <h3>Passionate Learner 🧑‍🎓</h3>
-              <p class="about-section__text">
-                a passionate learner, dedicated to acquiring knowledge and
-                continuously expanding my horizons.
-              </p>
-            </article>
-            <article>
-              <!-- <img src="https://placehold.co/45x45" alt="my photo"> -->
-              <h3>Driven Developer 👨‍💻</h3>
-              <p class="about-section__text">
-                deeply engaged in creating innovative solutions and pushing the
-                boundaries of technology.
-              </p>
-            </article>
-
-            <article>
-              <!-- <img src="https://placehold.co/45x45" alt="my photo"> -->
-              <h3>Tech Explorer 🔍🚀</h3>
-              <p class="about-section__text">
-                navigating through the ever-evolving landscape of technology,
-                uncovering new possibilities and embracing challenges
-              </p>
-            </article>
-            <article>
-              <!-- <img src="https://placehold.co/45x45" alt="my photo"> -->
-              <h3>Philosophy Enthusiast 🤔📚</h3>
-              <p class="about-section__text">
-                delving into the profound questions that shape our understanding
-                of existence. Exploring the works of renowned philosophers and
-                reflecting on the complexities of life, sharing insights that
-                challenge and inspire.
-              </p>
-            </article>
+              </div>
           </div>
+          
+            </div>
         </div>
-      </section>
+    </section>
 
       <!-- Skills with percentage: First technical skill, then communicational skills, then languages I can speak -->
-      <section id="skills" class="center">
-        <h2 class="title blue">Skills</h2>
-        <div class="services-section__grid grid-container">
-          <article class="table-container grid-item">
-            <h3 class="table__head">Technical Skills</h3>
-            <table class="table">
-              <tr class="table__row">
-                <td class="table__data">HTML</td>
-                <td class="table__data">90%</td>
+      <section id="skills" class="container">
+        <h2 class="h2 text-primary text-center my-4 pt-3">Skills</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 d-flex">
+          <article class="col">
+            <h3 class="h4 text-info text-center mb-4">Technical Skills</h3>
+            <table class="table overflow-auto">
+              <tr>
+                <td>HTML</td>
+                <td>90%</td>
               </tr>
-              <tr class="table__row">
-                <td class="table__data">CSS</td>
-                <td class="table__data">85%</td>
+              <tr>
+                <td>CSS</td>
+                <td>85%</td>
               </tr>
-              <tr class="table__row">
-                <td class="table__data">JavaScript</td>
-                <td class="table__data">80%</td>
+              <tr>
+                <td>JavaScript</td>
+                <td>80%</td>
               </tr>
-              <tr class="table__row">
-                <td class="table__data">Python</td>
-                <td class="table__data">95%</td>
+              <tr>
+                <td>Python</td>
+                <td>95%</td>
               </tr>
-              <tr class="table__row">
-                <td class="table__data">Django</td>
-                <td class="table__data">90%</td>
-              </tr>
-            </table>
-          </article>
-          <article class="table-container grid-item">
-            <h3 class="table__head">Communicational Skills</h3>
-            <table class="table">
-              <tr class="table__row">
-                <td class="table__data">Teamwork</td>
-                <td class="table__data">95%</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__data">Leadership</td>
-                <td class="table__data">90%</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__data">Communication</td>
-                <td class="table__data">85%</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__data">Documentation</td>
-                <td class="table__data">95%</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__data">Learning</td>
-                <td class="table__data">98%</td>
+              <tr>
+                <td>Django</td>
+                <td>90%</td>
               </tr>
             </table>
           </article>
-          <article class="table-container grid-item">
-            <h3 class="table__head">Languages</h3>
-            <table class="table">
-              <tr class="table__row">
-                <td class="table__data">Afan&nbsp;Oromo</td>
-                <td class="table__data">Mother&nbsp;Tongue</td>
+
+          <article class="col">
+            <h3 class="h4 text-info text-center mb-4">Communicational Skills</h3>
+            <table class="table overflow-auto">
+              <tr>
+                <td>Teamwork</td>
+                <td>95%</td>
               </tr>
-              <tr class="table__row">
-                <td class="table__data">Amharic</td>
-                <td class="table__data">Native</td>
+              <tr>
+                <td>Leadership</td>
+                <td>90%</td>
               </tr>
-              <tr class="table__row">
-                <td class="table__data">English</td>
-                <td class="table__data">Fluent&nbsp;(C1)</td>
+              <tr>
+                <td>Communication</td>
+                <td>85%</td>
               </tr>
-              <tr class="table__row">
-                <td class="table__data">Arabic</td>
-                <td class="table__data">Intermediate&nbsp;(B2)</td>
+              <tr>
+                <td>Documentation</td>
+                <td>95%</td>
+              </tr>
+              <tr>
+                <td>Learning</td>
+                <td>98%</td>
+              </tr>
+            </table>
+          </article>
+
+          <article class="col">
+            <h3 class="h4 text-info text-center mb-4">Languages</h3>
+            <table class="table overflow-auto">
+              <tr>
+                <td>Afan&nbsp;Oromo</td>
+                <td>Mother&nbsp;Tongue</td>
+              </tr>
+              <tr>
+                <td>Amharic</td>
+                <td>Native</td>
+              </tr>
+              <tr>
+                <td>English</td>
+                <td>Fluent&nbsp;(C1)</td>
+              </tr>
+              <tr>
+                <td>Arabic</td>
+                <td>Intermediate&nbsp;(B2)</td>
               </tr>
             </table>
           </article>
@@ -223,31 +219,49 @@
       </section>
 
       <!-- Education Section -->
-      <section class="section container">
-        <h2 class="title blue text-center">Education</h2>
-        <div class="education-section">
-          <div class="table-title">High&nbsp;School</div>
-          <div class="item">Eldan Secondary School</div>
-          <div class="item">2017 - 2019</div>
-          <div class="item">SOS Hermann Gmeiner Secondary School</div>
-          <div class="item">2019 - 2021 (Graduated)</div>
-          <div class="table-title">Undergraduate&nbsp;Studies</div>
-          <div class="item">Addis Ababa University</div>
-          <div class="item">2022 - 2026 (Ongoing)</div>
-          <div class="item">Major</div>
-          <div class="item">BSc SoftWare Engineering</div>
-          <div class="table-title">Relevant&nbsp;Coursework</div>
-          <div class="item">SOS Hermann Gmeiner Secondary School</div>
-          <div class="item grid-item-center">
-            High&nbsp;School&nbsp;Mathematics, Academic&nbsp;Writing,
-            Language&nbsp;Courses, Natural&nbsp;Science&nbsp;Courses
-          </div>
-          <div class="item">Addis Ababa University</div>
-          <div class="item">
-            Data Structures and Algorithm, Object Oriented Programming, Web
-            Programming, Fundamentals of Software Engineering
-          </div>
-        </div>
+      <section class="container mx-auto bg-light">
+        <h2 class="h2 text-primary text-center my-4 pt-3">Education</h2>
+        <table class="table mx-auto">
+          <tr>
+            <th colspan="2" class="text-center h5 text-secondary">High&nbsp;School</th>
+          </tr>
+         <tr>
+            <td>Eldan Secondary School</td>
+            <td>2017 - 2019</td>
+         </tr>
+         <tr>
+          <td>SOS Hermann Gmeiner Secondary School</td>
+          <td>2019 - 2021 (Graduated)</td>
+         </tr>
+         
+         <tr>
+          <th colspan="2" class="text-center h5 text-secondary">Undergraduate&nbsp;Studies</th>
+        </tr>
+
+        <tr>
+          <td>Addis Ababa University</td>
+          <td>2022 - 2026 (Ongoing)</td>
+        </tr>
+        <tr>
+          <td>Major</td>
+          <td>BSc SoftWare Engineering</td>
+        </tr>
+
+        <tr>
+          <th colspan="2" class="text-center h5 text-secondary">Relevant&nbsp;Coursework</th>
+        </tr>
+
+        <tr>
+          <td>SOS Hermann Gmeiner Secondary School</td>
+          <td>High&nbsp;School&nbsp;Mathematics, Academic&nbsp;Writing, Language&nbsp;Courses, Natural&nbsp;Science&nbsp;Courses</td>
+        </tr>
+
+        <tr>
+          <td>Addis Ababa University</td>
+          <td>Data Structures and Algorithm, Object Oriented Programming, Web Programming, Fundamentals of Software Engineering
+          </td>
+        </tr>
+        </table>
       </section>
     </main>
 
