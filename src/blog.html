@@ -10,12 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     >
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    >
+    <link rel="stylesheet" href="assets/css/bootstrap.css" >
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
@@ -51,8 +46,8 @@
           <button
             class="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
@@ -89,7 +84,7 @@
                 href="#"
                 id="languageDropdown"
                 role="button"
-                data-toggle="dropdown"
+                data-bs-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
@@ -117,31 +112,29 @@
         <div
           id="slider-window"
           class="carousel slide mx-auto"
-          data-ride="carousel"
+          data-bs-ride="carousel"
           style="max-width: 800px"
         >
           <ol class="carousel-indicators">
             <li
-              data-target="#slider-window"
-              data-slide-to="0"
+              data-bs-target="#slider-window"
+              data-bs-slide-to="0"
               class="active"
             ></li>
-            <li data-target="#slider-window" data-slide-to="1"></li>
-            <li data-target="#slider-window" data-slide-to="2"></li>
-            <li data-target="#slider-window" data-slide-to="3"></li>
+            <li data-bs-target="#slider-window" data-bs-slide-to="1"></li>
+            <li data-bs-target="#slider-window" data-bs-slide-to="2"></li>
+            <li data-bs-target="#slider-window" data-bs-slide-to="3"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
                 class="d-block mx-auto img-fluid"
-                src="https://placehold.co/600x300"
+                src="images/600x300.svg"
                 alt="First slide"
               >
               <div class="carousel-caption d-none d-md-block">
-                <h5 class="bg-dark-subtle text-black">
-                  AI Blooming in Ethiopia
-                </h5>
-                <p class="bg-dark-subtle text-black">
+                <h5 class="bg-dark text-white">AI Blooming in Ethiopia</h5>
+                <p class="bg-dark text-white">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quisquam, voluptatum.
                 </p>
@@ -150,14 +143,12 @@
             <div class="carousel-item">
               <img
                 class="d-block mx-auto img-fluid"
-                src="https://placehold.co/600x300"
+                src="images/600x300.svg"
                 alt="Second slide"
               >
               <div class="carousel-caption d-none d-md-block">
-                <h5 class="bg-dark-subtle text-black">
-                  NLP and Its Application
-                </h5>
-                <p class="bg-dark-subtle text-black">
+                <h5 class="bg-dark text-white">NLP and Its Application</h5>
+                <p class="bg-dark text-white">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quisquam, voluptatum.
                 </p>
@@ -166,12 +157,12 @@
             <div class="carousel-item">
               <img
                 class="d-block mx-auto img-fluid"
-                src="https://placehold.co/600x300"
+                src="images/600x300.svg"
                 alt="Third slide"
               >
               <div class="carousel-caption d-none d-md-block">
-                <h5 class="bg-dark-subtle text-black">My Approach to Life</h5>
-                <p class="bg-dark-subtle text-black">
+                <h5 class="bg-dark text-white">My Approach to Life</h5>
+                <p class="bg-dark text-white">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quisquam, voluptatum.
                 </p>
@@ -180,42 +171,36 @@
             <div class="carousel-item">
               <img
                 class="d-block mx-auto img-fluid"
-                src="https://placehold.co/600x300"
+                src="images/600x300.svg"
                 alt="Fourth slide"
               >
               <div class="carousel-caption d-none d-md-block">
-                <h5 class="bg-dark-subtle text-black">
+                <h5 class="bg-dark text-white">
                   Islam: From One to One Billion
                 </h5>
-                <p class="bg-dark-subtle text-black">
+                <p class="bg-dark text-white">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quisquam, voluptatum.
                 </p>
               </div>
             </div>
           </div>
-          <a
+          <button
             class="carousel-control-prev"
-            href="#slider-window"
-            role="button"
-            data-slide="prev"
+            type="button"
+            data-bs-target="#slider-window"
+            data-bs-slide="prev"
           >
-            <span
-              class="carousel-control-prev-icon text-white bg-black rounded"
-              aria-hidden="true"
-            ></span>
-          </a>
-          <a
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button
             class="carousel-control-next"
-            href="#slider-window"
-            role="button"
-            data-slide="next"
+            type="button"
+            data-bs-target="#slider-window"
+            data-bs-slide="next"
           >
-            <span
-              class="carousel-control-next-icon text-white bg-black rounded"
-              aria-hidden="true"
-            ></span>
-          </a>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
         </div>
       </section>
 
@@ -454,17 +439,7 @@
       </div>
     </footer>
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      src="assets/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
   </body>
